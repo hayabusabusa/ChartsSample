@@ -13,7 +13,7 @@ final class BarChartViewController: UIViewController {
     
     // MARK: IBOutlet
     
-    @IBOutlet weak var chartView: BarChartView!
+    @IBOutlet private weak var chartView: BarChartView!
     
     // MARK: Properties
     
@@ -26,7 +26,7 @@ final class BarChartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupChart()
+        setupChartView()
         setupChartData()
     }
     
@@ -37,7 +37,7 @@ final class BarChartViewController: UIViewController {
 
 extension BarChartViewController {
     
-    private func setupChart() {
+    private func setupChartView() {
         // X axis
         chartView.xAxis.enabled = false
         chartView.xAxis.labelPosition = .bottom

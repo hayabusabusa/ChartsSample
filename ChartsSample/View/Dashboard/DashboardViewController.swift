@@ -48,5 +48,8 @@ extension DashboardViewController {
     private func setupChild() {
         let barChart = BarChartViewController.instantiate()
         embed(barChart, to: firstContainer)
+        
+        let horizontalBarChart = HorizontalBarChartViewController.instantiate()
+        embed(horizontalBarChart, to: secondContainer)
     }
 }

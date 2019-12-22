@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xCj-qv-l6G">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Horizontal Bar Chart View Controller-->
+        <scene sceneID="m64-7R-WBt">
+            <objects>
+                <viewController id="xCj-qv-l6G" customClass="HorizontalBarChartViewController" customModule="ChartsSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xvW-lO-evD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWy-wR-yCJ" customClass="HorizontalBarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cWy-wR-yCJ" firstAttribute="leading" secondItem="SQE-0A-vew" secondAttribute="leading" id="IIP-jA-gBv"/>
+                            <constraint firstItem="cWy-wR-yCJ" firstAttribute="top" secondItem="SQE-0A-vew" secondAttribute="top" id="Lye-Z1-EcE"/>
+                            <constraint firstItem="cWy-wR-yCJ" firstAttribute="trailing" secondItem="SQE-0A-vew" secondAttribute="trailing" id="PqY-of-WEY"/>
+                            <constraint firstItem="cWy-wR-yCJ" firstAttribute="bottom" secondItem="SQE-0A-vew" secondAttribute="bottom" id="cqT-FA-Frn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SQE-0A-vew"/>
+                    </view>
+                    <connections>
+                        <outlet property="chartView" destination="cWy-wR-yCJ" id="mPr-p0-ymE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TFE-2G-uPj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11.594202898550726" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+</document>

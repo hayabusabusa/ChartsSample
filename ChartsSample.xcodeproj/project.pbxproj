@@ -23,6 +23,8 @@
 		716C71C723ADCF9300A78E9D /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71C623ADCF9300A78E9D /* BarChartViewController.swift */; };
 		716C71C923ADD17200A78E9D /* BarChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716C71C823ADD17200A78E9D /* BarChartViewController.storyboard */; };
 		716C71CB23ADD84D00A78E9D /* ChartType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71CA23ADD84D00A78E9D /* ChartType.swift */; };
+		716C71CE23AFAA0800A78E9D /* HorizontalBarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71CD23AFAA0800A78E9D /* HorizontalBarChartViewController.swift */; };
+		716C71D023AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716C71CF23AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		716C71C623ADCF9300A78E9D /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
 		716C71C823ADD17200A78E9D /* BarChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BarChartViewController.storyboard; sourceTree = "<group>"; };
 		716C71CA23ADD84D00A78E9D /* ChartType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartType.swift; sourceTree = "<group>"; };
+		716C71CD23AFAA0800A78E9D /* HorizontalBarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalBarChartViewController.swift; sourceTree = "<group>"; };
+		716C71CF23AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HorizontalBarChartViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,7 @@
 			children = (
 				716C71CA23ADD84D00A78E9D /* ChartType.swift */,
 				716C71C523ADCF8500A78E9D /* BarChart */,
+				716C71CC23AFA9D400A78E9D /* HorizontalBarChart */,
 			);
 			path = DashboardCharts;
 			sourceTree = "<group>";
@@ -163,6 +168,15 @@
 				716C71C823ADD17200A78E9D /* BarChartViewController.storyboard */,
 			);
 			path = BarChart;
+			sourceTree = "<group>";
+		};
+		716C71CC23AFA9D400A78E9D /* HorizontalBarChart */ = {
+			isa = PBXGroup;
+			children = (
+				716C71CD23AFAA0800A78E9D /* HorizontalBarChartViewController.swift */,
+				716C71CF23AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard */,
+			);
+			path = HorizontalBarChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				716C71BD23ADC10600A78E9D /* DashboardViewController.storyboard in Resources */,
+				716C71D023AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard in Resources */,
 				716C719F23ADBB9100A78E9D /* LaunchScreen.storyboard in Resources */,
 				716C71C923ADD17200A78E9D /* BarChartViewController.storyboard in Resources */,
 				716C719C23ADBB9100A78E9D /* Assets.xcassets in Resources */,
@@ -265,6 +280,7 @@
 			files = (
 				716C71C323ADCB4D00A78E9D /* UIViewController+Extension.swift in Sources */,
 				716C71BB23ADC06E00A78E9D /* Storyboard.swift in Sources */,
+				716C71CE23AFAA0800A78E9D /* HorizontalBarChartViewController.swift in Sources */,
 				716C719323ADBB8A00A78E9D /* AppDelegate.swift in Sources */,
 				716C71C723ADCF9300A78E9D /* BarChartViewController.swift in Sources */,
 				716C71C023ADC18200A78E9D /* NavigationController.swift in Sources */,
