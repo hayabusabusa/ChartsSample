@@ -26,6 +26,7 @@ final class SCDashboardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigation()
+        setupChild()
     }
 }
 
@@ -35,5 +36,10 @@ extension SCDashboardViewController {
     
     private func setupNavigation() {
         navigationItem.title = "SwiftChart ver"
+    }
+    
+    private func setupChild() {
+        let bar = SCBarChartViewController.instantiate()
+        embed(bar, to: firstContainer)
     }
 }

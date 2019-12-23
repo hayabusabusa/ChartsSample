@@ -18,6 +18,7 @@ enum Storyboard: String {
     case PieChartViewController
     // SwiftCharts
     case SCDashboardViewController
+    case SCBarChartViewController
     
     func instantiate<VC: UIViewController>(_: VC.Type, inBundle: Bundle? = nil) -> VC {
         guard let vc = UIStoryboard(name: self.rawValue, bundle: inBundle).instantiateInitialViewController() as? VC else {

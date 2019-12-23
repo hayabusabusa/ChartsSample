@@ -23,7 +23,7 @@ extension SceneDelegate {
     
     private func setupRoot(_ windowScene: UIWindowScene) {
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = NavigationController(rootViewController: SCDashboardViewController.instantiate())
+        window.rootViewController = NavigationController(rootViewController: DashboardViewController.instantiate())
         self.window = window
         window.makeKeyAndVisible()
     }
