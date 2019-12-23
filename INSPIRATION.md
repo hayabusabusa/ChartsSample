@@ -1,7 +1,5 @@
 いい感じの見た目のグラフとかグラフ付きのUIをまとめる.
 
-# Bhehance
-
 ## [Chart Only Collection UI UX](https://www.behance.net/gallery/79846225/Chart-Only-Collection-UI-UX?tracking_source=search%7Cdashboard)
 グラフ( 棒グラフと折れ線グラフ )のまとめ.  
 
@@ -20,7 +18,7 @@ X軸、Y軸の線、目盛りなどは一切なしで、グラフの線だけの
 データの表示の仕方がオシャレなので参考にしたい.
 
 ### 📊 棒グラフ
-![barChart2](https://mir-s3-cdn-cf.behance.net/project_modules/fs/3b988d75567415.5c51df2788aa4.gif)
+![barChart2](https://mir-s3-cdn-cf.behance.net/project_modules/fs/3b988d75567415.5c51df2788aa4.gif)  
 水平タイプの棒グラフ.  
 点線と背景グレーありでオシャレ.
 

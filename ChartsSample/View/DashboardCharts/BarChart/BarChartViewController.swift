@@ -46,6 +46,7 @@ extension BarChartViewController {
         //chartView.leftAxis.enabled = false
         chartView.leftAxis.drawAxisLineEnabled = false
         chartView.leftAxis.gridColor = UIColor.gray.withAlphaComponent(0.3)
+        chartView.leftAxis.labelTextColor = UIColor.lightGray
         //chartView.leftAxis.drawGridLinesEnabled = false
         chartView.leftAxis.labelCount = 4
         // Y Right axis
