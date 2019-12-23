@@ -9,12 +9,15 @@
 import UIKit
 
 enum Storyboard: String {
+    // Charts
     case DashboardViewController
     case DashboardPopoverViewController
     case BarChartViewController
     case HorizontalBarChartViewController
     case LineChartViewController
     case PieChartViewController
+    // SwiftCharts
+    case SCDashboardViewController
     
     func instantiate<VC: UIViewController>(_: VC.Type, inBundle: Bundle? = nil) -> VC {
         guard let vc = UIStoryboard(name: self.rawValue, bundle: inBundle).instantiateInitialViewController() as? VC else {
