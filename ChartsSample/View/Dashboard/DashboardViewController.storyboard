@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ehD-8a-vsC">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="428"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="676"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Er-5y-8pb">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="220"/>
@@ -33,6 +33,13 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="200" id="wGq-HD-bxu"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WN2-QV-z4g">
+                                                <rect key="frame" x="0.0" y="436" width="414" height="240"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="240" id="v6D-PQ-uP2"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -60,6 +67,7 @@
                     <connections>
                         <outlet property="firstContainer" destination="5Er-5y-8pb" id="RfT-US-9g3"/>
                         <outlet property="secondContainer" destination="Qex-Ly-vf7" id="lXD-5j-w5t"/>
+                        <outlet property="thirdContainer" destination="WN2-QV-z4g" id="ulN-5T-hOa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zz5-Ii-Xo9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

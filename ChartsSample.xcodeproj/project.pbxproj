@@ -25,6 +25,8 @@
 		716C71CB23ADD84D00A78E9D /* ChartType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71CA23ADD84D00A78E9D /* ChartType.swift */; };
 		716C71CE23AFAA0800A78E9D /* HorizontalBarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71CD23AFAA0800A78E9D /* HorizontalBarChartViewController.swift */; };
 		716C71D023AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716C71CF23AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard */; };
+		A417208323B061FF0009C10D /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208223B061FF0009C10D /* PieChartViewController.swift */; };
+		A417208523B062190009C10D /* PieChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A417208423B062190009C10D /* PieChartViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		716C71CA23ADD84D00A78E9D /* ChartType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartType.swift; sourceTree = "<group>"; };
 		716C71CD23AFAA0800A78E9D /* HorizontalBarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalBarChartViewController.swift; sourceTree = "<group>"; };
 		716C71CF23AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HorizontalBarChartViewController.storyboard; sourceTree = "<group>"; };
+		A417208223B061FF0009C10D /* PieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
+		A417208423B062190009C10D /* PieChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PieChartViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,7 @@
 				716C71CA23ADD84D00A78E9D /* ChartType.swift */,
 				716C71C523ADCF8500A78E9D /* BarChart */,
 				716C71CC23AFA9D400A78E9D /* HorizontalBarChart */,
+				A417208123B061EC0009C10D /* PieChart */,
 			);
 			path = DashboardCharts;
 			sourceTree = "<group>";
@@ -177,6 +182,15 @@
 				716C71CF23AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard */,
 			);
 			path = HorizontalBarChart;
+			sourceTree = "<group>";
+		};
+		A417208123B061EC0009C10D /* PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				A417208223B061FF0009C10D /* PieChartViewController.swift */,
+				A417208423B062190009C10D /* PieChartViewController.storyboard */,
+			);
+			path = PieChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				716C71BD23ADC10600A78E9D /* DashboardViewController.storyboard in Resources */,
+				A417208523B062190009C10D /* PieChartViewController.storyboard in Resources */,
 				716C71D023AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard in Resources */,
 				716C719F23ADBB9100A78E9D /* LaunchScreen.storyboard in Resources */,
 				716C71C923ADD17200A78E9D /* BarChartViewController.storyboard in Resources */,
@@ -284,6 +299,7 @@
 				716C719323ADBB8A00A78E9D /* AppDelegate.swift in Sources */,
 				716C71C723ADCF9300A78E9D /* BarChartViewController.swift in Sources */,
 				716C71C023ADC18200A78E9D /* NavigationController.swift in Sources */,
+				A417208323B061FF0009C10D /* PieChartViewController.swift in Sources */,
 				716C719523ADBB8A00A78E9D /* SceneDelegate.swift in Sources */,
 				716C71CB23ADD84D00A78E9D /* ChartType.swift in Sources */,
 				716C71B823ADC01A00A78E9D /* DashboardViewController.swift in Sources */,
