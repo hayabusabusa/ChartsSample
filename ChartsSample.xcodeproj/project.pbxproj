@@ -35,6 +35,7 @@
 		A417209423B077BF0009C10D /* DashboardPopoverPresentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417209323B077BF0009C10D /* DashboardPopoverPresentDelegate.swift */; };
 		A417209723B07C0F0009C10D /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417209623B07C0F0009C10D /* LineChartViewController.swift */; };
 		A417209923B07D790009C10D /* LineChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A417209823B07D790009C10D /* LineChartViewController.storyboard */; };
+		A417209B23B092600009C10D /* SwiftCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A417209A23B092600009C10D /* SwiftCharts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		A417209323B077BF0009C10D /* DashboardPopoverPresentDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPopoverPresentDelegate.swift; sourceTree = "<group>"; };
 		A417209623B07C0F0009C10D /* LineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
 		A417209823B07D790009C10D /* LineChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LineChartViewController.storyboard; sourceTree = "<group>"; };
+		A417209A23B092600009C10D /* SwiftCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCharts.framework; path = Carthage/Build/iOS/SwiftCharts.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A417209B23B092600009C10D /* SwiftCharts.framework in Frameworks */,
 				716C71B123ADBF8100A78E9D /* RxCocoa.framework in Frameworks */,
 				716C71AB23ADBF8100A78E9D /* RxRelay.framework in Frameworks */,
 				716C71AD23ADBF8100A78E9D /* Charts.framework in Frameworks */,
@@ -119,6 +122,7 @@
 		716C71A623ADBF8000A78E9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A417209A23B092600009C10D /* SwiftCharts.framework */,
 				716C71A823ADBF8000A78E9D /* Charts.framework */,
 				716C71AA23ADBF8000A78E9D /* RxCocoa.framework */,
 				716C71A723ADBF8000A78E9D /* RxRelay.framework */,
@@ -318,6 +322,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftCharts.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
