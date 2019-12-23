@@ -43,7 +43,12 @@ final class DashboardViewController: UIViewController {
 extension DashboardViewController {
     
     private func setupNavigation() {
+        let barButtonItem = UIBarButtonItem(image: UIImage(systemName: "ellipses.bubble"), style: .plain, target: self, action: nil)
         navigationItem.title = "Dashboard"
+        navigationItem.rightBarButtonItem = barButtonItem
+        barButtonItem.rx.tap.asSignal()
+            .emit(onNext: { [weak self] in self?.presentPopover() })
+            .disposed(by: disposeBag)
     }
     
     private func setupChild() {
@@ -55,5 +60,24 @@ extension DashboardViewController {
         
         let pieChart = PieChartViewController.instantiate()
         embed(pieChart, to: thirdContainer)
+    }
+}
+
+// MARK: - Popover delegate
+
+extension DashboardViewController: UIPopoverPresentationControllerDelegate {
+    
+    private func presentPopover() {
+        let vc = DashboardPopoverViewController.instantiate()
+        vc.modalPresentationStyle = .popover
+        vc.preferredContentSize = CGSize(width: 240, height: 300)
+        vc.popoverPresentationController?.delegate = self
+        vc.popoverPresentationController?.permittedArrowDirections = .any
+        vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+        present(vc, animated: true, completion: nil)
+    }
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle {
+        return .none
     }
 }

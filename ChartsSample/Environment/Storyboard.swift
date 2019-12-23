@@ -10,6 +10,7 @@ import UIKit
 
 enum Storyboard: String {
     case DashboardViewController
+    case DashboardPopoverViewController
     case BarChartViewController
     case HorizontalBarChartViewController
     case PieChartViewController

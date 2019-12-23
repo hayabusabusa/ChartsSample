@@ -30,6 +30,9 @@
 		A417208923B069290009C10D /* RxAnimated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208623B069290009C10D /* RxAnimated.swift */; };
 		A417208A23B069290009C10D /* RxAnimated+animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208723B069290009C10D /* RxAnimated+animations.swift */; };
 		A417208B23B069290009C10D /* RxAnimated+bindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208823B069290009C10D /* RxAnimated+bindings.swift */; };
+		A417208E23B074890009C10D /* DashboardPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208D23B074890009C10D /* DashboardPopoverViewController.swift */; };
+		A417209223B076250009C10D /* DashboardPopoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A417209123B076250009C10D /* DashboardPopoverViewController.storyboard */; };
+		A417209423B077BF0009C10D /* DashboardPopoverPresentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417209323B077BF0009C10D /* DashboardPopoverPresentDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		A417208623B069290009C10D /* RxAnimated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxAnimated.swift; sourceTree = "<group>"; };
 		A417208723B069290009C10D /* RxAnimated+animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RxAnimated+animations.swift"; sourceTree = "<group>"; };
 		A417208823B069290009C10D /* RxAnimated+bindings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RxAnimated+bindings.swift"; sourceTree = "<group>"; };
+		A417208D23B074890009C10D /* DashboardPopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPopoverViewController.swift; sourceTree = "<group>"; };
+		A417209123B076250009C10D /* DashboardPopoverViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardPopoverViewController.storyboard; sourceTree = "<group>"; };
+		A417209323B077BF0009C10D /* DashboardPopoverPresentDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPopoverPresentDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,7 @@
 			children = (
 				716C71BE23ADC16F00A78E9D /* Base */,
 				716C71B623ADC00D00A78E9D /* Dashboard */,
+				A417208C23B0746E0009C10D /* DashboardPopover */,
 				716C71C423ADCF0400A78E9D /* DashboardCharts */,
 			);
 			path = View;
@@ -202,6 +209,16 @@
 			path = PieChart;
 			sourceTree = "<group>";
 		};
+		A417208C23B0746E0009C10D /* DashboardPopover */ = {
+			isa = PBXGroup;
+			children = (
+				A417209323B077BF0009C10D /* DashboardPopoverPresentDelegate.swift */,
+				A417208D23B074890009C10D /* DashboardPopoverViewController.swift */,
+				A417209123B076250009C10D /* DashboardPopoverViewController.storyboard */,
+			);
+			path = DashboardPopover;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -264,6 +281,7 @@
 				716C71BD23ADC10600A78E9D /* DashboardViewController.storyboard in Resources */,
 				A417208523B062190009C10D /* PieChartViewController.storyboard in Resources */,
 				716C71D023AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard in Resources */,
+				A417209223B076250009C10D /* DashboardPopoverViewController.storyboard in Resources */,
 				716C719F23ADBB9100A78E9D /* LaunchScreen.storyboard in Resources */,
 				716C71C923ADD17200A78E9D /* BarChartViewController.storyboard in Resources */,
 				716C719C23ADBB9100A78E9D /* Assets.xcassets in Resources */,
@@ -302,12 +320,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A417208E23B074890009C10D /* DashboardPopoverViewController.swift in Sources */,
 				716C71C323ADCB4D00A78E9D /* UIViewController+Extension.swift in Sources */,
 				A417208A23B069290009C10D /* RxAnimated+animations.swift in Sources */,
 				716C71BB23ADC06E00A78E9D /* Storyboard.swift in Sources */,
 				716C71CE23AFAA0800A78E9D /* HorizontalBarChartViewController.swift in Sources */,
 				716C719323ADBB8A00A78E9D /* AppDelegate.swift in Sources */,
 				716C71C723ADCF9300A78E9D /* BarChartViewController.swift in Sources */,
+				A417209423B077BF0009C10D /* DashboardPopoverPresentDelegate.swift in Sources */,
 				716C71C023ADC18200A78E9D /* NavigationController.swift in Sources */,
 				A417208323B061FF0009C10D /* PieChartViewController.swift in Sources */,
 				716C719523ADBB8A00A78E9D /* SceneDelegate.swift in Sources */,
