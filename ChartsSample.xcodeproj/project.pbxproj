@@ -146,7 +146,7 @@
 				716C71B623ADC00D00A78E9D /* Dashboard */,
 				A417208C23B0746E0009C10D /* DashboardPopover */,
 				716C71C423ADCF0400A78E9D /* DashboardCharts */,
-				A417209E23B094410009C10D /* SCDashboard */,
+				A41720A823B0A12F0009C10D /* TEST */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -263,6 +263,14 @@
 				A41720A623B09B9C0009C10D /* SCBarChartViewController.storyboard */,
 			);
 			path = SCBarChart;
+			sourceTree = "<group>";
+		};
+		A41720A823B0A12F0009C10D /* TEST */ = {
+			isa = PBXGroup;
+			children = (
+				A417209E23B094410009C10D /* SCDashboard */,
+			);
+			path = TEST;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
