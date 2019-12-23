@@ -27,6 +27,9 @@
 		716C71D023AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716C71CF23AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard */; };
 		A417208323B061FF0009C10D /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208223B061FF0009C10D /* PieChartViewController.swift */; };
 		A417208523B062190009C10D /* PieChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A417208423B062190009C10D /* PieChartViewController.storyboard */; };
+		A417208923B069290009C10D /* RxAnimated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208623B069290009C10D /* RxAnimated.swift */; };
+		A417208A23B069290009C10D /* RxAnimated+animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208723B069290009C10D /* RxAnimated+animations.swift */; };
+		A417208B23B069290009C10D /* RxAnimated+bindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208823B069290009C10D /* RxAnimated+bindings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		716C71CF23AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HorizontalBarChartViewController.storyboard; sourceTree = "<group>"; };
 		A417208223B061FF0009C10D /* PieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
 		A417208423B062190009C10D /* PieChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PieChartViewController.storyboard; sourceTree = "<group>"; };
+		A417208623B069290009C10D /* RxAnimated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxAnimated.swift; sourceTree = "<group>"; };
+		A417208723B069290009C10D /* RxAnimated+animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RxAnimated+animations.swift"; sourceTree = "<group>"; };
+		A417208823B069290009C10D /* RxAnimated+bindings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RxAnimated+bindings.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +156,9 @@
 		716C71C123ADCB3B00A78E9D /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				A417208623B069290009C10D /* RxAnimated.swift */,
+				A417208723B069290009C10D /* RxAnimated+animations.swift */,
+				A417208823B069290009C10D /* RxAnimated+bindings.swift */,
 				716C71C223ADCB4D00A78E9D /* UIViewController+Extension.swift */,
 			);
 			path = Util;
@@ -294,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				716C71C323ADCB4D00A78E9D /* UIViewController+Extension.swift in Sources */,
+				A417208A23B069290009C10D /* RxAnimated+animations.swift in Sources */,
 				716C71BB23ADC06E00A78E9D /* Storyboard.swift in Sources */,
 				716C71CE23AFAA0800A78E9D /* HorizontalBarChartViewController.swift in Sources */,
 				716C719323ADBB8A00A78E9D /* AppDelegate.swift in Sources */,
@@ -301,7 +311,9 @@
 				716C71C023ADC18200A78E9D /* NavigationController.swift in Sources */,
 				A417208323B061FF0009C10D /* PieChartViewController.swift in Sources */,
 				716C719523ADBB8A00A78E9D /* SceneDelegate.swift in Sources */,
+				A417208B23B069290009C10D /* RxAnimated+bindings.swift in Sources */,
 				716C71CB23ADD84D00A78E9D /* ChartType.swift in Sources */,
+				A417208923B069290009C10D /* RxAnimated.swift in Sources */,
 				716C71B823ADC01A00A78E9D /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
