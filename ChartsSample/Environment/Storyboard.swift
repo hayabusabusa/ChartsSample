@@ -13,6 +13,7 @@ enum Storyboard: String {
     case DashboardPopoverViewController
     case BarChartViewController
     case HorizontalBarChartViewController
+    case LineChartViewController
     case PieChartViewController
     
     func instantiate<VC: UIViewController>(_: VC.Type, inBundle: Bundle? = nil) -> VC {

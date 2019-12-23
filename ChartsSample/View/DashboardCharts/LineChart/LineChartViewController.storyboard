@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tFp-SA-MCE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Line Chart View Controller-->
+        <scene sceneID="KW2-lJ-Uli">
+            <objects>
+                <viewController id="tFp-SA-MCE" customClass="LineChartViewController" customModule="ChartsSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GQY-lT-fcs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lmg-gH-ysV">
+                                <rect key="frame" x="8" y="52" width="398" height="802"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bck-n3-BU4" customClass="LineChartView" customModule="Charts">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="802"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="igw-r4-G4Q" firstAttribute="trailing" secondItem="lmg-gH-ysV" secondAttribute="trailing" constant="8" id="1D2-Kw-Z8E"/>
+                            <constraint firstItem="lmg-gH-ysV" firstAttribute="leading" secondItem="igw-r4-G4Q" secondAttribute="leading" constant="8" id="CPR-Ye-7Jq"/>
+                            <constraint firstItem="igw-r4-G4Q" firstAttribute="bottom" secondItem="lmg-gH-ysV" secondAttribute="bottom" constant="8" id="YeO-qp-pUD"/>
+                            <constraint firstItem="lmg-gH-ysV" firstAttribute="top" secondItem="igw-r4-G4Q" secondAttribute="top" constant="8" id="jVr-hn-ZZ5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="igw-r4-G4Q"/>
+                    </view>
+                    <connections>
+                        <outlet property="chartView" destination="bck-n3-BU4" id="fSR-7D-E3V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kNg-Ag-SEW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229" y="-165"/>
+        </scene>
+    </scenes>
+</document>

@@ -38,6 +38,8 @@ final class BarChartViewController: UIViewController {
 extension BarChartViewController {
     
     private func setupChartView() {
+        chartView.scaleXEnabled = false
+        chartView.scaleYEnabled = false
         // X axis
         chartView.xAxis.enabled = false
         chartView.xAxis.labelPosition = .bottom

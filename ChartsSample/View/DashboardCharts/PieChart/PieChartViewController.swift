@@ -44,7 +44,7 @@ extension PieChartViewController {
         let chartEntries = rawData.map { PieChartDataEntry(value: Double($0), label: "data\($0)") }
         let chartDataSet = PieChartDataSet(entries: chartEntries)
         chartDataSet.colors = [.systemRed, .systemBlue, .systemYellow]
-        chartDataSet.label = ""
+        chartDataSet.drawValuesEnabled = false
         chartView.data = PieChartData(dataSet: chartDataSet)
     }
 }

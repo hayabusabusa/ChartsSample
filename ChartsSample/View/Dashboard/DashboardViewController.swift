@@ -17,6 +17,7 @@ final class DashboardViewController: UIViewController {
     @IBOutlet weak var firstContainer: UIView!
     @IBOutlet weak var secondContainer: UIView!
     @IBOutlet weak var thirdContainer: UIView!
+    @IBOutlet weak var fourthContainer: UIView!
     
     // MARK: Properties
     
@@ -58,8 +59,11 @@ extension DashboardViewController {
         let horizontalBarChart = HorizontalBarChartViewController.instantiate()
         embed(horizontalBarChart, to: secondContainer)
         
+        let lineChart = LineChartViewController.instantiate()
+        embed(lineChart, to: thirdContainer)
+        
         let pieChart = PieChartViewController.instantiate()
-        embed(pieChart, to: thirdContainer)
+        embed(pieChart, to: fourthContainer)
     }
 }
 
