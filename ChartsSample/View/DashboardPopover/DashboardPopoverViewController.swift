@@ -7,14 +7,18 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 final class DashboardPopoverViewController: UITableViewController {
     
     // MARK: IBOutlet
     
-    @IBOutlet weak var barChartSwitch: UISwitch!
+    @IBOutlet weak var testModeSwitch: UISwitch!
     
     // MARK: Properties
+    
+    private let disposeBag = DisposeBag()
     
     weak var delegate: DashboardPopoverPresentDelegate?
     
@@ -27,10 +31,22 @@ final class DashboardPopoverViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViews()
     }
+}
+
+// MARK: - Setup
+
+extension DashboardPopoverViewController {
     
-    override func dismiss(animated flag: Bool, completion: (() -> Void)? = nil) {
-        delegate?.onDismiss()
-        super.dismiss(animated: flag, completion: completion)
+    private func setupViews() {
+        testModeSwitch.setOn(true, animated: false)
+        testModeSwitch.rx.isOn.asSignal(onErrorSignalWith: .empty())
+            .map { DashboardPopoverPresentDelegateType.modeChanged(isTest: $0) }
+            .emit(onNext: { [weak self] type in
+                self?.delegate?.onDismiss(type)
+                self?.dismiss(animated: true, completion: nil)
+            })
+            .disposed(by: disposeBag)
     }
 }

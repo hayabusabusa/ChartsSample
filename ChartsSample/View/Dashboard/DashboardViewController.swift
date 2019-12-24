@@ -69,16 +69,24 @@ extension DashboardViewController {
 
 // MARK: - Popover delegate
 
-extension DashboardViewController: UIPopoverPresentationControllerDelegate {
+extension DashboardViewController: UIPopoverPresentationControllerDelegate, DashboardPopoverPresentDelegate {
     
     private func presentPopover() {
         let vc = DashboardPopoverViewController.instantiate()
+        vc.delegate = self
         vc.modalPresentationStyle = .popover
         vc.preferredContentSize = CGSize(width: 240, height: 300)
         vc.popoverPresentationController?.delegate = self
         vc.popoverPresentationController?.permittedArrowDirections = .any
         vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
         present(vc, animated: true, completion: nil)
+    }
+    
+    func onDismiss(_ type: DashboardPopoverPresentDelegateType) {
+        switch type {
+        case .modeChanged(let isTest):
+            print(isTest)
+        }
     }
     
     func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle {

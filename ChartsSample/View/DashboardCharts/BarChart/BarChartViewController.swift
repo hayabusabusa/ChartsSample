@@ -49,11 +49,16 @@ extension BarChartViewController {
         chartView.leftAxis.drawAxisLineEnabled = false
         chartView.leftAxis.gridColor = UIColor.gray.withAlphaComponent(0.3)
         chartView.leftAxis.labelTextColor = UIColor.lightGray
+        chartView.leftAxis.gridLineDashLengths = [4]
         //chartView.leftAxis.drawGridLinesEnabled = false
         chartView.leftAxis.labelCount = 4
         // Y Right axis
         chartView.rightAxis.enabled = false
         //chartView.rightAxis.drawAxisLineEnabled = false
+        let limitLine = ChartLimitLine(limit: 3, label: "Limit line")
+        limitLine.lineDashLengths = [4]
+        limitLine.lineColor = .systemPink
+        chartView.leftAxis.addLimitLine(limitLine)
     }
     
     private func setupChartData() {

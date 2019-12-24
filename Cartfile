@@ -1,5 +1,5 @@
 github "ReactiveX/RxSwift" ~> 5.0
 
 # Chart
-github "danielgindi/Charts" "roundedBars"
+github "danielgindi/Charts" ~> 3.4.0
 github "i-schuetz/SwiftCharts" ~> 0.6.5

@@ -27,9 +27,9 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WCI-c9-md1">
                                                     <rect key="frame" x="12" y="8" width="390" height="27.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Bar Chart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pO8-1e-e0j">
-                                                            <rect key="frame" x="0.0" y="0.0" width="119" height="27.5"/>
-                                                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pO8-1e-e0j">
+                                                            <rect key="frame" x="0.0" y="0.0" width="73" height="27.5"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -56,7 +56,7 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="barChartSwitch" destination="DY9-Il-50Y" id="2Kt-QP-mlM"/>
+                        <outlet property="testModeSwitch" destination="DY9-Il-50Y" id="wvc-6g-340"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eo6-lg-GBM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

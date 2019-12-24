@@ -9,5 +9,9 @@
 import Foundation
 
 protocol DashboardPopoverPresentDelegate: AnyObject {
-    func onDismiss()
+    func onDismiss(_ type: DashboardPopoverPresentDelegateType)
+}
+
+enum DashboardPopoverPresentDelegateType {
+    case modeChanged(isTest: Bool)
 }
