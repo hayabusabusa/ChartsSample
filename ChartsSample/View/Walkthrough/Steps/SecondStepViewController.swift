@@ -39,10 +39,10 @@ extension SecondStepViewController {
         layoutChartView.clipsToBounds = true
         layoutChartView.layer.cornerRadius = layoutChartView.bounds.width / 2
         layoutChartView.layer.borderWidth = 3
-        layoutChartView.layer.borderColor = UIColor.gray.withAlphaComponent(0.3).cgColor
+        layoutChartView.layer.borderColor = ColorPalette.soothingBreeze.cgColor
         // Button
         reloadButton.rx.tap.asSignal()
-            .emit(onNext: { [weak self] in self?.chartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.4, easingOption: .easeInBounce) })
+            .emit(onNext: { [weak self] in self?.chartView.animate(xAxisDuration: 1.4, yAxisDuration: 1.8, easingOption: .easeInBounce) })
         .disposed(by: disposeBag)
     }
     

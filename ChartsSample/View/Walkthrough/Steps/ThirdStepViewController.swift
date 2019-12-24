@@ -32,6 +32,6 @@ extension ThirdSetpViewController {
         layoutChartView.clipsToBounds = true
         layoutChartView.layer.cornerRadius = layoutChartView.bounds.width / 2
         layoutChartView.layer.borderWidth = 3
-        layoutChartView.layer.borderColor = UIColor.gray.withAlphaComponent(0.3).cgColor
+        layoutChartView.layer.borderColor = ColorPalette.chigong.cgColor
     }
 }

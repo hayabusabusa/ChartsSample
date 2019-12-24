@@ -214,7 +214,7 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UzM-85-wtP">
-                                                <rect key="frame" x="225" y="180.5" width="32" height="31"/>
+                                                <rect key="frame" x="227" y="182.5" width="32" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="32" id="0rO-HI-jbx"/>
                                                     <constraint firstAttribute="height" constant="32" id="v6F-9b-eAg"/>
@@ -227,10 +227,10 @@
                                             <constraint firstItem="xSF-uu-bCw" firstAttribute="top" secondItem="s3O-PO-vvA" secondAttribute="top" id="1Yk-af-ldG"/>
                                             <constraint firstItem="xSF-uu-bCw" firstAttribute="centerX" secondItem="s3O-PO-vvA" secondAttribute="centerX" id="7Pi-FF-qr8"/>
                                             <constraint firstItem="xSF-uu-bCw" firstAttribute="width" secondItem="s3O-PO-vvA" secondAttribute="height" multiplier="1:1" id="E5S-Op-fPq"/>
-                                            <constraint firstItem="UzM-85-wtP" firstAttribute="trailing" secondItem="xSF-uu-bCw" secondAttribute="trailing" constant="-16" id="Jc9-3H-mjK"/>
+                                            <constraint firstItem="UzM-85-wtP" firstAttribute="trailing" secondItem="xSF-uu-bCw" secondAttribute="trailing" constant="-14" id="Jc9-3H-mjK"/>
                                             <constraint firstAttribute="bottom" secondItem="xSF-uu-bCw" secondAttribute="bottom" id="UTi-jd-G9p"/>
                                             <constraint firstAttribute="height" constant="228" id="fCd-wN-oQs"/>
-                                            <constraint firstItem="UzM-85-wtP" firstAttribute="bottom" secondItem="xSF-uu-bCw" secondAttribute="bottom" constant="-16" id="jt5-li-nnY"/>
+                                            <constraint firstItem="UzM-85-wtP" firstAttribute="bottom" secondItem="xSF-uu-bCw" secondAttribute="bottom" constant="-14" id="jt5-li-nnY"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcE-ku-PeD">
@@ -285,17 +285,24 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qk8-v6-HLA" userLabel="Layout Chart View">
                                                 <rect key="frame" x="45" y="0.0" width="228" height="228"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IgK-an-9NJ" customClass="CombinedChartView" customModule="Charts">
-                                                        <rect key="frame" x="-8" y="-8" width="244" height="244"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                    </view>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_beautiful_chart" translatesAutoresizingMaskIntoConstraints="NO" id="L7U-i4-Qgk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="228" height="228"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1PE-5B-wKv">
+                                                        <rect key="frame" x="0.0" y="2" width="228" height="223.5"/>
+                                                        <color key="tintColor" name="Chi-gong"/>
+                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="IgK-an-9NJ" firstAttribute="leading" secondItem="qk8-v6-HLA" secondAttribute="leading" constant="-8" id="22p-wk-hQx"/>
-                                                    <constraint firstAttribute="bottom" secondItem="IgK-an-9NJ" secondAttribute="bottom" constant="-8" id="J4M-I2-gp9"/>
-                                                    <constraint firstAttribute="trailing" secondItem="IgK-an-9NJ" secondAttribute="trailing" constant="-8" id="R5n-Em-pFM"/>
-                                                    <constraint firstItem="IgK-an-9NJ" firstAttribute="top" secondItem="qk8-v6-HLA" secondAttribute="top" constant="-8" id="ab6-Ay-Ewr"/>
+                                                    <constraint firstAttribute="trailing" secondItem="L7U-i4-Qgk" secondAttribute="trailing" id="1TS-dw-kls"/>
+                                                    <constraint firstAttribute="bottom" secondItem="1PE-5B-wKv" secondAttribute="bottom" id="Fck-hZ-7hs"/>
+                                                    <constraint firstItem="L7U-i4-Qgk" firstAttribute="top" secondItem="qk8-v6-HLA" secondAttribute="top" id="P2V-8D-af6"/>
+                                                    <constraint firstItem="1PE-5B-wKv" firstAttribute="top" secondItem="qk8-v6-HLA" secondAttribute="top" id="PFE-hN-jZp"/>
+                                                    <constraint firstItem="L7U-i4-Qgk" firstAttribute="leading" secondItem="qk8-v6-HLA" secondAttribute="leading" id="T8Z-5O-NzB"/>
+                                                    <constraint firstAttribute="trailing" secondItem="1PE-5B-wKv" secondAttribute="trailing" id="kGd-Pr-s8g"/>
+                                                    <constraint firstAttribute="bottom" secondItem="L7U-i4-Qgk" secondAttribute="bottom" id="kxV-H7-neb"/>
+                                                    <constraint firstItem="1PE-5B-wKv" firstAttribute="leading" secondItem="qk8-v6-HLA" secondAttribute="leading" id="mMZ-w3-4TU"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -339,8 +346,13 @@ PR作成者が更新してくれていないので
     </scenes>
     <resources>
         <image name="arrow.counterclockwise.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="img_beautiful_chart" width="286" height="256"/>
+        <image name="xmark" catalog="system" width="64" height="56"/>
         <namedColor name="American river">
             <color red="0.3880000114440918" green="0.4309999942779541" blue="0.44699999690055847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Chi-gong">
+            <color red="0.83899998664855957" green="0.18799999356269836" blue="0.19200000166893005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Dracula orchid">
             <color red="0.17599999904632568" green="0.20399999618530273" blue="0.21199999749660492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
