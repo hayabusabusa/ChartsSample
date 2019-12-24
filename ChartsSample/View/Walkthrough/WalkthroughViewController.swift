@@ -44,11 +44,11 @@ extension WalkthroughViewController {
         // 値が流れるタイミングによってはアニメーションがキャンセルされてしまう.
         // 3ページ -> 1ページに戻る -> 再度3ページに戻ってくるとアニメーションがおかしい.
         scrollView.rx.currentPage
-            .map { $0 != 2 }
-            .bind(animated: nextButton.rx.animated.fade(duration: 0.1).isHidden)
+            .map { $0 != 2 ? 0 : 1 }
+            .bind(animated: nextButton.rx.animated.fade(duration: 0.3).alpha)
             .disposed(by: disposeBag)
         // Button
-        nextButton.isHidden = true
+        nextButton.alpha = 0
         nextButton.rx.tap.asSignal()
             .emit(onNext: { [weak self] in self?.replaceRootToTabBar() })
             .disposed(by: disposeBag)
