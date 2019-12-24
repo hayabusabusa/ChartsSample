@@ -102,33 +102,114 @@
             </objects>
             <point key="canvasLocation" x="269.56521739130437" y="-162.05357142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--First Setp View Controller-->
         <scene sceneID="kTA-aF-pEr">
             <objects>
-                <viewController id="7GF-9s-yjo" sceneMemberID="viewController">
+                <viewController id="7GF-9s-yjo" customClass="FirstSetpViewController" customModule="ChartsSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CCM-hJ-mY2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" name="Sour lemon"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="3A3-I1-8Sg">
+                                <rect key="frame" x="48" y="207" width="318" height="434"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="複雑なグラフが描画可能" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37L-pM-xeq">
+                                        <rect key="frame" x="0.0" y="0.0" width="318" height="23"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="23"/>
+                                        <color key="textColor" name="Dracula orchid"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eV1-3m-pse" userLabel="Layout Chart View">
+                                        <rect key="frame" x="0.0" y="47" width="318" height="318"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gmU-Fe-cUh" customClass="CombinedChartView" customModule="Charts">
+                                                <rect key="frame" x="-8" y="-8" width="334" height="334"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="gmU-Fe-cUh" secondAttribute="bottom" constant="-8" id="Aj4-rx-Nyu"/>
+                                            <constraint firstItem="gmU-Fe-cUh" firstAttribute="top" secondItem="eV1-3m-pse" secondAttribute="top" constant="-8" id="F0q-bb-fgY"/>
+                                            <constraint firstAttribute="width" secondItem="eV1-3m-pse" secondAttribute="height" multiplier="1:1" id="K2F-bC-nHM"/>
+                                            <constraint firstAttribute="trailing" secondItem="gmU-Fe-cUh" secondAttribute="trailing" constant="-8" id="Y8P-zr-DZs"/>
+                                            <constraint firstItem="gmU-Fe-cUh" firstAttribute="leading" secondItem="eV1-3m-pse" secondAttribute="leading" constant="-8" id="zSE-dI-eTu"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYc-lf-wpO">
+                                        <rect key="frame" x="0.0" y="389" width="318" height="45"/>
+                                        <string key="text">棒グラフ+折れ線グラフや
+その他のグラフを組み合わせたグラフを
+描画することができます。</string>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                        <color key="textColor" name="American river"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3A3-I1-8Sg" firstAttribute="centerY" secondItem="CCM-hJ-mY2" secondAttribute="centerY" constant="-24" id="bnZ-8c-HRd"/>
+                            <constraint firstAttribute="trailing" secondItem="3A3-I1-8Sg" secondAttribute="trailing" constant="48" id="dhr-Pq-da1"/>
+                            <constraint firstItem="3A3-I1-8Sg" firstAttribute="leading" secondItem="CCM-hJ-mY2" secondAttribute="leading" constant="48" id="u11-QC-tec"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="chartView" destination="gmU-Fe-cUh" id="IBG-jC-oYq"/>
+                        <outlet property="layoutChartView" destination="eV1-3m-pse" id="XJ9-gX-Q8c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gEs-u1-TjP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="271" y="-815"/>
         </scene>
-        <!--View Controller-->
+        <!--Second Step View Controller-->
         <scene sceneID="4cO-Im-ngd">
             <objects>
-                <viewController id="m6Z-qf-cW3" sceneMemberID="viewController">
+                <viewController id="m6Z-qf-cW3" customClass="SecondStepViewController" customModule="ChartsSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i0V-4t-R8m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" name="Faded poster"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="fae-HL-scb">
+                                <rect key="frame" x="48" y="214.5" width="318" height="419"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アニメーション" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q80-4Y-75E">
+                                        <rect key="frame" x="0.0" y="0.0" width="318" height="23"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="23"/>
+                                        <color key="textColor" name="Dracula orchid"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arw-MF-n6V" userLabel="Layout Chart View">
+                                        <rect key="frame" x="0.0" y="47" width="318" height="318"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="arw-MF-n6V" secondAttribute="height" multiplier="1:1" id="tYc-59-xUw"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcE-ku-PeD">
+                                        <rect key="frame" x="0.0" y="389" width="318" height="30"/>
+                                        <string key="text">X軸Y軸別々の速度を指定して
+アニメーションさせることができます。</string>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                        <color key="textColor" name="American river"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fae-HL-scb" firstAttribute="leading" secondItem="i0V-4t-R8m" secondAttribute="leading" constant="48" id="GhV-Zz-eZj"/>
+                            <constraint firstAttribute="trailing" secondItem="fae-HL-scb" secondAttribute="trailing" constant="48" id="LC1-5y-ksE"/>
+                            <constraint firstItem="fae-HL-scb" firstAttribute="centerY" secondItem="i0V-4t-R8m" secondAttribute="centerY" constant="-24" id="rd2-7t-LRs"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uek-Ye-SYS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1516" y="-816"/>
+            <point key="canvasLocation" x="980" y="-816"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="A9t-ft-p8M">
@@ -137,29 +218,62 @@
                     <view key="view" contentMode="scaleToFill" id="Yeg-QC-9xD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="0XL-Qc-j56">
+                                <rect key="frame" x="48" y="214.5" width="318" height="419"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アニメーション" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zte-FB-MfR">
+                                        <rect key="frame" x="0.0" y="0.0" width="318" height="23"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="23"/>
+                                        <color key="textColor" name="Dracula orchid"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZYs-We-aqX" userLabel="Layout Chart View">
+                                        <rect key="frame" x="0.0" y="47" width="318" height="318"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ZYs-We-aqX" secondAttribute="height" multiplier="1:1" id="HPN-j2-LsN"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pip-CP-O7Y">
+                                        <rect key="frame" x="0.0" y="389" width="318" height="30"/>
+                                        <string key="text">X軸Y軸別々の速度を指定して
+アニメーションさせることができます。</string>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                        <color key="textColor" name="American river"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" name="Shy moment"/>
+                        <constraints>
+                            <constraint firstItem="0XL-Qc-j56" firstAttribute="leading" secondItem="Yeg-QC-9xD" secondAttribute="leading" constant="48" id="Cmf-vW-b9c"/>
+                            <constraint firstItem="0XL-Qc-j56" firstAttribute="centerY" secondItem="Yeg-QC-9xD" secondAttribute="centerY" constant="-24" id="ea3-Rx-UQI"/>
+                            <constraint firstAttribute="trailing" secondItem="0XL-Qc-j56" secondAttribute="trailing" constant="48" id="kEF-VI-VOa"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jNW-An-bMU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2759" y="-816"/>
+            <point key="canvasLocation" x="1668" y="-816"/>
         </scene>
     </scenes>
     <resources>
+        <namedColor name="American river">
+            <color red="0.38823529411764707" green="0.43137254901960786" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Dracula orchid">
+            <color red="0.1764705882352941" green="0.20392156862745098" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Electron blue">
             <color red="0.035294117647058823" green="0.51764705882352935" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Faded poster">
-            <color red="0.50588235294117645" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Green darner tail">
             <color red="0.45490196078431372" green="0.72549019607843135" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Shy moment">
             <color red="0.63529411764705879" green="0.60784313725490191" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Sour lemon">
-            <color red="1" green="0.91764705882352937" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

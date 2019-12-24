@@ -28,11 +28,6 @@ final class WalkthroughViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         setupViews()
     }
 }
@@ -46,6 +41,8 @@ extension WalkthroughViewController {
         scrollView.rx.currentPage
             .bind(to: pageControl.rx.currentPage)
             .disposed(by: disposeBag)
+        // 値が流れるタイミングによってはアニメーションがキャンセルされてしまう.
+        // 3ページ -> 1ページに戻る -> 再度3ページに戻ってくるとアニメーションがおかしい.
         scrollView.rx.currentPage
             .map { $0 != 2 }
             .bind(animated: nextButton.rx.animated.fade(duration: 0.1).isHidden)

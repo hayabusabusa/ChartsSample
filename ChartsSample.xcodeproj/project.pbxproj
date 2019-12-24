@@ -38,6 +38,8 @@
 		A48E6E0B23B1B59D0043332F /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E0823B1B59D0043332F /* RoundedButton.swift */; };
 		A48E6E0C23B1B59D0043332F /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E0923B1B59D0043332F /* ContainerView.swift */; };
 		A48E6E0D23B1B59D0043332F /* OutlinedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E0A23B1B59D0043332F /* OutlinedButton.swift */; };
+		A48E6E1023B1C9250043332F /* FirstStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E0F23B1C9250043332F /* FirstStepViewController.swift */; };
+		A48E6E1223B1CEFE0043332F /* SecondStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E1123B1CEFE0043332F /* SecondStepViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +77,8 @@
 		A48E6E0823B1B59D0043332F /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		A48E6E0923B1B59D0043332F /* ContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		A48E6E0A23B1B59D0043332F /* OutlinedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutlinedButton.swift; sourceTree = "<group>"; };
+		A48E6E0F23B1C9250043332F /* FirstStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepViewController.swift; sourceTree = "<group>"; };
+		A48E6E1123B1CEFE0043332F /* SecondStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStepViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +232,7 @@
 		A48E6DFD23B1AD250043332F /* Walkthrough */ = {
 			isa = PBXGroup;
 			children = (
+				A48E6E0E23B1C86E0043332F /* Steps */,
 				A48E6DFE23B1AD3E0043332F /* WalkthroughViewController.swift */,
 				A48E6E0023B1AD760043332F /* WalkthroughViewController.storyboard */,
 			);
@@ -250,6 +255,15 @@
 				A48E6E0823B1B59D0043332F /* RoundedButton.swift */,
 			);
 			path = Skin;
+			sourceTree = "<group>";
+		};
+		A48E6E0E23B1C86E0043332F /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				A48E6E0F23B1C9250043332F /* FirstStepViewController.swift */,
+				A48E6E1123B1CEFE0043332F /* SecondStepViewController.swift */,
+			);
+			path = Steps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +376,7 @@
 				A48E6DFC23B1ACD80043332F /* BaseViewController.swift in Sources */,
 				716C719323ADBB8A00A78E9D /* AppDelegate.swift in Sources */,
 				716C71C723ADCF9300A78E9D /* BarChartViewController.swift in Sources */,
+				A48E6E1023B1C9250043332F /* FirstStepViewController.swift in Sources */,
 				716C71C023ADC18200A78E9D /* NavigationController.swift in Sources */,
 				A48E6DFF23B1AD3E0043332F /* WalkthroughViewController.swift in Sources */,
 				A417208323B061FF0009C10D /* PieChartViewController.swift in Sources */,
@@ -370,6 +385,7 @@
 				A48E6E0B23B1B59D0043332F /* RoundedButton.swift in Sources */,
 				A48E6E0D23B1B59D0043332F /* OutlinedButton.swift in Sources */,
 				A417208B23B069290009C10D /* RxAnimated+bindings.swift in Sources */,
+				A48E6E1223B1CEFE0043332F /* SecondStepViewController.swift in Sources */,
 				A48E6E0323B1AE2D0043332F /* UIScrollView+Rx.swift in Sources */,
 				716C71CB23ADD84D00A78E9D /* ChartType.swift in Sources */,
 				A417208923B069290009C10D /* RxAnimated.swift in Sources */,
