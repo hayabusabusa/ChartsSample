@@ -111,33 +111,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="3A3-I1-8Sg">
-                                <rect key="frame" x="48" y="207" width="318" height="434"/>
+                                <rect key="frame" x="32" y="251.5" width="350" height="345"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="複雑なグラフが描画可能" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37L-pM-xeq">
-                                        <rect key="frame" x="0.0" y="0.0" width="318" height="23"/>
-                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="23"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="複雑なグラフが描画可能" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37L-pM-xeq">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="24"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="24"/>
                                         <color key="textColor" name="Dracula orchid"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eV1-3m-pse" userLabel="Layout Chart View">
-                                        <rect key="frame" x="0.0" y="47" width="318" height="318"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cOf-rn-0wQ" userLabel="Layout Circle View">
+                                        <rect key="frame" x="0.0" y="48" width="350" height="228"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gmU-Fe-cUh" customClass="CombinedChartView" customModule="Charts">
-                                                <rect key="frame" x="-8" y="-8" width="334" height="334"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eV1-3m-pse" userLabel="Layout Chart View">
+                                                <rect key="frame" x="61" y="0.0" width="228" height="228"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gmU-Fe-cUh" customClass="CombinedChartView" customModule="Charts">
+                                                        <rect key="frame" x="-8" y="-8" width="244" height="244"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="gmU-Fe-cUh" secondAttribute="bottom" constant="-8" id="Aj4-rx-Nyu"/>
+                                                    <constraint firstItem="gmU-Fe-cUh" firstAttribute="top" secondItem="eV1-3m-pse" secondAttribute="top" constant="-8" id="F0q-bb-fgY"/>
+                                                    <constraint firstAttribute="trailing" secondItem="gmU-Fe-cUh" secondAttribute="trailing" constant="-8" id="Y8P-zr-DZs"/>
+                                                    <constraint firstItem="gmU-Fe-cUh" firstAttribute="leading" secondItem="eV1-3m-pse" secondAttribute="leading" constant="-8" id="zSE-dI-eTu"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="gmU-Fe-cUh" secondAttribute="bottom" constant="-8" id="Aj4-rx-Nyu"/>
-                                            <constraint firstItem="gmU-Fe-cUh" firstAttribute="top" secondItem="eV1-3m-pse" secondAttribute="top" constant="-8" id="F0q-bb-fgY"/>
-                                            <constraint firstAttribute="width" secondItem="eV1-3m-pse" secondAttribute="height" multiplier="1:1" id="K2F-bC-nHM"/>
-                                            <constraint firstAttribute="trailing" secondItem="gmU-Fe-cUh" secondAttribute="trailing" constant="-8" id="Y8P-zr-DZs"/>
-                                            <constraint firstItem="gmU-Fe-cUh" firstAttribute="leading" secondItem="eV1-3m-pse" secondAttribute="leading" constant="-8" id="zSE-dI-eTu"/>
+                                            <constraint firstItem="eV1-3m-pse" firstAttribute="centerX" secondItem="cOf-rn-0wQ" secondAttribute="centerX" id="4cL-RH-cI8"/>
+                                            <constraint firstItem="eV1-3m-pse" firstAttribute="width" secondItem="cOf-rn-0wQ" secondAttribute="height" multiplier="1:1" id="6O5-uW-Gti"/>
+                                            <constraint firstAttribute="height" constant="228" id="AWr-sQ-xh5"/>
+                                            <constraint firstAttribute="bottom" secondItem="eV1-3m-pse" secondAttribute="bottom" id="FFd-xl-SyZ"/>
+                                            <constraint firstItem="eV1-3m-pse" firstAttribute="top" secondItem="cOf-rn-0wQ" secondAttribute="top" id="FYn-BP-nz2"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYc-lf-wpO">
-                                        <rect key="frame" x="0.0" y="389" width="318" height="45"/>
+                                        <rect key="frame" x="0.0" y="300" width="350" height="45"/>
                                         <string key="text">棒グラフ+折れ線グラフや
 その他のグラフを組み合わせたグラフを
 描画することができます。</string>
@@ -151,9 +163,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="3A3-I1-8Sg" firstAttribute="centerY" secondItem="CCM-hJ-mY2" secondAttribute="centerY" constant="-24" id="bnZ-8c-HRd"/>
-                            <constraint firstAttribute="trailing" secondItem="3A3-I1-8Sg" secondAttribute="trailing" constant="48" id="dhr-Pq-da1"/>
-                            <constraint firstItem="3A3-I1-8Sg" firstAttribute="leading" secondItem="CCM-hJ-mY2" secondAttribute="leading" constant="48" id="u11-QC-tec"/>
+                            <constraint firstAttribute="trailing" secondItem="3A3-I1-8Sg" secondAttribute="trailing" constant="32" id="dhr-Pq-da1"/>
+                            <constraint firstItem="3A3-I1-8Sg" firstAttribute="leading" secondItem="CCM-hJ-mY2" secondAttribute="leading" constant="32" id="u11-QC-tec"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ebs-fh-mjU"/>
                     </view>
                     <connections>
                         <outlet property="chartView" destination="gmU-Fe-cUh" id="IBG-jC-oYq"/>
@@ -173,23 +186,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="fae-HL-scb">
-                                <rect key="frame" x="48" y="214.5" width="318" height="419"/>
+                                <rect key="frame" x="48" y="259" width="318" height="330"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アニメーション" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q80-4Y-75E">
-                                        <rect key="frame" x="0.0" y="0.0" width="318" height="23"/>
-                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="23"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="318" height="24"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="24"/>
                                         <color key="textColor" name="Dracula orchid"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arw-MF-n6V" userLabel="Layout Chart View">
-                                        <rect key="frame" x="0.0" y="47" width="318" height="318"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s3O-PO-vvA" userLabel="Layout Circle View">
+                                        <rect key="frame" x="0.0" y="48" width="318" height="228"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSF-uu-bCw" userLabel="Layout Chart View">
+                                                <rect key="frame" x="45" y="0.0" width="228" height="228"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qau-rf-VXH" customClass="CombinedChartView" customModule="Charts">
+                                                        <rect key="frame" x="-8" y="-8" width="244" height="244"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="Qau-rf-VXH" secondAttribute="trailing" constant="-8" id="6ud-kX-j5c"/>
+                                                    <constraint firstItem="Qau-rf-VXH" firstAttribute="leading" secondItem="xSF-uu-bCw" secondAttribute="leading" constant="-8" id="cye-eC-Ofk"/>
+                                                    <constraint firstItem="Qau-rf-VXH" firstAttribute="top" secondItem="xSF-uu-bCw" secondAttribute="top" constant="-8" id="jta-0y-yMl"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Qau-rf-VXH" secondAttribute="bottom" constant="-8" id="o8x-zx-Qfl"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="arw-MF-n6V" secondAttribute="height" multiplier="1:1" id="tYc-59-xUw"/>
+                                            <constraint firstItem="xSF-uu-bCw" firstAttribute="top" secondItem="s3O-PO-vvA" secondAttribute="top" id="1Yk-af-ldG"/>
+                                            <constraint firstItem="xSF-uu-bCw" firstAttribute="centerX" secondItem="s3O-PO-vvA" secondAttribute="centerX" id="7Pi-FF-qr8"/>
+                                            <constraint firstItem="xSF-uu-bCw" firstAttribute="width" secondItem="s3O-PO-vvA" secondAttribute="height" multiplier="1:1" id="E5S-Op-fPq"/>
+                                            <constraint firstAttribute="bottom" secondItem="xSF-uu-bCw" secondAttribute="bottom" id="UTi-jd-G9p"/>
+                                            <constraint firstAttribute="height" constant="228" id="fCd-wN-oQs"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcE-ku-PeD">
-                                        <rect key="frame" x="0.0" y="389" width="318" height="30"/>
+                                        <rect key="frame" x="0.0" y="300" width="318" height="30"/>
                                         <string key="text">X軸Y軸別々の速度を指定して
 アニメーションさせることができます。</string>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
@@ -205,40 +240,67 @@
                             <constraint firstAttribute="trailing" secondItem="fae-HL-scb" secondAttribute="trailing" constant="48" id="LC1-5y-ksE"/>
                             <constraint firstItem="fae-HL-scb" firstAttribute="centerY" secondItem="i0V-4t-R8m" secondAttribute="centerY" constant="-24" id="rd2-7t-LRs"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="fDA-wk-ZhP"/>
                     </view>
+                    <connections>
+                        <outlet property="layoutChartView" destination="xSF-uu-bCw" id="mxI-CQ-e6S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uek-Ye-SYS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="980" y="-816"/>
         </scene>
-        <!--View Controller-->
+        <!--Third Setp View Controller-->
         <scene sceneID="A9t-ft-p8M">
             <objects>
-                <viewController id="WIi-bf-qnU" sceneMemberID="viewController">
+                <viewController id="WIi-bf-qnU" customClass="ThirdSetpViewController" customModule="ChartsSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yeg-QC-9xD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="0XL-Qc-j56">
-                                <rect key="frame" x="48" y="214.5" width="318" height="419"/>
+                                <rect key="frame" x="48" y="251.5" width="318" height="345"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アニメーション" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zte-FB-MfR">
-                                        <rect key="frame" x="0.0" y="0.0" width="318" height="23"/>
-                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="23"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="角丸はできない...😭" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zte-FB-MfR">
+                                        <rect key="frame" x="0.0" y="0.0" width="318" height="24"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="24"/>
                                         <color key="textColor" name="Dracula orchid"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZYs-We-aqX" userLabel="Layout Chart View">
-                                        <rect key="frame" x="0.0" y="47" width="318" height="318"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TdZ-rs-ceb" userLabel="Layout Circle View">
+                                        <rect key="frame" x="0.0" y="48" width="318" height="228"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qk8-v6-HLA" userLabel="Layout Chart View">
+                                                <rect key="frame" x="45" y="0.0" width="228" height="228"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IgK-an-9NJ" customClass="CombinedChartView" customModule="Charts">
+                                                        <rect key="frame" x="-8" y="-8" width="244" height="244"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="IgK-an-9NJ" firstAttribute="leading" secondItem="qk8-v6-HLA" secondAttribute="leading" constant="-8" id="22p-wk-hQx"/>
+                                                    <constraint firstAttribute="bottom" secondItem="IgK-an-9NJ" secondAttribute="bottom" constant="-8" id="J4M-I2-gp9"/>
+                                                    <constraint firstAttribute="trailing" secondItem="IgK-an-9NJ" secondAttribute="trailing" constant="-8" id="R5n-Em-pFM"/>
+                                                    <constraint firstItem="IgK-an-9NJ" firstAttribute="top" secondItem="qk8-v6-HLA" secondAttribute="top" constant="-8" id="ab6-Ay-Ewr"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="ZYs-We-aqX" secondAttribute="height" multiplier="1:1" id="HPN-j2-LsN"/>
+                                            <constraint firstAttribute="height" constant="228" id="278-H5-WBC"/>
+                                            <constraint firstItem="qk8-v6-HLA" firstAttribute="centerX" secondItem="TdZ-rs-ceb" secondAttribute="centerX" id="BNs-6f-7mH"/>
+                                            <constraint firstAttribute="bottom" secondItem="qk8-v6-HLA" secondAttribute="bottom" id="Ywk-c6-eNF"/>
+                                            <constraint firstItem="qk8-v6-HLA" firstAttribute="width" secondItem="TdZ-rs-ceb" secondAttribute="height" multiplier="1:1" id="aH3-ou-6Sd"/>
+                                            <constraint firstItem="qk8-v6-HLA" firstAttribute="top" secondItem="TdZ-rs-ceb" secondAttribute="top" id="g6a-de-ZeY"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pip-CP-O7Y">
-                                        <rect key="frame" x="0.0" y="389" width="318" height="30"/>
-                                        <string key="text">X軸Y軸別々の速度を指定して
-アニメーションさせることができます。</string>
+                                        <rect key="frame" x="0.0" y="300" width="318" height="45"/>
+                                        <string key="text">PRは存在していますが、
+PR作成者が更新してくれていないので
+現状はサポートされていません。</string>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
                                         <color key="textColor" name="American river"/>
                                         <nil key="highlightedColor"/>
@@ -246,13 +308,17 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" name="Shy moment"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="0XL-Qc-j56" firstAttribute="leading" secondItem="Yeg-QC-9xD" secondAttribute="leading" constant="48" id="Cmf-vW-b9c"/>
                             <constraint firstItem="0XL-Qc-j56" firstAttribute="centerY" secondItem="Yeg-QC-9xD" secondAttribute="centerY" constant="-24" id="ea3-Rx-UQI"/>
                             <constraint firstAttribute="trailing" secondItem="0XL-Qc-j56" secondAttribute="trailing" constant="48" id="kEF-VI-VOa"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="JnS-b2-L2v"/>
                     </view>
+                    <connections>
+                        <outlet property="layoutChartView" destination="qk8-v6-HLA" id="ROG-0T-NED"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jNW-An-bMU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -261,19 +327,16 @@
     </scenes>
     <resources>
         <namedColor name="American river">
-            <color red="0.38823529411764707" green="0.43137254901960786" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.3880000114440918" green="0.4309999942779541" blue="0.44699999690055847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Dracula orchid">
-            <color red="0.1764705882352941" green="0.20392156862745098" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.17599999904632568" green="0.20399999618530273" blue="0.21199999749660492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Electron blue">
-            <color red="0.035294117647058823" green="0.51764705882352935" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.035000000149011612" green="0.51800000667572021" blue="0.88999998569488525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Green darner tail">
-            <color red="0.45490196078431372" green="0.72549019607843135" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Shy moment">
-            <color red="0.63529411764705879" green="0.60784313725490191" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.45500001311302185" green="0.72500002384185791" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

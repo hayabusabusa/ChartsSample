@@ -1,5 +1,5 @@
 //
-//  SecondStepViewController.swift
+//  ThirdStepViewController.swift
 //  ChartsSample
 //
 //  Created by Yamada Shunya on 2019/12/24.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class SecondStepViewController: UIViewController {
+final class ThirdSetpViewController: UIViewController {
     
     // MARK: IBOutlet
     
@@ -26,7 +26,7 @@ final class SecondStepViewController: UIViewController {
 
 // MARK: - Setup
 
-extension SecondStepViewController {
+extension ThirdSetpViewController {
     
     private func setupViews() {
         layoutChartView.clipsToBounds = true

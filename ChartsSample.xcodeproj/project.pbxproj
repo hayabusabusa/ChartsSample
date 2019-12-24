@@ -40,6 +40,7 @@
 		A48E6E0D23B1B59D0043332F /* OutlinedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E0A23B1B59D0043332F /* OutlinedButton.swift */; };
 		A48E6E1023B1C9250043332F /* FirstStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E0F23B1C9250043332F /* FirstStepViewController.swift */; };
 		A48E6E1223B1CEFE0043332F /* SecondStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E1123B1CEFE0043332F /* SecondStepViewController.swift */; };
+		A48E6E1A23B202710043332F /* ThirdStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E1923B202710043332F /* ThirdStepViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,7 @@
 		A48E6E0A23B1B59D0043332F /* OutlinedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutlinedButton.swift; sourceTree = "<group>"; };
 		A48E6E0F23B1C9250043332F /* FirstStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepViewController.swift; sourceTree = "<group>"; };
 		A48E6E1123B1CEFE0043332F /* SecondStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStepViewController.swift; sourceTree = "<group>"; };
+		A48E6E1923B202710043332F /* ThirdStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdStepViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +264,7 @@
 			children = (
 				A48E6E0F23B1C9250043332F /* FirstStepViewController.swift */,
 				A48E6E1123B1CEFE0043332F /* SecondStepViewController.swift */,
+				A48E6E1923B202710043332F /* ThirdStepViewController.swift */,
 			);
 			path = Steps;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				716C71CE23AFAA0800A78E9D /* HorizontalBarChartViewController.swift in Sources */,
 				A48E6DFC23B1ACD80043332F /* BaseViewController.swift in Sources */,
 				716C719323ADBB8A00A78E9D /* AppDelegate.swift in Sources */,
+				A48E6E1A23B202710043332F /* ThirdStepViewController.swift in Sources */,
 				716C71C723ADCF9300A78E9D /* BarChartViewController.swift in Sources */,
 				A48E6E1023B1C9250043332F /* FirstStepViewController.swift in Sources */,
 				716C71C023ADC18200A78E9D /* NavigationController.swift in Sources */,
