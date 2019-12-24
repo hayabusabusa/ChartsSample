@@ -41,6 +41,8 @@
 		A48E6E1023B1C9250043332F /* FirstStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E0F23B1C9250043332F /* FirstStepViewController.swift */; };
 		A48E6E1223B1CEFE0043332F /* SecondStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E1123B1CEFE0043332F /* SecondStepViewController.swift */; };
 		A48E6E1A23B202710043332F /* ThirdStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E1923B202710043332F /* ThirdStepViewController.swift */; };
+		A48E6E1D23B207620043332F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E1C23B207620043332F /* TabBarController.swift */; };
+		A48E6E1F23B2079E0043332F /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A48E6E1E23B2079E0043332F /* TabBarController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +83,8 @@
 		A48E6E0F23B1C9250043332F /* FirstStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepViewController.swift; sourceTree = "<group>"; };
 		A48E6E1123B1CEFE0043332F /* SecondStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStepViewController.swift; sourceTree = "<group>"; };
 		A48E6E1923B202710043332F /* ThirdStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdStepViewController.swift; sourceTree = "<group>"; };
+		A48E6E1C23B207620043332F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		A48E6E1E23B2079E0043332F /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,7 @@
 			children = (
 				716C71BE23ADC16F00A78E9D /* Base */,
 				A48E6DFD23B1AD250043332F /* Walkthrough */,
+				A48E6E1B23B207520043332F /* TabBar */,
 				716C71C423ADCF0400A78E9D /* Charts */,
 				A48E6E0623B1B57F0043332F /* Common */,
 			);
@@ -269,6 +274,15 @@
 			path = Steps;
 			sourceTree = "<group>";
 		};
+		A48E6E1B23B207520043332F /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A48E6E1C23B207620043332F /* TabBarController.swift */,
+				A48E6E1E23B2079E0043332F /* TabBarController.storyboard */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -330,6 +344,7 @@
 			files = (
 				A417208523B062190009C10D /* PieChartViewController.storyboard in Resources */,
 				A417209923B07D790009C10D /* LineChartViewController.storyboard in Resources */,
+				A48E6E1F23B2079E0043332F /* TabBarController.storyboard in Resources */,
 				716C71D023AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard in Resources */,
 				A48E6E0123B1AD760043332F /* WalkthroughViewController.storyboard in Resources */,
 				716C719F23ADBB9100A78E9D /* LaunchScreen.storyboard in Resources */,
@@ -379,6 +394,7 @@
 				A48E6DFC23B1ACD80043332F /* BaseViewController.swift in Sources */,
 				716C719323ADBB8A00A78E9D /* AppDelegate.swift in Sources */,
 				A48E6E1A23B202710043332F /* ThirdStepViewController.swift in Sources */,
+				A48E6E1D23B207620043332F /* TabBarController.swift in Sources */,
 				716C71C723ADCF9300A78E9D /* BarChartViewController.swift in Sources */,
 				A48E6E1023B1C9250043332F /* FirstStepViewController.swift in Sources */,
 				716C71C023ADC18200A78E9D /* NavigationController.swift in Sources */,

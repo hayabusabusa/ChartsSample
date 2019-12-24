@@ -11,6 +11,7 @@ import UIKit
 enum Storyboard: String {
     // Application
     case WalkthroughViewController
+    case TabBarController
     // Charts
     case BarChartViewController
     case HorizontalBarChartViewController
