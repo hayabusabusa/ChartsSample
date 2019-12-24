@@ -19,6 +19,7 @@ final class NavigationController: UINavigationController {
 extension NavigationController {
     
     private func setupAppearance() {
+        view.backgroundColor = .systemBackground
         
     }
 }
