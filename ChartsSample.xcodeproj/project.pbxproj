@@ -43,6 +43,7 @@
 		A48E6E1A23B202710043332F /* ThirdStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E1923B202710043332F /* ThirdStepViewController.swift */; };
 		A48E6E1D23B207620043332F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E1C23B207620043332F /* TabBarController.swift */; };
 		A48E6E1F23B2079E0043332F /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A48E6E1E23B2079E0043332F /* TabBarController.storyboard */; };
+		A48E6E2123B208F00043332F /* TabBarItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E2023B208F00043332F /* TabBarItemType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +86,7 @@
 		A48E6E1923B202710043332F /* ThirdStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdStepViewController.swift; sourceTree = "<group>"; };
 		A48E6E1C23B207620043332F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		A48E6E1E23B2079E0043332F /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
+		A48E6E2023B208F00043332F /* TabBarItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +279,7 @@
 		A48E6E1B23B207520043332F /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				A48E6E2023B208F00043332F /* TabBarItemType.swift */,
 				A48E6E1C23B207620043332F /* TabBarController.swift */,
 				A48E6E1E23B2079E0043332F /* TabBarController.storyboard */,
 			);
@@ -396,6 +399,7 @@
 				A48E6E1A23B202710043332F /* ThirdStepViewController.swift in Sources */,
 				A48E6E1D23B207620043332F /* TabBarController.swift in Sources */,
 				716C71C723ADCF9300A78E9D /* BarChartViewController.swift in Sources */,
+				A48E6E2123B208F00043332F /* TabBarItemType.swift in Sources */,
 				A48E6E1023B1C9250043332F /* FirstStepViewController.swift in Sources */,
 				716C71C023ADC18200A78E9D /* NavigationController.swift in Sources */,
 				A48E6DFF23B1AD3E0043332F /* WalkthroughViewController.swift in Sources */,

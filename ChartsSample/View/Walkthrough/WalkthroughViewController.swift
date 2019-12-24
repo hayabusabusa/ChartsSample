@@ -37,7 +37,7 @@ final class WalkthroughViewController: BaseViewController {
 extension WalkthroughViewController {
     
     private func setupViews() {
-        nextButton.isHidden = true
+        // ScrollView
         scrollView.rx.currentPage
             .bind(to: pageControl.rx.currentPage)
             .disposed(by: disposeBag)
@@ -47,5 +47,20 @@ extension WalkthroughViewController {
             .map { $0 != 2 }
             .bind(animated: nextButton.rx.animated.fade(duration: 0.1).isHidden)
             .disposed(by: disposeBag)
+        // Button
+        nextButton.isHidden = true
+        nextButton.rx.tap.asSignal()
+            .emit(onNext: { [weak self] in self?.replaceRootToTabBar() })
+            .disposed(by: disposeBag)
+    }
+}
+
+// MARK: Transition
+
+extension WalkthroughViewController {
+    
+    func replaceRootToTabBar() {
+        let vc = TabBarController.instantiate()
+        replaceRoot(to: vc)
     }
 }
