@@ -9,6 +9,8 @@
 import UIKit
 
 enum Storyboard: String {
+    // Application
+    case WalkthroughViewController
     // Charts
     case BarChartViewController
     case HorizontalBarChartViewController

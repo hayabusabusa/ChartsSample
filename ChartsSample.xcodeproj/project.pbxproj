@@ -31,6 +31,9 @@
 		A417209723B07C0F0009C10D /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417209623B07C0F0009C10D /* LineChartViewController.swift */; };
 		A417209923B07D790009C10D /* LineChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A417209823B07D790009C10D /* LineChartViewController.storyboard */; };
 		A48E6DFC23B1ACD80043332F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6DFB23B1ACD80043332F /* BaseViewController.swift */; };
+		A48E6DFF23B1AD3E0043332F /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6DFE23B1AD3E0043332F /* WalkthroughViewController.swift */; };
+		A48E6E0123B1AD760043332F /* WalkthroughViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A48E6E0023B1AD760043332F /* WalkthroughViewController.storyboard */; };
+		A48E6E0323B1AE2D0043332F /* UIScrollView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E0223B1AE2C0043332F /* UIScrollView+Rx.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +64,9 @@
 		A417209823B07D790009C10D /* LineChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LineChartViewController.storyboard; sourceTree = "<group>"; };
 		A417209A23B092600009C10D /* SwiftCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCharts.framework; path = Carthage/Build/iOS/SwiftCharts.framework; sourceTree = "<group>"; };
 		A48E6DFB23B1ACD80043332F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A48E6DFE23B1AD3E0043332F /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
+		A48E6E0023B1AD760043332F /* WalkthroughViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WalkthroughViewController.storyboard; sourceTree = "<group>"; };
+		A48E6E0223B1AE2C0043332F /* UIScrollView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Rx.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				716C71BE23ADC16F00A78E9D /* Base */,
+				A48E6DFD23B1AD250043332F /* Walkthrough */,
 				716C71C423ADCF0400A78E9D /* Charts */,
 			);
 			path = View;
@@ -151,6 +158,7 @@
 		716C71C123ADCB3B00A78E9D /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				A48E6E0223B1AE2C0043332F /* UIScrollView+Rx.swift */,
 				A417208623B069290009C10D /* RxAnimated.swift */,
 				A417208723B069290009C10D /* RxAnimated+animations.swift */,
 				A417208823B069290009C10D /* RxAnimated+bindings.swift */,
@@ -205,6 +213,15 @@
 				A417209823B07D790009C10D /* LineChartViewController.storyboard */,
 			);
 			path = LineChart;
+			sourceTree = "<group>";
+		};
+		A48E6DFD23B1AD250043332F /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				A48E6DFE23B1AD3E0043332F /* WalkthroughViewController.swift */,
+				A48E6E0023B1AD760043332F /* WalkthroughViewController.storyboard */,
+			);
+			path = Walkthrough;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +286,7 @@
 				A417208523B062190009C10D /* PieChartViewController.storyboard in Resources */,
 				A417209923B07D790009C10D /* LineChartViewController.storyboard in Resources */,
 				716C71D023AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard in Resources */,
+				A48E6E0123B1AD760043332F /* WalkthroughViewController.storyboard in Resources */,
 				716C719F23ADBB9100A78E9D /* LaunchScreen.storyboard in Resources */,
 				716C71C923ADD17200A78E9D /* BarChartViewController.storyboard in Resources */,
 				716C719C23ADBB9100A78E9D /* Assets.xcassets in Resources */,
@@ -316,9 +334,11 @@
 				716C719323ADBB8A00A78E9D /* AppDelegate.swift in Sources */,
 				716C71C723ADCF9300A78E9D /* BarChartViewController.swift in Sources */,
 				716C71C023ADC18200A78E9D /* NavigationController.swift in Sources */,
+				A48E6DFF23B1AD3E0043332F /* WalkthroughViewController.swift in Sources */,
 				A417208323B061FF0009C10D /* PieChartViewController.swift in Sources */,
 				716C719523ADBB8A00A78E9D /* SceneDelegate.swift in Sources */,
 				A417208B23B069290009C10D /* RxAnimated+bindings.swift in Sources */,
+				A48E6E0323B1AE2D0043332F /* UIScrollView+Rx.swift in Sources */,
 				716C71CB23ADD84D00A78E9D /* ChartType.swift in Sources */,
 				A417208923B069290009C10D /* RxAnimated.swift in Sources */,
 			);
