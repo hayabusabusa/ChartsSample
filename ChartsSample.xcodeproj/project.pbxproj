@@ -25,6 +25,8 @@
 		716C71D023AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716C71CF23AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard */; };
 		716C71D323B26FBB00A78E9D /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71D223B26FBB00A78E9D /* DashboardViewController.swift */; };
 		716C71D523B26FE100A78E9D /* DashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716C71D423B26FE100A78E9D /* DashboardViewController.storyboard */; };
+		716C71D823B273B900A78E9D /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71D723B273B900A78E9D /* TimelineViewController.swift */; };
+		716C71DA23B273D800A78E9D /* TimelineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716C71D923B273D800A78E9D /* TimelineViewController.storyboard */; };
 		A417208323B061FF0009C10D /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208223B061FF0009C10D /* PieChartViewController.swift */; };
 		A417208523B062190009C10D /* PieChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A417208423B062190009C10D /* PieChartViewController.storyboard */; };
 		A417208923B069290009C10D /* RxAnimated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208623B069290009C10D /* RxAnimated.swift */; };
@@ -69,6 +71,8 @@
 		716C71CF23AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HorizontalBarChartViewController.storyboard; sourceTree = "<group>"; };
 		716C71D223B26FBB00A78E9D /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		716C71D423B26FE100A78E9D /* DashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardViewController.storyboard; sourceTree = "<group>"; };
+		716C71D723B273B900A78E9D /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		716C71D923B273D800A78E9D /* TimelineViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimelineViewController.storyboard; sourceTree = "<group>"; };
 		A417208223B061FF0009C10D /* PieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
 		A417208423B062190009C10D /* PieChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PieChartViewController.storyboard; sourceTree = "<group>"; };
 		A417208623B069290009C10D /* RxAnimated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxAnimated.swift; sourceTree = "<group>"; };
@@ -158,6 +162,7 @@
 				A48E6DFD23B1AD250043332F /* Walkthrough */,
 				A48E6E1B23B207520043332F /* TabBar */,
 				716C71D123B26FA900A78E9D /* Dashboard */,
+				716C71D623B272A200A78E9D /* Timeline */,
 				716C71C423ADCF0400A78E9D /* Charts */,
 				A48E6E0623B1B57F0043332F /* Common */,
 			);
@@ -232,6 +237,15 @@
 				716C71D423B26FE100A78E9D /* DashboardViewController.storyboard */,
 			);
 			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		716C71D623B272A200A78E9D /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				716C71D723B273B900A78E9D /* TimelineViewController.swift */,
+				716C71D923B273D800A78E9D /* TimelineViewController.storyboard */,
+			);
+			path = Timeline;
 			sourceTree = "<group>";
 		};
 		A417208123B061EC0009C10D /* PieChart */ = {
@@ -367,6 +381,7 @@
 				716C719F23ADBB9100A78E9D /* LaunchScreen.storyboard in Resources */,
 				716C71D523B26FE100A78E9D /* DashboardViewController.storyboard in Resources */,
 				716C71C923ADD17200A78E9D /* BarChartViewController.storyboard in Resources */,
+				716C71DA23B273D800A78E9D /* TimelineViewController.storyboard in Resources */,
 				716C719C23ADBB9100A78E9D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +423,7 @@
 				716C71C323ADCB4D00A78E9D /* UIViewController+Extension.swift in Sources */,
 				A417208A23B069290009C10D /* RxAnimated+animations.swift in Sources */,
 				716C71BB23ADC06E00A78E9D /* Storyboard.swift in Sources */,
+				716C71D823B273B900A78E9D /* TimelineViewController.swift in Sources */,
 				716C71CE23AFAA0800A78E9D /* HorizontalBarChartViewController.swift in Sources */,
 				A48E6DFC23B1ACD80043332F /* BaseViewController.swift in Sources */,
 				716C71D323B26FBB00A78E9D /* DashboardViewController.swift in Sources */,
