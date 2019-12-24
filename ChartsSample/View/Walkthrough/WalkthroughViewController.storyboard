@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,13 +15,151 @@
                     <view key="view" contentMode="scaleToFill" id="Bsp-jQ-i3f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wX-va-lZV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="dTt-KY-Hro">
+                                        <rect key="frame" x="0.0" y="0.0" width="1242" height="896"/>
+                                        <subviews>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vh-sb-tHW">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                                <connections>
+                                                    <segue destination="7GF-9s-yjo" kind="embed" id="KkC-BK-e4s"/>
+                                                </connections>
+                                            </containerView>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2e-Wn-ldw">
+                                                <rect key="frame" x="414" y="0.0" width="414" height="896"/>
+                                                <connections>
+                                                    <segue destination="m6Z-qf-cW3" kind="embed" id="ADM-10-ldQ"/>
+                                                </connections>
+                                            </containerView>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbw-Y4-hnh">
+                                                <rect key="frame" x="828" y="0.0" width="414" height="896"/>
+                                                <connections>
+                                                    <segue destination="WIi-bf-qnU" kind="embed" id="jO7-4y-idK"/>
+                                                </connections>
+                                            </containerView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="1vh-sb-tHW" firstAttribute="width" secondItem="6wX-va-lZV" secondAttribute="width" id="0Sf-gL-3kU"/>
+                                    <constraint firstItem="Y2e-Wn-ldw" firstAttribute="width" secondItem="6wX-va-lZV" secondAttribute="width" id="12U-pX-Jes"/>
+                                    <constraint firstItem="dTt-KY-Hro" firstAttribute="leading" secondItem="6wX-va-lZV" secondAttribute="leading" id="34H-43-xDq"/>
+                                    <constraint firstAttribute="trailing" secondItem="dTt-KY-Hro" secondAttribute="trailing" id="9jb-R3-nKN"/>
+                                    <constraint firstItem="nbw-Y4-hnh" firstAttribute="width" secondItem="6wX-va-lZV" secondAttribute="width" id="PXx-dg-HF0"/>
+                                    <constraint firstItem="Y2e-Wn-ldw" firstAttribute="height" secondItem="6wX-va-lZV" secondAttribute="height" id="fId-cI-3Ty"/>
+                                    <constraint firstAttribute="bottom" secondItem="dTt-KY-Hro" secondAttribute="bottom" id="gJJ-Wn-P36"/>
+                                    <constraint firstItem="1vh-sb-tHW" firstAttribute="height" secondItem="6wX-va-lZV" secondAttribute="height" id="iEd-11-jj6"/>
+                                    <constraint firstItem="dTt-KY-Hro" firstAttribute="height" secondItem="6wX-va-lZV" secondAttribute="height" id="kbg-Xz-cAM"/>
+                                    <constraint firstItem="nbw-Y4-hnh" firstAttribute="height" secondItem="6wX-va-lZV" secondAttribute="height" id="nKP-OY-UyJ"/>
+                                    <constraint firstItem="dTt-KY-Hro" firstAttribute="top" secondItem="6wX-va-lZV" secondAttribute="top" id="yHh-ZJ-Ng6"/>
+                                </constraints>
+                            </scrollView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="DJr-NK-ues">
+                                <rect key="frame" x="24" y="769" width="366" height="85"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="q7b-65-vPd">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="37"/>
+                                        <color key="pageIndicatorTintColor" name="Green darner tail"/>
+                                        <color key="currentPageIndicatorTintColor" name="Electron blue"/>
+                                    </pageControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSU-FB-KD7" customClass="RoundedButton" customModule="ChartsSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="41" width="366" height="44"/>
+                                        <color key="backgroundColor" name="Electron blue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="3NQ-3J-g13"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="14"/>
+                                        <color key="tintColor" name="Electron blue"/>
+                                        <state key="normal" title="次に進む">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="6wX-va-lZV" secondAttribute="bottom" id="46w-ag-119"/>
+                            <constraint firstItem="qt7-Dj-eJ4" firstAttribute="bottom" secondItem="DJr-NK-ues" secondAttribute="bottom" constant="8" id="9x1-kU-FPz"/>
+                            <constraint firstItem="6wX-va-lZV" firstAttribute="leading" secondItem="qt7-Dj-eJ4" secondAttribute="leading" id="Crg-j7-WD6"/>
+                            <constraint firstItem="6wX-va-lZV" firstAttribute="trailing" secondItem="qt7-Dj-eJ4" secondAttribute="trailing" id="Ryy-t2-LsX"/>
+                            <constraint firstItem="DJr-NK-ues" firstAttribute="leading" secondItem="qt7-Dj-eJ4" secondAttribute="leading" constant="24" id="Uum-cb-Bfv"/>
+                            <constraint firstItem="6wX-va-lZV" firstAttribute="top" secondItem="Bsp-jQ-i3f" secondAttribute="top" id="fxY-CW-rwt"/>
+                            <constraint firstItem="qt7-Dj-eJ4" firstAttribute="trailing" secondItem="DJr-NK-ues" secondAttribute="trailing" constant="24" id="zuy-qT-bqM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qt7-Dj-eJ4"/>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="cSU-FB-KD7" id="KiT-WS-KUY"/>
+                        <outlet property="pageControl" destination="q7b-65-vPd" id="4ni-KG-vTd"/>
+                        <outlet property="scrollView" destination="6wX-va-lZV" id="NMb-u7-iAa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mcs-Iq-ffy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="270" y="-162"/>
+            <point key="canvasLocation" x="269.56521739130437" y="-162.05357142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kTA-aF-pEr">
+            <objects>
+                <viewController id="7GF-9s-yjo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CCM-hJ-mY2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="Sour lemon"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gEs-u1-TjP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="271" y="-815"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4cO-Im-ngd">
+            <objects>
+                <viewController id="m6Z-qf-cW3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i0V-4t-R8m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="Faded poster"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uek-Ye-SYS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1516" y="-816"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="A9t-ft-p8M">
+            <objects>
+                <viewController id="WIi-bf-qnU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yeg-QC-9xD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="Shy moment"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jNW-An-bMU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2759" y="-816"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="Electron blue">
+            <color red="0.035294117647058823" green="0.51764705882352935" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Faded poster">
+            <color red="0.50588235294117645" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Green darner tail">
+            <color red="0.45490196078431372" green="0.72549019607843135" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Shy moment">
+            <color red="0.63529411764705879" green="0.60784313725490191" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Sour lemon">
+            <color red="1" green="0.91764705882352937" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

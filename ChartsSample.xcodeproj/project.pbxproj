@@ -34,6 +34,10 @@
 		A48E6DFF23B1AD3E0043332F /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6DFE23B1AD3E0043332F /* WalkthroughViewController.swift */; };
 		A48E6E0123B1AD760043332F /* WalkthroughViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A48E6E0023B1AD760043332F /* WalkthroughViewController.storyboard */; };
 		A48E6E0323B1AE2D0043332F /* UIScrollView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E0223B1AE2C0043332F /* UIScrollView+Rx.swift */; };
+		A48E6E0523B1B0E50043332F /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E0423B1B0E50043332F /* ColorPalette.swift */; };
+		A48E6E0B23B1B59D0043332F /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E0823B1B59D0043332F /* RoundedButton.swift */; };
+		A48E6E0C23B1B59D0043332F /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E0923B1B59D0043332F /* ContainerView.swift */; };
+		A48E6E0D23B1B59D0043332F /* OutlinedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E0A23B1B59D0043332F /* OutlinedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +71,10 @@
 		A48E6DFE23B1AD3E0043332F /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		A48E6E0023B1AD760043332F /* WalkthroughViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WalkthroughViewController.storyboard; sourceTree = "<group>"; };
 		A48E6E0223B1AE2C0043332F /* UIScrollView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Rx.swift"; sourceTree = "<group>"; };
+		A48E6E0423B1B0E50043332F /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		A48E6E0823B1B59D0043332F /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		A48E6E0923B1B59D0043332F /* ContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		A48E6E0A23B1B59D0043332F /* OutlinedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutlinedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +141,7 @@
 				716C71BE23ADC16F00A78E9D /* Base */,
 				A48E6DFD23B1AD250043332F /* Walkthrough */,
 				716C71C423ADCF0400A78E9D /* Charts */,
+				A48E6E0623B1B57F0043332F /* Common */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -141,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				716C71BA23ADC06E00A78E9D /* Storyboard.swift */,
+				A48E6E0423B1B0E50043332F /* ColorPalette.swift */,
 				716C71C123ADCB3B00A78E9D /* Util */,
 			);
 			path = Environment;
@@ -222,6 +232,24 @@
 				A48E6E0023B1AD760043332F /* WalkthroughViewController.storyboard */,
 			);
 			path = Walkthrough;
+			sourceTree = "<group>";
+		};
+		A48E6E0623B1B57F0043332F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A48E6E0723B1B58B0043332F /* Skin */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A48E6E0723B1B58B0043332F /* Skin */ = {
+			isa = PBXGroup;
+			children = (
+				A48E6E0923B1B59D0043332F /* ContainerView.swift */,
+				A48E6E0A23B1B59D0043332F /* OutlinedButton.swift */,
+				A48E6E0823B1B59D0043332F /* RoundedButton.swift */,
+			);
+			path = Skin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48E6E0523B1B0E50043332F /* ColorPalette.swift in Sources */,
 				A417209723B07C0F0009C10D /* LineChartViewController.swift in Sources */,
 				716C71C323ADCB4D00A78E9D /* UIViewController+Extension.swift in Sources */,
 				A417208A23B069290009C10D /* RxAnimated+animations.swift in Sources */,
@@ -337,6 +366,9 @@
 				A48E6DFF23B1AD3E0043332F /* WalkthroughViewController.swift in Sources */,
 				A417208323B061FF0009C10D /* PieChartViewController.swift in Sources */,
 				716C719523ADBB8A00A78E9D /* SceneDelegate.swift in Sources */,
+				A48E6E0C23B1B59D0043332F /* ContainerView.swift in Sources */,
+				A48E6E0B23B1B59D0043332F /* RoundedButton.swift in Sources */,
+				A48E6E0D23B1B59D0043332F /* OutlinedButton.swift in Sources */,
 				A417208B23B069290009C10D /* RxAnimated+bindings.swift in Sources */,
 				A48E6E0323B1AE2D0043332F /* UIScrollView+Rx.swift in Sources */,
 				716C71CB23ADD84D00A78E9D /* ChartType.swift in Sources */,

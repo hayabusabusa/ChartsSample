@@ -7,10 +7,15 @@
 //
 
 import UIKit
+import RxCocoa
 
 final class WalkthroughViewController: BaseViewController {
     
     // MARK: IBOutlet
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var nextButton: UIButton!
     
     // MARK: Properties
     
@@ -23,5 +28,27 @@ final class WalkthroughViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        setupViews()
+    }
+}
+
+// MARK: - Setup
+
+extension WalkthroughViewController {
+    
+    private func setupViews() {
+        nextButton.isHidden = true
+        scrollView.rx.currentPage
+            .bind(to: pageControl.rx.currentPage)
+            .disposed(by: disposeBag)
+        scrollView.rx.currentPage
+            .map { $0 != 2 }
+            .bind(animated: nextButton.rx.animated.fade(duration: 0.1).isHidden)
+            .disposed(by: disposeBag)
     }
 }
