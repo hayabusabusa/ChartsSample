@@ -15,9 +15,7 @@
 		716C71AD23ADBF8100A78E9D /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716C71A823ADBF8000A78E9D /* Charts.framework */; };
 		716C71AF23ADBF8100A78E9D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716C71A923ADBF8000A78E9D /* RxSwift.framework */; };
 		716C71B123ADBF8100A78E9D /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716C71AA23ADBF8000A78E9D /* RxCocoa.framework */; };
-		716C71B823ADC01A00A78E9D /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71B723ADC01A00A78E9D /* DashboardViewController.swift */; };
 		716C71BB23ADC06E00A78E9D /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71BA23ADC06E00A78E9D /* Storyboard.swift */; };
-		716C71BD23ADC10600A78E9D /* DashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716C71BC23ADC10600A78E9D /* DashboardViewController.storyboard */; };
 		716C71C023ADC18200A78E9D /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71BF23ADC18200A78E9D /* NavigationController.swift */; };
 		716C71C323ADCB4D00A78E9D /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71C223ADCB4D00A78E9D /* UIViewController+Extension.swift */; };
 		716C71C723ADCF9300A78E9D /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71C623ADCF9300A78E9D /* BarChartViewController.swift */; };
@@ -30,16 +28,8 @@
 		A417208923B069290009C10D /* RxAnimated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208623B069290009C10D /* RxAnimated.swift */; };
 		A417208A23B069290009C10D /* RxAnimated+animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208723B069290009C10D /* RxAnimated+animations.swift */; };
 		A417208B23B069290009C10D /* RxAnimated+bindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208823B069290009C10D /* RxAnimated+bindings.swift */; };
-		A417208E23B074890009C10D /* DashboardPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208D23B074890009C10D /* DashboardPopoverViewController.swift */; };
-		A417209223B076250009C10D /* DashboardPopoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A417209123B076250009C10D /* DashboardPopoverViewController.storyboard */; };
-		A417209423B077BF0009C10D /* DashboardPopoverPresentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417209323B077BF0009C10D /* DashboardPopoverPresentDelegate.swift */; };
 		A417209723B07C0F0009C10D /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417209623B07C0F0009C10D /* LineChartViewController.swift */; };
 		A417209923B07D790009C10D /* LineChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A417209823B07D790009C10D /* LineChartViewController.storyboard */; };
-		A417209B23B092600009C10D /* SwiftCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A417209A23B092600009C10D /* SwiftCharts.framework */; };
-		A41720A023B0945C0009C10D /* SCDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417209F23B0945C0009C10D /* SCDashboardViewController.swift */; };
-		A41720A223B094760009C10D /* SCDashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41720A123B094760009C10D /* SCDashboardViewController.storyboard */; };
-		A41720A523B09B730009C10D /* SCBarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41720A423B09B730009C10D /* SCBarChartViewController.swift */; };
-		A41720A723B09B9C0009C10D /* SCBarChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41720A623B09B9C0009C10D /* SCBarChartViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,9 +43,7 @@
 		716C71A823ADBF8000A78E9D /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
 		716C71A923ADBF8000A78E9D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		716C71AA23ADBF8000A78E9D /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
-		716C71B723ADC01A00A78E9D /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		716C71BA23ADC06E00A78E9D /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
-		716C71BC23ADC10600A78E9D /* DashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardViewController.storyboard; sourceTree = "<group>"; };
 		716C71BF23ADC18200A78E9D /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		716C71C223ADCB4D00A78E9D /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		716C71C623ADCF9300A78E9D /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
@@ -68,16 +56,9 @@
 		A417208623B069290009C10D /* RxAnimated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxAnimated.swift; sourceTree = "<group>"; };
 		A417208723B069290009C10D /* RxAnimated+animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RxAnimated+animations.swift"; sourceTree = "<group>"; };
 		A417208823B069290009C10D /* RxAnimated+bindings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RxAnimated+bindings.swift"; sourceTree = "<group>"; };
-		A417208D23B074890009C10D /* DashboardPopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPopoverViewController.swift; sourceTree = "<group>"; };
-		A417209123B076250009C10D /* DashboardPopoverViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardPopoverViewController.storyboard; sourceTree = "<group>"; };
-		A417209323B077BF0009C10D /* DashboardPopoverPresentDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPopoverPresentDelegate.swift; sourceTree = "<group>"; };
 		A417209623B07C0F0009C10D /* LineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
 		A417209823B07D790009C10D /* LineChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LineChartViewController.storyboard; sourceTree = "<group>"; };
 		A417209A23B092600009C10D /* SwiftCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCharts.framework; path = Carthage/Build/iOS/SwiftCharts.framework; sourceTree = "<group>"; };
-		A417209F23B0945C0009C10D /* SCDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDashboardViewController.swift; sourceTree = "<group>"; };
-		A41720A123B094760009C10D /* SCDashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SCDashboardViewController.storyboard; sourceTree = "<group>"; };
-		A41720A423B09B730009C10D /* SCBarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCBarChartViewController.swift; sourceTree = "<group>"; };
-		A41720A623B09B9C0009C10D /* SCBarChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SCBarChartViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +66,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A417209B23B092600009C10D /* SwiftCharts.framework in Frameworks */,
 				716C71B123ADBF8100A78E9D /* RxCocoa.framework in Frameworks */,
 				716C71AB23ADBF8100A78E9D /* RxRelay.framework in Frameworks */,
 				716C71AD23ADBF8100A78E9D /* Charts.framework in Frameworks */,
@@ -143,21 +123,9 @@
 			isa = PBXGroup;
 			children = (
 				716C71BE23ADC16F00A78E9D /* Base */,
-				716C71B623ADC00D00A78E9D /* Dashboard */,
-				A417208C23B0746E0009C10D /* DashboardPopover */,
-				716C71C423ADCF0400A78E9D /* DashboardCharts */,
-				A41720A823B0A12F0009C10D /* TEST */,
+				716C71C423ADCF0400A78E9D /* Charts */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		716C71B623ADC00D00A78E9D /* Dashboard */ = {
-			isa = PBXGroup;
-			children = (
-				716C71B723ADC01A00A78E9D /* DashboardViewController.swift */,
-				716C71BC23ADC10600A78E9D /* DashboardViewController.storyboard */,
-			);
-			path = Dashboard;
 			sourceTree = "<group>";
 		};
 		716C71B923ADC05F00A78E9D /* Environment */ = {
@@ -188,7 +156,7 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
-		716C71C423ADCF0400A78E9D /* DashboardCharts */ = {
+		716C71C423ADCF0400A78E9D /* Charts */ = {
 			isa = PBXGroup;
 			children = (
 				716C71CA23ADD84D00A78E9D /* ChartType.swift */,
@@ -197,7 +165,7 @@
 				A417209523B07BF90009C10D /* LineChart */,
 				A417208123B061EC0009C10D /* PieChart */,
 			);
-			path = DashboardCharts;
+			path = Charts;
 			sourceTree = "<group>";
 		};
 		716C71C523ADCF8500A78E9D /* BarChart */ = {
@@ -227,16 +195,6 @@
 			path = PieChart;
 			sourceTree = "<group>";
 		};
-		A417208C23B0746E0009C10D /* DashboardPopover */ = {
-			isa = PBXGroup;
-			children = (
-				A417209323B077BF0009C10D /* DashboardPopoverPresentDelegate.swift */,
-				A417208D23B074890009C10D /* DashboardPopoverViewController.swift */,
-				A417209123B076250009C10D /* DashboardPopoverViewController.storyboard */,
-			);
-			path = DashboardPopover;
-			sourceTree = "<group>";
-		};
 		A417209523B07BF90009C10D /* LineChart */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,33 +202,6 @@
 				A417209823B07D790009C10D /* LineChartViewController.storyboard */,
 			);
 			path = LineChart;
-			sourceTree = "<group>";
-		};
-		A417209E23B094410009C10D /* SCDashboard */ = {
-			isa = PBXGroup;
-			children = (
-				A417209F23B0945C0009C10D /* SCDashboardViewController.swift */,
-				A41720A123B094760009C10D /* SCDashboardViewController.storyboard */,
-				A41720A323B09B440009C10D /* SCBarChart */,
-			);
-			path = SCDashboard;
-			sourceTree = "<group>";
-		};
-		A41720A323B09B440009C10D /* SCBarChart */ = {
-			isa = PBXGroup;
-			children = (
-				A41720A423B09B730009C10D /* SCBarChartViewController.swift */,
-				A41720A623B09B9C0009C10D /* SCBarChartViewController.storyboard */,
-			);
-			path = SCBarChart;
-			sourceTree = "<group>";
-		};
-		A41720A823B0A12F0009C10D /* TEST */ = {
-			isa = PBXGroup;
-			children = (
-				A417209E23B094410009C10D /* SCDashboard */,
-			);
-			path = TEST;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,13 +263,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A41720A723B09B9C0009C10D /* SCBarChartViewController.storyboard in Resources */,
-				716C71BD23ADC10600A78E9D /* DashboardViewController.storyboard in Resources */,
-				A41720A223B094760009C10D /* SCDashboardViewController.storyboard in Resources */,
 				A417208523B062190009C10D /* PieChartViewController.storyboard in Resources */,
 				A417209923B07D790009C10D /* LineChartViewController.storyboard in Resources */,
 				716C71D023AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard in Resources */,
-				A417209223B076250009C10D /* DashboardPopoverViewController.storyboard in Resources */,
 				716C719F23ADBB9100A78E9D /* LaunchScreen.storyboard in Resources */,
 				716C71C923ADD17200A78E9D /* BarChartViewController.storyboard in Resources */,
 				716C719C23ADBB9100A78E9D /* Assets.xcassets in Resources */,
@@ -360,7 +287,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SwiftCharts.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
@@ -378,24 +304,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A417208E23B074890009C10D /* DashboardPopoverViewController.swift in Sources */,
 				A417209723B07C0F0009C10D /* LineChartViewController.swift in Sources */,
-				A41720A023B0945C0009C10D /* SCDashboardViewController.swift in Sources */,
-				A41720A523B09B730009C10D /* SCBarChartViewController.swift in Sources */,
 				716C71C323ADCB4D00A78E9D /* UIViewController+Extension.swift in Sources */,
 				A417208A23B069290009C10D /* RxAnimated+animations.swift in Sources */,
 				716C71BB23ADC06E00A78E9D /* Storyboard.swift in Sources */,
 				716C71CE23AFAA0800A78E9D /* HorizontalBarChartViewController.swift in Sources */,
 				716C719323ADBB8A00A78E9D /* AppDelegate.swift in Sources */,
 				716C71C723ADCF9300A78E9D /* BarChartViewController.swift in Sources */,
-				A417209423B077BF0009C10D /* DashboardPopoverPresentDelegate.swift in Sources */,
 				716C71C023ADC18200A78E9D /* NavigationController.swift in Sources */,
 				A417208323B061FF0009C10D /* PieChartViewController.swift in Sources */,
 				716C719523ADBB8A00A78E9D /* SceneDelegate.swift in Sources */,
 				A417208B23B069290009C10D /* RxAnimated+bindings.swift in Sources */,
 				716C71CB23ADD84D00A78E9D /* ChartType.swift in Sources */,
 				A417208923B069290009C10D /* RxAnimated.swift in Sources */,
-				716C71B823ADC01A00A78E9D /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
