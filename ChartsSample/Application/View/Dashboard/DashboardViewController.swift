@@ -70,6 +70,8 @@ extension DashboardViewController {
 extension DashboardViewController {
     
     private func presentTimer() {
-        
+        let vc = NavigationController(rootViewController: TimerViewController.instantiate())
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
     }
 }
