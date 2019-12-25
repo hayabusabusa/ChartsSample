@@ -23,6 +23,7 @@ final class DashboardViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavigation()
     }
     
     // MARK: IBAction

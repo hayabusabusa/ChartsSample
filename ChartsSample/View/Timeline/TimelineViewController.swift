@@ -23,7 +23,17 @@ final class TimelineViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavigation()
     }
     
     // MARK: IBAction
+}
+
+// MARK: - Setup
+
+extension TimelineViewController {
+    
+    private func setupNavigation() {
+        navigationItem.title = "タイムライン"
+    }
 }

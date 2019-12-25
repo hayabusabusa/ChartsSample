@@ -24,6 +24,7 @@ final class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAppearance()
+        setupTabBar()
     }
 }
 
@@ -32,6 +33,14 @@ final class TabBarController: UITabBarController {
 extension TabBarController {
     
     private func setupAppearance() {
-        
+        tabBar.tintColor = ColorPalette.electronBlue
+        tabBar.unselectedItemTintColor = ColorPalette.soothingBreeze
+        tabBar.backgroundImage = UIImage()
+        tabBar.backgroundColor = .white
+    }
+    
+    private func setupTabBar() {
+        viewControllers = [TabBarItemType.dashboard, TabBarItemType.timeline]
+            .map { NavigationController(rootViewController: $0.viewController) }
     }
 }
