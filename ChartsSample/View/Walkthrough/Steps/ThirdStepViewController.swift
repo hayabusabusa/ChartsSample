@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class ThirdSetpViewController: UIViewController {
+final class ThirdSetpViewController: BaseViewController {
     
     // MARK: IBOutlet
     

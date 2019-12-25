@@ -40,6 +40,7 @@
 		A42E5BDF23B34548002F58C0 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E5BDE23B34548002F58C0 /* UIViewController+Rx.swift */; };
 		A42E5BE323B34658002F58C0 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E5BE223B34658002F58C0 /* RootViewModel.swift */; };
 		A42E5BE523B34661002F58C0 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E5BE423B34661002F58C0 /* ViewModelType.swift */; };
+		A42E5BE823B34C70002F58C0 /* WalkthroughViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E5BE723B34C70002F58C0 /* WalkthroughViewModel.swift */; };
 		A48E6DFC23B1ACD80043332F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6DFB23B1ACD80043332F /* BaseViewController.swift */; };
 		A48E6DFF23B1AD3E0043332F /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6DFE23B1AD3E0043332F /* WalkthroughViewController.swift */; };
 		A48E6E0123B1AD760043332F /* WalkthroughViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A48E6E0023B1AD760043332F /* WalkthroughViewController.storyboard */; };
@@ -93,6 +94,7 @@
 		A42E5BDE23B34548002F58C0 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
 		A42E5BE223B34658002F58C0 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		A42E5BE423B34661002F58C0 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		A42E5BE723B34C70002F58C0 /* WalkthroughViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewModel.swift; sourceTree = "<group>"; };
 		A48E6DFB23B1ACD80043332F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A48E6DFE23B1AD3E0043332F /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		A48E6E0023B1AD760043332F /* WalkthroughViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WalkthroughViewController.storyboard; sourceTree = "<group>"; };
@@ -296,6 +298,7 @@
 			children = (
 				A42E5BE423B34661002F58C0 /* ViewModelType.swift */,
 				A42E5BE123B34650002F58C0 /* Root */,
+				A42E5BE623B34C58002F58C0 /* Walkthrough */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -306,6 +309,14 @@
 				A42E5BE223B34658002F58C0 /* RootViewModel.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		A42E5BE623B34C58002F58C0 /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				A42E5BE723B34C70002F58C0 /* WalkthroughViewModel.swift */,
+			);
+			path = Walkthrough;
 			sourceTree = "<group>";
 		};
 		A48E6DFD23B1AD250043332F /* Walkthrough */ = {
@@ -484,6 +495,7 @@
 				A48E6DFF23B1AD3E0043332F /* WalkthroughViewController.swift in Sources */,
 				A417208323B061FF0009C10D /* PieChartViewController.swift in Sources */,
 				716C719523ADBB8A00A78E9D /* SceneDelegate.swift in Sources */,
+				A42E5BE823B34C70002F58C0 /* WalkthroughViewModel.swift in Sources */,
 				A48E6E0C23B1B59D0043332F /* ContainerView.swift in Sources */,
 				A48E6E0B23B1B59D0043332F /* RoundedButton.swift in Sources */,
 				A48E6E0D23B1B59D0043332F /* OutlinedButton.swift in Sources */,

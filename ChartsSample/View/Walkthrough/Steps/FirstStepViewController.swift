@@ -9,7 +9,7 @@
 import UIKit
 import Charts
 
-final class FirstSetpViewController: UIViewController {
+final class FirstSetpViewController: BaseViewController {
     
     // MARK: IBOutlet
     

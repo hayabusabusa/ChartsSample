@@ -19,6 +19,8 @@ final class WalkthroughViewController: BaseViewController {
     
     // MARK: Properties
     
+    private var viewModel: WalkthroughViewModel!
+    
     // MARK: Lifecycle
     
     static func instantiate() -> WalkthroughViewController {
@@ -29,6 +31,7 @@ final class WalkthroughViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+        bindViewModel()
     }
 }
 
@@ -49,8 +52,21 @@ extension WalkthroughViewController {
             .disposed(by: disposeBag)
         // Button
         nextButton.alpha = 0
-        nextButton.rx.tap.asSignal()
-            .emit(onNext: { [weak self] in self?.replaceRootToTabBar() })
+    }
+}
+
+// MARK: - ViewModel
+
+extension WalkthroughViewController {
+    
+    private func bindViewModel() {
+        viewModel = WalkthroughViewModel()
+        
+        let input = WalkthroughViewModel.Input(nextButtonDidTap: nextButton.rx.tap.asSignal())
+        let output = viewModel.transform(input: input)
+        
+        output.replaceRootToLogin
+            .drive(onNext: { [weak self] in self?.replaceRootToTabBar() })
             .disposed(by: disposeBag)
     }
 }
