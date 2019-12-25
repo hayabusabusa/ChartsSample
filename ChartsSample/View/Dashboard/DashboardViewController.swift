@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import RxCocoa
 
 final class DashboardViewController: BaseViewController {
     
     // MARK: IBOutlet
     
+    @IBOutlet private weak var plusButton: UIButton!
+    
     // MARK: Properties
+    
+    private var viewModel: DashboardViewModel!
     
     // MARK: Lifecycle
     
@@ -24,6 +29,8 @@ final class DashboardViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigation()
+        setupViews()
+        bindViewModel()
     }
     
     // MARK: IBAction
@@ -35,5 +42,34 @@ extension DashboardViewController {
     
     private func setupNavigation() {
         navigationItem.title = "ボード"
+    }
+    
+    private func setupViews() {
+        
+    }
+}
+
+// MARK: - ViewModel
+
+extension DashboardViewController {
+    
+    private func bindViewModel() {
+        viewModel = DashboardViewModel()
+        
+        let input = DashboardViewModel.Input(plusButtonDidTap: plusButton.rx.tap.asDriver())
+        let output = viewModel.transform(input: input)
+        
+        output.presentTimer
+            .drive(onNext: { [weak self] in self?.presentTimer() })
+            .disposed(by: disposeBag)
+    }
+}
+
+// MARK: - Transition
+
+extension DashboardViewController {
+    
+    private func presentTimer() {
+        
     }
 }
