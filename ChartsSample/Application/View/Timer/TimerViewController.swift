@@ -20,7 +20,7 @@ final class TimerViewController: BaseViewController {
     
     // MARK: Properties
     
-    private let timerRelay: BehaviorRelay<Int> = .init(value: 0)
+    private let isValidRelay: BehaviorRelay<Bool> = .init(value: false)
     
     // MARK: Lifecycle
     
@@ -46,10 +46,20 @@ extension TimerViewController {
     
     private func setupViews() {
         // Timer
-        timerRelay
+        isValidRelay.asObservable()
+            .debug("isValid", trimOutput: false)
+            .flatMapLatest { $0 ? Observable<Int>.interval(RxTimeInterval.seconds(1), scheduler: MainScheduler.instance) : Observable.empty() }
+            .share(replay: 1, scope: .forever)
+            .debug("Timer", trimOutput: false)
             .map { String(format: "%02i:%02i:%02i", $0 / 3600, $0 / 60 % 60, $0 % 60) }
             .bind(to: timerLabel.rx.text)
             .disposed(by: disposeBag)
-        
+        // Button
+        startButton.rx.tap.map { true }
+            .bind(to: isValidRelay)
+            .disposed(by: disposeBag)
+        stopButton.rx.tap.map { false }
+            .bind(to: isValidRelay)
+            .disposed(by: disposeBag)
     }
 }
