@@ -34,6 +34,12 @@
 		A417208B23B069290009C10D /* RxAnimated+bindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208823B069290009C10D /* RxAnimated+bindings.swift */; };
 		A417209723B07C0F0009C10D /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417209623B07C0F0009C10D /* LineChartViewController.swift */; };
 		A417209923B07D790009C10D /* LineChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A417209823B07D790009C10D /* LineChartViewController.storyboard */; };
+		A42E5BD823B33B68002F58C0 /* LocalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E5BD723B33B68002F58C0 /* LocalSettings.swift */; };
+		A42E5BDB23B34373002F58C0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E5BDA23B34373002F58C0 /* RootViewController.swift */; };
+		A42E5BDD23B34393002F58C0 /* RootViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42E5BDC23B34393002F58C0 /* RootViewController.storyboard */; };
+		A42E5BDF23B34548002F58C0 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E5BDE23B34548002F58C0 /* UIViewController+Rx.swift */; };
+		A42E5BE323B34658002F58C0 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E5BE223B34658002F58C0 /* RootViewModel.swift */; };
+		A42E5BE523B34661002F58C0 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E5BE423B34661002F58C0 /* ViewModelType.swift */; };
 		A48E6DFC23B1ACD80043332F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6DFB23B1ACD80043332F /* BaseViewController.swift */; };
 		A48E6DFF23B1AD3E0043332F /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6DFE23B1AD3E0043332F /* WalkthroughViewController.swift */; };
 		A48E6E0123B1AD760043332F /* WalkthroughViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A48E6E0023B1AD760043332F /* WalkthroughViewController.storyboard */; };
@@ -81,6 +87,12 @@
 		A417209623B07C0F0009C10D /* LineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
 		A417209823B07D790009C10D /* LineChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LineChartViewController.storyboard; sourceTree = "<group>"; };
 		A417209A23B092600009C10D /* SwiftCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCharts.framework; path = Carthage/Build/iOS/SwiftCharts.framework; sourceTree = "<group>"; };
+		A42E5BD723B33B68002F58C0 /* LocalSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSettings.swift; sourceTree = "<group>"; };
+		A42E5BDA23B34373002F58C0 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		A42E5BDC23B34393002F58C0 /* RootViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RootViewController.storyboard; sourceTree = "<group>"; };
+		A42E5BDE23B34548002F58C0 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
+		A42E5BE223B34658002F58C0 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		A42E5BE423B34661002F58C0 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		A48E6DFB23B1ACD80043332F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A48E6DFE23B1AD3E0043332F /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		A48E6E0023B1AD760043332F /* WalkthroughViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WalkthroughViewController.storyboard; sourceTree = "<group>"; };
@@ -134,6 +146,7 @@
 			children = (
 				716C719223ADBB8A00A78E9D /* AppDelegate.swift */,
 				716C719423ADBB8A00A78E9D /* SceneDelegate.swift */,
+				A42E5BE023B34645002F58C0 /* ViewModel */,
 				716C71B523ADC00500A78E9D /* View */,
 				716C71B923ADC05F00A78E9D /* Environment */,
 				716C719B23ADBB9100A78E9D /* Assets.xcassets */,
@@ -159,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				716C71BE23ADC16F00A78E9D /* Base */,
+				A42E5BD923B34367002F58C0 /* Root */,
 				A48E6DFD23B1AD250043332F /* Walkthrough */,
 				A48E6E1B23B207520043332F /* TabBar */,
 				716C71D123B26FA900A78E9D /* Dashboard */,
@@ -174,6 +188,7 @@
 			children = (
 				716C71BA23ADC06E00A78E9D /* Storyboard.swift */,
 				A48E6E0423B1B0E50043332F /* ColorPalette.swift */,
+				A42E5BD723B33B68002F58C0 /* LocalSettings.swift */,
 				716C71C123ADCB3B00A78E9D /* Util */,
 			);
 			path = Environment;
@@ -196,6 +211,7 @@
 				A417208723B069290009C10D /* RxAnimated+animations.swift */,
 				A417208823B069290009C10D /* RxAnimated+bindings.swift */,
 				716C71C223ADCB4D00A78E9D /* UIViewController+Extension.swift */,
+				A42E5BDE23B34548002F58C0 /* UIViewController+Rx.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -264,6 +280,32 @@
 				A417209823B07D790009C10D /* LineChartViewController.storyboard */,
 			);
 			path = LineChart;
+			sourceTree = "<group>";
+		};
+		A42E5BD923B34367002F58C0 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				A42E5BDA23B34373002F58C0 /* RootViewController.swift */,
+				A42E5BDC23B34393002F58C0 /* RootViewController.storyboard */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		A42E5BE023B34645002F58C0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A42E5BE423B34661002F58C0 /* ViewModelType.swift */,
+				A42E5BE123B34650002F58C0 /* Root */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A42E5BE123B34650002F58C0 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				A42E5BE223B34658002F58C0 /* RootViewModel.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 		A48E6DFD23B1AD250043332F /* Walkthrough */ = {
@@ -376,6 +418,7 @@
 				A417208523B062190009C10D /* PieChartViewController.storyboard in Resources */,
 				A417209923B07D790009C10D /* LineChartViewController.storyboard in Resources */,
 				A48E6E1F23B2079E0043332F /* TabBarController.storyboard in Resources */,
+				A42E5BDD23B34393002F58C0 /* RootViewController.storyboard in Resources */,
 				716C71D023AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard in Resources */,
 				A48E6E0123B1AD760043332F /* WalkthroughViewController.storyboard in Resources */,
 				716C719F23ADBB9100A78E9D /* LaunchScreen.storyboard in Resources */,
@@ -420,12 +463,16 @@
 			files = (
 				A48E6E0523B1B0E50043332F /* ColorPalette.swift in Sources */,
 				A417209723B07C0F0009C10D /* LineChartViewController.swift in Sources */,
+				A42E5BD823B33B68002F58C0 /* LocalSettings.swift in Sources */,
 				716C71C323ADCB4D00A78E9D /* UIViewController+Extension.swift in Sources */,
 				A417208A23B069290009C10D /* RxAnimated+animations.swift in Sources */,
+				A42E5BDB23B34373002F58C0 /* RootViewController.swift in Sources */,
 				716C71BB23ADC06E00A78E9D /* Storyboard.swift in Sources */,
 				716C71D823B273B900A78E9D /* TimelineViewController.swift in Sources */,
 				716C71CE23AFAA0800A78E9D /* HorizontalBarChartViewController.swift in Sources */,
 				A48E6DFC23B1ACD80043332F /* BaseViewController.swift in Sources */,
+				A42E5BDF23B34548002F58C0 /* UIViewController+Rx.swift in Sources */,
+				A42E5BE323B34658002F58C0 /* RootViewModel.swift in Sources */,
 				716C71D323B26FBB00A78E9D /* DashboardViewController.swift in Sources */,
 				716C719323ADBB8A00A78E9D /* AppDelegate.swift in Sources */,
 				A48E6E1A23B202710043332F /* ThirdStepViewController.swift in Sources */,
@@ -442,6 +489,7 @@
 				A48E6E0D23B1B59D0043332F /* OutlinedButton.swift in Sources */,
 				A417208B23B069290009C10D /* RxAnimated+bindings.swift in Sources */,
 				A48E6E1223B1CEFE0043332F /* SecondStepViewController.swift in Sources */,
+				A42E5BE523B34661002F58C0 /* ViewModelType.swift in Sources */,
 				A48E6E0323B1AE2D0043332F /* UIScrollView+Rx.swift in Sources */,
 				716C71CB23ADD84D00A78E9D /* ChartType.swift in Sources */,
 				A417208923B069290009C10D /* RxAnimated.swift in Sources */,

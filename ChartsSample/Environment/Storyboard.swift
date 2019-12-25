@@ -10,6 +10,7 @@ import UIKit
 
 enum Storyboard: String {
     // Application
+    case RootViewController
     case WalkthroughViewController
     case TabBarController
     case DashboardViewController

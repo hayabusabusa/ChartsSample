@@ -12,7 +12,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         setupRoot(windowScene)
@@ -23,7 +22,7 @@ extension SceneDelegate {
     
     private func setupRoot(_ windowScene: UIWindowScene) {
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = WalkthroughViewController.instantiate()
+        window.rootViewController = RootViewController.instantiate()
         self.window = window
         window.makeKeyAndVisible()
     }
