@@ -27,6 +27,7 @@
 		716C71D523B26FE100A78E9D /* DashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716C71D423B26FE100A78E9D /* DashboardViewController.storyboard */; };
 		716C71D823B273B900A78E9D /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71D723B273B900A78E9D /* TimelineViewController.swift */; };
 		716C71DA23B273D800A78E9D /* TimelineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716C71D923B273D800A78E9D /* TimelineViewController.storyboard */; };
+		716C71DD23B3948700A78E9D /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71DC23B3948700A78E9D /* TimerViewModel.swift */; };
 		A417208323B061FF0009C10D /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208223B061FF0009C10D /* PieChartViewController.swift */; };
 		A417208523B062190009C10D /* PieChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A417208423B062190009C10D /* PieChartViewController.storyboard */; };
 		A417208923B069290009C10D /* RxAnimated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208623B069290009C10D /* RxAnimated.swift */; };
@@ -84,6 +85,7 @@
 		716C71D423B26FE100A78E9D /* DashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardViewController.storyboard; sourceTree = "<group>"; };
 		716C71D723B273B900A78E9D /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		716C71D923B273D800A78E9D /* TimelineViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimelineViewController.storyboard; sourceTree = "<group>"; };
+		716C71DC23B3948700A78E9D /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		A417208223B061FF0009C10D /* PieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
 		A417208423B062190009C10D /* PieChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PieChartViewController.storyboard; sourceTree = "<group>"; };
 		A417208623B069290009C10D /* RxAnimated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxAnimated.swift; sourceTree = "<group>"; };
@@ -273,6 +275,21 @@
 			path = Timeline;
 			sourceTree = "<group>";
 		};
+		716C71DB23B3939000A78E9D /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				716C71DC23B3948700A78E9D /* TimerViewModel.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		716C71DE23B395EE00A78E9D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		A417208123B061EC0009C10D /* PieChart */ = {
 			isa = PBXGroup;
 			children = (
@@ -307,6 +324,7 @@
 				A42E5BE123B34650002F58C0 /* Root */,
 				A42E5BE623B34C58002F58C0 /* Walkthrough */,
 				A42E5BE923B3520D002F58C0 /* Dashboard */,
+				716C71DB23B3939000A78E9D /* Timer */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -347,6 +365,7 @@
 		A42E5BF323B3591F002F58C0 /* Infrastracture */ = {
 			isa = PBXGroup;
 			children = (
+				716C71DE23B395EE00A78E9D /* Repository */,
 				A42E5BF523B35953002F58C0 /* Entity */,
 			);
 			path = Infrastracture;
@@ -563,6 +582,7 @@
 				A42E5BEB23B35224002F58C0 /* DashboardViewModel.swift in Sources */,
 				A48E6E0B23B1B59D0043332F /* RoundedButton.swift in Sources */,
 				A48E6E0D23B1B59D0043332F /* OutlinedButton.swift in Sources */,
+				716C71DD23B3948700A78E9D /* TimerViewModel.swift in Sources */,
 				A417208B23B069290009C10D /* RxAnimated+bindings.swift in Sources */,
 				A48E6E1223B1CEFE0043332F /* SecondStepViewController.swift in Sources */,
 				A42E5BE523B34661002F58C0 /* ViewModelType.swift in Sources */,

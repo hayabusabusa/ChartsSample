@@ -17,10 +17,13 @@ final class TimerViewController: BaseViewController {
     @IBOutlet private weak var timerLabel: UILabel!
     @IBOutlet private weak var startButton: UIButton!
     @IBOutlet private weak var stopButton: UIButton!
+    @IBOutlet private weak var resetButton: UIButton!
     
     // MARK: Properties
     
-    private let isValidRelay: BehaviorRelay<Bool> = .init(value: false)
+    private var viewModel: TimerViewModel!
+    
+    private let timerRelay: BehaviorRelay<Int> = .init(value: 0)
     
     // MARK: Lifecycle
     
@@ -33,6 +36,7 @@ final class TimerViewController: BaseViewController {
         super.viewDidLoad()
         setupNavigation()
         setupViews()
+        bindViewModel()
     }
 }
 
@@ -45,21 +49,24 @@ extension TimerViewController {
     }
     
     private func setupViews() {
-        // Timer
-        isValidRelay.asObservable()
-            .debug("isValid", trimOutput: false)
-            .flatMapLatest { $0 ? Observable<Int>.interval(RxTimeInterval.seconds(1), scheduler: MainScheduler.instance) : Observable.empty() }
-            .share(replay: 1, scope: .forever)
-            .debug("Timer", trimOutput: false)
-            .map { String(format: "%02i:%02i:%02i", $0 / 3600, $0 / 60 % 60, $0 % 60) }
-            .bind(to: timerLabel.rx.text)
-            .disposed(by: disposeBag)
-        // Button
-        startButton.rx.tap.map { true }
-            .bind(to: isValidRelay)
-            .disposed(by: disposeBag)
-        stopButton.rx.tap.map { false }
-            .bind(to: isValidRelay)
+        
+    }
+}
+
+// MARK: - ViewModel
+
+extension TimerViewController {
+    
+    private func bindViewModel() {
+        viewModel = TimerViewModel()
+        
+        let input = TimerViewModel.Input(startButtonDidTap: startButton.rx.tap.asDriver(),
+                                         stopButtonDidTap: stopButton.rx.tap.asDriver(),
+                                         resetButtonDidTap: resetButton.rx.tap.asDriver())
+        let output = viewModel.transform(input: input)
+        
+        output.timerDriver
+            .drive(timerLabel.rx.text)
             .disposed(by: disposeBag)
     }
 }
