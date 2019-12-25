@@ -154,8 +154,6 @@
 		716C719123ADBB8A00A78E9D /* ChartsSample */ = {
 			isa = PBXGroup;
 			children = (
-				716C719223ADBB8A00A78E9D /* AppDelegate.swift */,
-				716C719423ADBB8A00A78E9D /* SceneDelegate.swift */,
 				A42E5BF323B3591F002F58C0 /* Infrastracture */,
 				A42E5BF423B35938002F58C0 /* Application */,
 				716C71B923ADC05F00A78E9D /* Environment */,
@@ -357,6 +355,8 @@
 		A42E5BF423B35938002F58C0 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				716C719223ADBB8A00A78E9D /* AppDelegate.swift */,
+				716C719423ADBB8A00A78E9D /* SceneDelegate.swift */,
 				A42E5BE023B34645002F58C0 /* ViewModel */,
 				716C71B523ADC00500A78E9D /* View */,
 			);

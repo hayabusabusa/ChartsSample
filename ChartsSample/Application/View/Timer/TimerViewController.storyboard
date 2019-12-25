@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,13 +15,64 @@
                     <view key="view" contentMode="scaleToFill" id="UjN-Di-hPl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFy-Tb-3mH">
+                                <rect key="frame" x="24" y="396" width="366" height="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQf-15-OfQ" customClass="RoundedButton" customModule="ChartsSample" customModuleProvider="target">
+                                <rect key="frame" x="302" y="750" width="88" height="88"/>
+                                <color key="backgroundColor" name="Electron blue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="45m-15-ou5"/>
+                                    <constraint firstAttribute="width" constant="88" id="qxt-40-5re"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="14"/>
+                                <state key="normal" title="スタート">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhx-4p-rTv" customClass="RoundedButton" customModule="ChartsSample" customModuleProvider="target">
+                                <rect key="frame" x="24" y="750" width="88" height="88"/>
+                                <color key="backgroundColor" name="Electron blue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="aHU-ne-LhA"/>
+                                    <constraint firstAttribute="width" constant="88" id="vPh-6z-90r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="14"/>
+                                <state key="normal" title="ストップ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Y6R-02-eB2" firstAttribute="trailing" secondItem="wFy-Tb-3mH" secondAttribute="trailing" constant="24" id="6Vx-Ck-SR6"/>
+                            <constraint firstItem="Y6R-02-eB2" firstAttribute="bottom" secondItem="dQf-15-OfQ" secondAttribute="bottom" constant="24" id="7cD-Rh-Rib"/>
+                            <constraint firstItem="Y6R-02-eB2" firstAttribute="bottom" secondItem="Vhx-4p-rTv" secondAttribute="bottom" constant="24" id="CHq-IW-3gK"/>
+                            <constraint firstItem="wFy-Tb-3mH" firstAttribute="centerY" secondItem="UjN-Di-hPl" secondAttribute="centerY" constant="-40" id="EL5-K4-yJJ"/>
+                            <constraint firstItem="Vhx-4p-rTv" firstAttribute="leading" secondItem="Y6R-02-eB2" secondAttribute="leading" constant="24" id="Txz-a6-fbG"/>
+                            <constraint firstItem="wFy-Tb-3mH" firstAttribute="leading" secondItem="Y6R-02-eB2" secondAttribute="leading" constant="24" id="Xme-44-H0A"/>
+                            <constraint firstItem="Y6R-02-eB2" firstAttribute="trailing" secondItem="dQf-15-OfQ" secondAttribute="trailing" constant="24" id="gPK-dQ-Tab"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Y6R-02-eB2"/>
                     </view>
+                    <connections>
+                        <outlet property="startButton" destination="dQf-15-OfQ" id="iwa-Cs-Gas"/>
+                        <outlet property="stopButton" destination="Vhx-4p-rTv" id="Lcl-M9-ZXS"/>
+                        <outlet property="timerLabel" destination="wFy-Tb-3mH" id="R3t-o4-2PP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A4H-lj-zFL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="416" y="-136"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="Electron blue">
+            <color red="0.035000000149011612" green="0.51800000667572021" blue="0.88999998569488525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
