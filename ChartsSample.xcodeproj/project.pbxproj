@@ -28,6 +28,7 @@
 		716C71D823B273B900A78E9D /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71D723B273B900A78E9D /* TimelineViewController.swift */; };
 		716C71DA23B273D800A78E9D /* TimelineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716C71D923B273D800A78E9D /* TimelineViewController.storyboard */; };
 		716C71DD23B3948700A78E9D /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71DC23B3948700A78E9D /* TimerViewModel.swift */; };
+		716C71E523B4722000A78E9D /* ScaledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71E423B4722000A78E9D /* ScaledButton.swift */; };
 		A417208323B061FF0009C10D /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208223B061FF0009C10D /* PieChartViewController.swift */; };
 		A417208523B062190009C10D /* PieChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A417208423B062190009C10D /* PieChartViewController.storyboard */; };
 		A417208923B069290009C10D /* RxAnimated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208623B069290009C10D /* RxAnimated.swift */; };
@@ -86,6 +87,7 @@
 		716C71D723B273B900A78E9D /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		716C71D923B273D800A78E9D /* TimelineViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimelineViewController.storyboard; sourceTree = "<group>"; };
 		716C71DC23B3948700A78E9D /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		716C71E423B4722000A78E9D /* ScaledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledButton.swift; sourceTree = "<group>"; };
 		A417208223B061FF0009C10D /* PieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
 		A417208423B062190009C10D /* PieChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PieChartViewController.storyboard; sourceTree = "<group>"; };
 		A417208623B069290009C10D /* RxAnimated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxAnimated.swift; sourceTree = "<group>"; };
@@ -421,6 +423,7 @@
 			children = (
 				A48E6E0923B1B59D0043332F /* ContainerView.swift */,
 				A48E6E0A23B1B59D0043332F /* OutlinedButton.swift */,
+				716C71E423B4722000A78E9D /* ScaledButton.swift */,
 				A48E6E0823B1B59D0043332F /* RoundedButton.swift */,
 			);
 			path = Skin;
@@ -553,6 +556,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A48E6E0523B1B0E50043332F /* ColorPalette.swift in Sources */,
+				716C71E523B4722000A78E9D /* ScaledButton.swift in Sources */,
 				A417209723B07C0F0009C10D /* LineChartViewController.swift in Sources */,
 				A42E5BD823B33B68002F58C0 /* LocalSettings.swift in Sources */,
 				716C71C323ADCB4D00A78E9D /* UIViewController+Extension.swift in Sources */,

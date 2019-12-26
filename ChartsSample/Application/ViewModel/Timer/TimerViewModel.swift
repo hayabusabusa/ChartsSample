@@ -29,10 +29,13 @@ extension TimerViewModel: ViewModelType {
         let startButtonDidTap: Driver<Void>
         let stopButtonDidTap: Driver<Void>
         let resetButtonDidTap: Driver<Void>
+        let closeButtonDidTap: Driver<Void>
+        let didEnterBackground: Driver<Void>
     }
     
     struct Output {
         let timerDriver: Driver<String>
+        let dismiss: Driver<Void>
     }
     
     // MARK: Transform I/O
@@ -57,10 +60,22 @@ extension TimerViewModel: ViewModelType {
         input.resetButtonDidTap.map { 0 }
             .drive(timerRelay)
             .disposed(by: disposeBag)
+        input.didEnterBackground
+            .drive(onNext: {
+                // Check timer and save cache
+                // If timer was started or counted
+                if isValidRelay.value == true || timerRelay.value > 0 {
+                    let timerCache = TimerCache(isValid: isValidRelay.value, rawTime: timerRelay.value)
+                    LocalSettings.saveTimerCache(timerCache)
+                    print("[TIMER] 💾 Save timer cache. \(timerCache)")
+                }
+            })
+            .disposed(by: disposeBag)
         
         let timerDriver = timerRelay
             .map { String(format: "%02i:%02i:%02i", $0 / 3600, $0 / 60 % 60, $0 % 60) }
             .asDriver(onErrorDriveWith: .empty())
-        return Output(timerDriver: timerDriver)
+        return Output(timerDriver: timerDriver,
+                      dismiss: input.closeButtonDidTap)
     }
 }

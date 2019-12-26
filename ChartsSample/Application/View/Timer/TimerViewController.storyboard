@@ -17,47 +17,67 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFy-Tb-3mH">
-                                <rect key="frame" x="24" y="396.5" width="366" height="23.5"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <rect key="frame" x="24" y="387.5" width="366" height="41"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="WNh-fI-LMn">
                                 <rect key="frame" x="24" y="732" width="366" height="106"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhx-4p-rTv" customClass="RoundedButton" customModule="ChartsSample" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vGd-kH-ZSY">
                                         <rect key="frame" x="0.0" y="0.0" width="106" height="106"/>
-                                        <color key="backgroundColor" name="Electron blue"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhx-4p-rTv" customClass="RoundedButton" customModule="ChartsSample" customModuleProvider="target">
+                                                <rect key="frame" x="21" y="21" width="85" height="85"/>
+                                                <color key="backgroundColor" name="Electron blue"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
+                                                <state key="normal" title="ストップ">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="Vhx-4p-rTv" secondAttribute="height" multiplier="1:1" id="NSo-RW-NJA"/>
+                                            <constraint firstItem="Vhx-4p-rTv" firstAttribute="height" secondItem="vGd-kH-ZSY" secondAttribute="height" multiplier="0.8" id="5Cg-zD-MNF"/>
+                                            <constraint firstItem="Vhx-4p-rTv" firstAttribute="width" secondItem="vGd-kH-ZSY" secondAttribute="width" multiplier="0.8" id="U69-GJ-Vpe"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vhx-4p-rTv" secondAttribute="trailing" id="akq-Ut-zfy"/>
+                                            <constraint firstAttribute="bottom" secondItem="Vhx-4p-rTv" secondAttribute="bottom" id="lgK-Ao-UTq"/>
+                                            <constraint firstAttribute="width" secondItem="vGd-kH-ZSY" secondAttribute="height" multiplier="1:1" id="vwS-Jr-n6f"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="14"/>
-                                        <state key="normal" title="ストップ">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQf-15-OfQ" customClass="RoundedButton" customModule="ChartsSample" customModuleProvider="target">
                                         <rect key="frame" x="130" y="0.0" width="106" height="106"/>
                                         <color key="backgroundColor" name="Electron blue"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="dQf-15-OfQ" secondAttribute="height" multiplier="1:1" id="jNI-Cw-RWR"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                         <state key="normal" title="スタート">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhy-N6-Hft" customClass="RoundedButton" customModule="ChartsSample" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8YM-Ai-16d">
                                         <rect key="frame" x="260" y="0.0" width="106" height="106"/>
-                                        <color key="backgroundColor" name="Electron blue"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhy-N6-Hft" customClass="RoundedButton" customModule="ChartsSample" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="21" width="85" height="85"/>
+                                                <color key="backgroundColor" name="Electron blue"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
+                                                <state key="normal" title="リセット">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="Rhy-N6-Hft" secondAttribute="height" multiplier="1:1" id="HGM-S6-vSU"/>
+                                            <constraint firstItem="Rhy-N6-Hft" firstAttribute="height" secondItem="8YM-Ai-16d" secondAttribute="height" multiplier="0.8" id="AjQ-HF-pHD"/>
+                                            <constraint firstAttribute="width" secondItem="8YM-Ai-16d" secondAttribute="height" multiplier="1:1" id="PwJ-GL-Zpt"/>
+                                            <constraint firstItem="Rhy-N6-Hft" firstAttribute="width" secondItem="8YM-Ai-16d" secondAttribute="width" multiplier="0.8" id="TpM-pk-oYk"/>
+                                            <constraint firstAttribute="bottom" secondItem="Rhy-N6-Hft" secondAttribute="bottom" id="dVI-Je-nik"/>
+                                            <constraint firstItem="Rhy-N6-Hft" firstAttribute="leading" secondItem="8YM-Ai-16d" secondAttribute="leading" id="pGM-EY-0B0"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="14"/>
-                                        <state key="normal" title="リセット">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
+                                    </view>
                                 </subviews>
                             </stackView>
                         </subviews>
