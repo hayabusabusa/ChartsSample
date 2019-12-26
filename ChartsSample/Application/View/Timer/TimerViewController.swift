@@ -23,8 +23,6 @@ final class TimerViewController: BaseViewController {
     
     private var viewModel: TimerViewModel!
     
-    private let timerRelay: BehaviorRelay<Int> = .init(value: 0)
-    
     // MARK: Lifecycle
     
     static func instantiate() -> TimerViewController {
