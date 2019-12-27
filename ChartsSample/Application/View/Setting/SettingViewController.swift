@@ -7,14 +7,18 @@
 //
 
 import UIKit
+import RxCocoa
 
-final class SettingViewController: UIViewController {
+
+final class SettingViewController: BaseViewController {
     
     // MARK: IBOutlet
     
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: Properties
+    
+    private var viewModel: SettingViewModel!
     
     // MARK: Lifecycle
     
@@ -26,8 +30,11 @@ final class SettingViewController: UIViewController {
         super.viewDidLoad()
         setupNavigation()
         setupTableView()
+        bindViewModel()
     }
 }
+
+// MARK: - Setup
 
 extension SettingViewController {
     
@@ -37,6 +44,29 @@ extension SettingViewController {
     
     private func setupTableView() {
         tableView.tableFooterView = UIView()
+        tableView.rowHeight = SettingListCell.rowHeight
         tableView.register(SettingListCell.nib, forCellReuseIdentifier: SettingListCell.reuseIdentifier)
+    }
+}
+
+// MARK: - ViewModel
+
+extension SettingViewController {
+    
+    private func bindViewModel() {
+        viewModel = SettingViewModel()
+        
+        let output = viewModel.transform(input: SettingViewModel.Input())
+        
+        output.settingsDriver
+            .drive(tableView.rx.items(cellIdentifier: SettingListCell.reuseIdentifier, cellType: SettingListCell.self)) { index, item, cell  in
+                switch item {
+                case .normal(let title):
+                    cell.setupCell(title: title, status: nil)
+                case let .withStatus(title, status):
+                    cell.setupCell(title: title, status: status)
+                }
+        }
+        .disposed(by: disposeBag)
     }
 }

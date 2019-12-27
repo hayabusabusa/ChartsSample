@@ -33,6 +33,8 @@
 		A40FDCA023B5923F00C91E46 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40FDC9F23B5923E00C91E46 /* SettingViewController.storyboard */; };
 		A40FDCA423B5973200C91E46 /* SettingListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDCA223B5973200C91E46 /* SettingListCell.swift */; };
 		A40FDCA523B5973200C91E46 /* SettingListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A40FDCA323B5973200C91E46 /* SettingListCell.xib */; };
+		A40FDCA823B59FB500C91E46 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDCA723B59FB500C91E46 /* SettingViewModel.swift */; };
+		A40FDCAB23B5A06000C91E46 /* SettingCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDCAA23B5A06000C91E46 /* SettingCellType.swift */; };
 		A417208323B061FF0009C10D /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208223B061FF0009C10D /* PieChartViewController.swift */; };
 		A417208523B062190009C10D /* PieChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A417208423B062190009C10D /* PieChartViewController.storyboard */; };
 		A417208923B069290009C10D /* RxAnimated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208623B069290009C10D /* RxAnimated.swift */; };
@@ -96,6 +98,8 @@
 		A40FDC9F23B5923E00C91E46 /* SettingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingViewController.storyboard; sourceTree = "<group>"; };
 		A40FDCA223B5973200C91E46 /* SettingListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListCell.swift; sourceTree = "<group>"; };
 		A40FDCA323B5973200C91E46 /* SettingListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingListCell.xib; sourceTree = "<group>"; };
+		A40FDCA723B59FB500C91E46 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		A40FDCAA23B5A06000C91E46 /* SettingCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCellType.swift; sourceTree = "<group>"; };
 		A417208223B061FF0009C10D /* PieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
 		A417208423B062190009C10D /* PieChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PieChartViewController.storyboard; sourceTree = "<group>"; };
 		A417208623B069290009C10D /* RxAnimated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxAnimated.swift; sourceTree = "<group>"; };
@@ -314,10 +318,19 @@
 		A40FDCA123B596FF00C91E46 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				A40FDCAA23B5A06000C91E46 /* SettingCellType.swift */,
 				A40FDCA223B5973200C91E46 /* SettingListCell.swift */,
 				A40FDCA323B5973200C91E46 /* SettingListCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		A40FDCA623B59F6E00C91E46 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				A40FDCA723B59FB500C91E46 /* SettingViewModel.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		A417208123B061EC0009C10D /* PieChart */ = {
@@ -355,6 +368,7 @@
 				A42E5BE623B34C58002F58C0 /* Walkthrough */,
 				A42E5BE923B3520D002F58C0 /* Dashboard */,
 				716C71DB23B3939000A78E9D /* Timer */,
+				A40FDCA623B59F6E00C91E46 /* Setting */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -589,6 +603,7 @@
 				716C71E523B4722000A78E9D /* ScaledButton.swift in Sources */,
 				A417209723B07C0F0009C10D /* LineChartViewController.swift in Sources */,
 				A42E5BD823B33B68002F58C0 /* LocalSettings.swift in Sources */,
+				A40FDCAB23B5A06000C91E46 /* SettingCellType.swift in Sources */,
 				716C71C323ADCB4D00A78E9D /* UIViewController+Extension.swift in Sources */,
 				A417208A23B069290009C10D /* RxAnimated+animations.swift in Sources */,
 				A42E5BF823B35970002F58C0 /* TimerCache.swift in Sources */,
@@ -600,6 +615,7 @@
 				A42E5BF023B35394002F58C0 /* TimerViewController.swift in Sources */,
 				A42E5BDF23B34548002F58C0 /* UIViewController+Rx.swift in Sources */,
 				A42E5BE323B34658002F58C0 /* RootViewModel.swift in Sources */,
+				A40FDCA823B59FB500C91E46 /* SettingViewModel.swift in Sources */,
 				716C71D323B26FBB00A78E9D /* DashboardViewController.swift in Sources */,
 				716C719323ADBB8A00A78E9D /* AppDelegate.swift in Sources */,
 				A48E6E1A23B202710043332F /* ThirdStepViewController.swift in Sources */,
