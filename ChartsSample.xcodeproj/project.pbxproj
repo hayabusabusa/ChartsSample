@@ -29,6 +29,8 @@
 		716C71DA23B273D800A78E9D /* TimelineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716C71D923B273D800A78E9D /* TimelineViewController.storyboard */; };
 		716C71DD23B3948700A78E9D /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71DC23B3948700A78E9D /* TimerViewModel.swift */; };
 		716C71E523B4722000A78E9D /* ScaledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71E423B4722000A78E9D /* ScaledButton.swift */; };
+		A40FDC9E23B5918000C91E46 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDC9D23B5918000C91E46 /* SettingViewController.swift */; };
+		A40FDCA023B5923F00C91E46 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40FDC9F23B5923E00C91E46 /* SettingViewController.storyboard */; };
 		A417208323B061FF0009C10D /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208223B061FF0009C10D /* PieChartViewController.swift */; };
 		A417208523B062190009C10D /* PieChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A417208423B062190009C10D /* PieChartViewController.storyboard */; };
 		A417208923B069290009C10D /* RxAnimated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208623B069290009C10D /* RxAnimated.swift */; };
@@ -88,6 +90,8 @@
 		716C71D923B273D800A78E9D /* TimelineViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimelineViewController.storyboard; sourceTree = "<group>"; };
 		716C71DC23B3948700A78E9D /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		716C71E423B4722000A78E9D /* ScaledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledButton.swift; sourceTree = "<group>"; };
+		A40FDC9D23B5918000C91E46 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		A40FDC9F23B5923E00C91E46 /* SettingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingViewController.storyboard; sourceTree = "<group>"; };
 		A417208223B061FF0009C10D /* PieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
 		A417208423B062190009C10D /* PieChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PieChartViewController.storyboard; sourceTree = "<group>"; };
 		A417208623B069290009C10D /* RxAnimated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxAnimated.swift; sourceTree = "<group>"; };
@@ -190,6 +194,7 @@
 				716C71D123B26FA900A78E9D /* Dashboard */,
 				716C71D623B272A200A78E9D /* Timeline */,
 				A42E5BEC23B3531F002F58C0 /* Timer */,
+				A40FDC9C23B5916900C91E46 /* Setting */,
 				716C71C423ADCF0400A78E9D /* Charts */,
 				A48E6E0623B1B57F0043332F /* Common */,
 			);
@@ -290,6 +295,15 @@
 			children = (
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		A40FDC9C23B5916900C91E46 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				A40FDC9D23B5918000C91E46 /* SettingViewController.swift */,
+				A40FDC9F23B5923E00C91E46 /* SettingViewController.storyboard */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		A417208123B061EC0009C10D /* PieChart */ = {
@@ -516,6 +530,7 @@
 				716C71D023AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard in Resources */,
 				A48E6E0123B1AD760043332F /* WalkthroughViewController.storyboard in Resources */,
 				716C719F23ADBB9100A78E9D /* LaunchScreen.storyboard in Resources */,
+				A40FDCA023B5923F00C91E46 /* SettingViewController.storyboard in Resources */,
 				716C71D523B26FE100A78E9D /* DashboardViewController.storyboard in Resources */,
 				716C71C923ADD17200A78E9D /* BarChartViewController.storyboard in Resources */,
 				716C71DA23B273D800A78E9D /* TimelineViewController.storyboard in Resources */,
@@ -584,6 +599,7 @@
 				A42E5BE823B34C70002F58C0 /* WalkthroughViewModel.swift in Sources */,
 				A48E6E0C23B1B59D0043332F /* ContainerView.swift in Sources */,
 				A42E5BEB23B35224002F58C0 /* DashboardViewModel.swift in Sources */,
+				A40FDC9E23B5918000C91E46 /* SettingViewController.swift in Sources */,
 				A48E6E0B23B1B59D0043332F /* RoundedButton.swift in Sources */,
 				A48E6E0D23B1B59D0043332F /* OutlinedButton.swift in Sources */,
 				716C71DD23B3948700A78E9D /* TimerViewModel.swift in Sources */,

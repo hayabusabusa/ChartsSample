@@ -40,7 +40,7 @@ extension TabBarController {
     }
     
     private func setupTabBar() {
-        viewControllers = [TabBarItemType.dashboard, TabBarItemType.timeline]
+        viewControllers = [TabBarItemType.dashboard, TabBarItemType.timeline, .setting]
             .map { NavigationController(rootViewController: $0.viewController) }
     }
 }

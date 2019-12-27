@@ -16,6 +16,7 @@ enum Storyboard: String {
     case DashboardViewController
     case TimelineViewController
     case TimerViewController
+    case SettingViewController
     // Charts
     case BarChartViewController
     case HorizontalBarChartViewController
