@@ -31,6 +31,8 @@
 		716C71E523B4722000A78E9D /* ScaledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71E423B4722000A78E9D /* ScaledButton.swift */; };
 		A40FDC9E23B5918000C91E46 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDC9D23B5918000C91E46 /* SettingViewController.swift */; };
 		A40FDCA023B5923F00C91E46 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40FDC9F23B5923E00C91E46 /* SettingViewController.storyboard */; };
+		A40FDCA423B5973200C91E46 /* SettingListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDCA223B5973200C91E46 /* SettingListCell.swift */; };
+		A40FDCA523B5973200C91E46 /* SettingListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A40FDCA323B5973200C91E46 /* SettingListCell.xib */; };
 		A417208323B061FF0009C10D /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208223B061FF0009C10D /* PieChartViewController.swift */; };
 		A417208523B062190009C10D /* PieChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A417208423B062190009C10D /* PieChartViewController.storyboard */; };
 		A417208923B069290009C10D /* RxAnimated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208623B069290009C10D /* RxAnimated.swift */; };
@@ -92,6 +94,8 @@
 		716C71E423B4722000A78E9D /* ScaledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledButton.swift; sourceTree = "<group>"; };
 		A40FDC9D23B5918000C91E46 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A40FDC9F23B5923E00C91E46 /* SettingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingViewController.storyboard; sourceTree = "<group>"; };
+		A40FDCA223B5973200C91E46 /* SettingListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListCell.swift; sourceTree = "<group>"; };
+		A40FDCA323B5973200C91E46 /* SettingListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingListCell.xib; sourceTree = "<group>"; };
 		A417208223B061FF0009C10D /* PieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
 		A417208423B062190009C10D /* PieChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PieChartViewController.storyboard; sourceTree = "<group>"; };
 		A417208623B069290009C10D /* RxAnimated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxAnimated.swift; sourceTree = "<group>"; };
@@ -302,8 +306,18 @@
 			children = (
 				A40FDC9D23B5918000C91E46 /* SettingViewController.swift */,
 				A40FDC9F23B5923E00C91E46 /* SettingViewController.storyboard */,
+				A40FDCA123B596FF00C91E46 /* Cell */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		A40FDCA123B596FF00C91E46 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A40FDCA223B5973200C91E46 /* SettingListCell.swift */,
+				A40FDCA323B5973200C91E46 /* SettingListCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		A417208123B061EC0009C10D /* PieChart */ = {
@@ -526,6 +540,7 @@
 				A42E5BF223B353AD002F58C0 /* TimerViewController.storyboard in Resources */,
 				A417209923B07D790009C10D /* LineChartViewController.storyboard in Resources */,
 				A48E6E1F23B2079E0043332F /* TabBarController.storyboard in Resources */,
+				A40FDCA523B5973200C91E46 /* SettingListCell.xib in Resources */,
 				A42E5BDD23B34393002F58C0 /* RootViewController.storyboard in Resources */,
 				716C71D023AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard in Resources */,
 				A48E6E0123B1AD760043332F /* WalkthroughViewController.storyboard in Resources */,
@@ -596,6 +611,7 @@
 				A48E6DFF23B1AD3E0043332F /* WalkthroughViewController.swift in Sources */,
 				A417208323B061FF0009C10D /* PieChartViewController.swift in Sources */,
 				716C719523ADBB8A00A78E9D /* SceneDelegate.swift in Sources */,
+				A40FDCA423B5973200C91E46 /* SettingListCell.swift in Sources */,
 				A42E5BE823B34C70002F58C0 /* WalkthroughViewModel.swift in Sources */,
 				A48E6E0C23B1B59D0043332F /* ContainerView.swift in Sources */,
 				A42E5BEB23B35224002F58C0 /* DashboardViewModel.swift in Sources */,

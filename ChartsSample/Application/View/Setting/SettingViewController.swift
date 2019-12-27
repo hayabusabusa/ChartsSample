@@ -12,6 +12,8 @@ final class SettingViewController: UIViewController {
     
     // MARK: IBOutlet
     
+    @IBOutlet weak var tableView: UITableView!
+    
     // MARK: Properties
     
     // MARK: Lifecycle
@@ -23,6 +25,7 @@ final class SettingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigation()
+        setupTableView()
     }
 }
 
@@ -30,5 +33,10 @@ extension SettingViewController {
     
     private func setupNavigation() {
         navigationItem.title = "設定"
+    }
+    
+    private func setupTableView() {
+        tableView.tableFooterView = UIView()
+        tableView.register(SettingListCell.nib, forCellReuseIdentifier: SettingListCell.reuseIdentifier)
     }
 }

@@ -14,13 +14,28 @@
                     <view key="view" contentMode="scaleToFill" id="jlB-Lq-a54">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="D8L-LP-QzX">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="D8L-LP-QzX" firstAttribute="top" secondItem="kE5-hN-in4" secondAttribute="top" id="5bs-Wj-h3u"/>
+                            <constraint firstItem="D8L-LP-QzX" firstAttribute="trailing" secondItem="kE5-hN-in4" secondAttribute="trailing" id="6dw-pN-lbg"/>
+                            <constraint firstAttribute="bottom" secondItem="D8L-LP-QzX" secondAttribute="bottom" id="W80-uD-qCl"/>
+                            <constraint firstItem="D8L-LP-QzX" firstAttribute="leading" secondItem="kE5-hN-in4" secondAttribute="leading" id="kul-SC-RLP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kE5-hN-in4"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="D8L-LP-QzX" id="Uji-e6-Sca"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oXi-cp-S8h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-132" y="-179"/>
+            <point key="canvasLocation" x="-133.33333333333334" y="-179.46428571428569"/>
         </scene>
     </scenes>
 </document>
