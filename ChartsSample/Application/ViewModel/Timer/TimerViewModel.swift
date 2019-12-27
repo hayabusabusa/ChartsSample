@@ -19,6 +19,7 @@ final class TimerViewModel {
     // MARK: Propreties
     
     private let timerCache: TimerCache?
+    
     private let disposeBag = DisposeBag()
     
     // MARK: Initializer
@@ -54,7 +55,9 @@ extension TimerViewModel: ViewModelType {
         // NOTE: Load timer cache and remove old cache.
         if let timerCache = timerCache {
             isValidRelay.accept(timerCache.isValid)
-            timerRelay.accept(timerCache.rawTime)
+            timerRelay.accept(timerCache.isValid
+                ? timerCache.rawTime + timerCache.difference
+                : timerCache.rawTime)
             LocalSettings.removeTimerCache()
         }
         
@@ -79,7 +82,7 @@ extension TimerViewModel: ViewModelType {
                 // Check timer and save cache
                 // If timer was started or counted
                 if isValidRelay.value == true || timerRelay.value > 0 {
-                    let timerCache = TimerCache(isValid: isValidRelay.value, rawTime: timerRelay.value)
+                    let timerCache = TimerCache(isValid: isValidRelay.value, enterDate: Date(), rawTime: timerRelay.value)
                     LocalSettings.saveTimerCache(timerCache)
                     print("[TIMER] 💾 Save timer cache. \(timerCache)")
                 }

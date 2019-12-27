@@ -10,5 +10,10 @@ import Foundation
 
 struct TimerCache: Codable {
     let isValid: Bool
+    let enterDate: Date
     let rawTime: Int
+    
+    var difference: Int {
+        return Int(Date().timeIntervalSince(enterDate))
+    }
 }
