@@ -14,11 +14,18 @@ final class SettingViewModel {
     
     // MARK: Dependency
     
+    typealias Dependency = MockStudyProvider
+    
     // MARK: Propreties
     
+    private let mockStudyProvider: MockStudyProvider
     private let disposeBag = DisposeBag()
     
     // MARK: Initializer
+    
+    init(dependency: Dependency = MockStudyProviderImpl.shared) {
+        self.mockStudyProvider = dependency
+    }
 }
 
 extension SettingViewModel: ViewModelType {
@@ -39,14 +46,21 @@ extension SettingViewModel: ViewModelType {
         let settingsRelay: BehaviorRelay<[SettingSectionType]> = .init(value: [])
         
         settingsRelay.accept([
-            .aboutTestData(title: "テストデータについて", rows: [.modifyStudies(title: "勉強データを変更", status: nil)]),
+            .aboutTestData(title: "テストデータについて", rows: [.modifyStudies(title: "勉強データを変更", status: nil), .modifyTimeline(title: "タイムラインのデータを変更", status: nil)]),
             .aboutApp(title: "アプリについて", rows: [.about(title: "このアプリについて", status: nil), .version(title: "バージョン", status: "1.0.0")]),
             .logout(title: nil, rows: [.logout(title: "ログアウト", status: nil)])
         ])
         
         input.selectedRow
             .map { settingsRelay.value[$0.section].rows[$0.row] }
-            .drive(onNext: { print($0) })
+            .drive(onNext: { [weak self] row in
+                switch row {
+                case .modifyStudies:
+                    self?.mockStudyProvider.acceptRandomMock(number: 10)
+                default:
+                    break
+                }
+            })
             .disposed(by: disposeBag)
         
         return Output(settingsDriver: settingsRelay.asDriver())

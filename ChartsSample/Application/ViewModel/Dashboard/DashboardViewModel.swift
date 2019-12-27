@@ -14,11 +14,18 @@ final class DashboardViewModel {
     
     // MARK: Dependency
     
+    typealias Dependency = MockStudyProvider
+    
     // MARK: Propreties
     
+    private let mockStudyProvider: MockStudyProvider
     private let disposeBag = DisposeBag()
     
     // MARK: Initializer
+    
+    init(dependency: Dependency = MockStudyProviderImpl.shared) {
+        self.mockStudyProvider = dependency
+    }
 }
 
 extension DashboardViewModel: ViewModelType {
@@ -30,12 +37,14 @@ extension DashboardViewModel: ViewModelType {
     }
     
     struct Output {
+        let mockStudiesDriver: Driver<[Study]>
         let presentTimer: Driver<Void>
     }
     
     // MARK: Transform I/O
     
     func transform(input: DashboardViewModel.Input) -> DashboardViewModel.Output {
-        return Output(presentTimer: input.plusButtonDidTap)
+        return Output(mockStudiesDriver: mockStudyProvider.studiesRelay.asDriver(),
+                      presentTimer: input.plusButtonDidTap)
     }
 }

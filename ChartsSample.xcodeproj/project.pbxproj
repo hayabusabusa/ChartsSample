@@ -37,6 +37,7 @@
 		A40FDCB223B5A85900C91E46 /* Study.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDCB123B5A85900C91E46 /* Study.swift */; };
 		A40FDCB523B5BCA000C91E46 /* SettingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDCB423B5BCA000C91E46 /* SettingDataSource.swift */; };
 		A40FDCB723B5BCF800C91E46 /* SettingSectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDCB623B5BCF800C91E46 /* SettingSectionType.swift */; };
+		A40FDCBB23B5D8A400C91E46 /* MockStudyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDCBA23B5D8A400C91E46 /* MockStudyProvider.swift */; };
 		A417208323B061FF0009C10D /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208223B061FF0009C10D /* PieChartViewController.swift */; };
 		A417208523B062190009C10D /* PieChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A417208423B062190009C10D /* PieChartViewController.storyboard */; };
 		A417208923B069290009C10D /* RxAnimated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208623B069290009C10D /* RxAnimated.swift */; };
@@ -104,6 +105,7 @@
 		A40FDCB123B5A85900C91E46 /* Study.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Study.swift; sourceTree = "<group>"; };
 		A40FDCB423B5BCA000C91E46 /* SettingDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingDataSource.swift; sourceTree = "<group>"; };
 		A40FDCB623B5BCF800C91E46 /* SettingSectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingSectionType.swift; sourceTree = "<group>"; };
+		A40FDCBA23B5D8A400C91E46 /* MockStudyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MockStudyProvider.swift; path = ChartsSample/Application/View/Setting/DataSource/MockStudyProvider.swift; sourceTree = SOURCE_ROOT; };
 		A417208223B061FF0009C10D /* PieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
 		A417208423B062190009C10D /* PieChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PieChartViewController.storyboard; sourceTree = "<group>"; };
 		A417208623B069290009C10D /* RxAnimated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxAnimated.swift; sourceTree = "<group>"; };
@@ -347,6 +349,22 @@
 			path = DataSource;
 			sourceTree = "<group>";
 		};
+		A40FDCB823B5D87E00C91E46 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				A40FDCB923B5D88900C91E46 /* MockStudy */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		A40FDCB923B5D88900C91E46 /* MockStudy */ = {
+			isa = PBXGroup;
+			children = (
+				A40FDCBA23B5D8A400C91E46 /* MockStudyProvider.swift */,
+			);
+			path = MockStudy;
+			sourceTree = "<group>";
+		};
 		A417208123B061EC0009C10D /* PieChart */ = {
 			isa = PBXGroup;
 			children = (
@@ -423,6 +441,7 @@
 		A42E5BF323B3591F002F58C0 /* Infrastracture */ = {
 			isa = PBXGroup;
 			children = (
+				A40FDCB823B5D87E00C91E46 /* Provider */,
 				A42E5BF523B35953002F58C0 /* Entity */,
 			);
 			path = Infrastracture;
@@ -647,6 +666,7 @@
 				A48E6E0C23B1B59D0043332F /* ContainerView.swift in Sources */,
 				A42E5BEB23B35224002F58C0 /* DashboardViewModel.swift in Sources */,
 				A40FDC9E23B5918000C91E46 /* SettingViewController.swift in Sources */,
+				A40FDCBB23B5D8A400C91E46 /* MockStudyProvider.swift in Sources */,
 				A48E6E0B23B1B59D0043332F /* RoundedButton.swift in Sources */,
 				A40FDCB223B5A85900C91E46 /* Study.swift in Sources */,
 				A48E6E0D23B1B59D0043332F /* OutlinedButton.swift in Sources */,

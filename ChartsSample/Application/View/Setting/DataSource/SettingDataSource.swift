@@ -39,6 +39,10 @@ class SettingDataSource: NSObject, UITableViewDataSource, RxTableViewDataSourceT
             let cell = tableView.dequeueReusableCell(withIdentifier: SettingListCell.reuseIdentifier, for: indexPath) as! SettingListCell
             cell.setupCell(title: title, status: status)
             return cell
+        case let .modifyTimeline(title, status):
+            let cell = tableView.dequeueReusableCell(withIdentifier: SettingListCell.reuseIdentifier, for: indexPath) as! SettingListCell
+            cell.setupCell(title: title, status: status)
+            return cell
         case let .about(title, status):
             let cell = tableView.dequeueReusableCell(withIdentifier: SettingListCell.reuseIdentifier, for: indexPath) as! SettingListCell
             cell.setupCell(title: title, status: status)

@@ -59,6 +59,9 @@ extension DashboardViewController {
         let input = DashboardViewModel.Input(plusButtonDidTap: plusButton.rx.tap.asDriver())
         let output = viewModel.transform(input: input)
         
+        output.mockStudiesDriver
+            .drive(onNext: { print($0) })
+            .disposed(by: disposeBag)
         output.presentTimer
             .drive(onNext: { [weak self] in self?.presentTimer() })
             .disposed(by: disposeBag)

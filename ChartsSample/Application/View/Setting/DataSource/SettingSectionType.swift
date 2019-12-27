@@ -15,6 +15,7 @@ enum SettingSectionType {
     
     enum SettingCellType {
         case modifyStudies(title: String, status: String?)
+        case modifyTimeline(title: String, status: String?)
         case about(title: String, status: String?)
         case version(title: String, status: String?)
         case logout(title: String, status: String?)
