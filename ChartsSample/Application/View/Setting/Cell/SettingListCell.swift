@@ -35,9 +35,14 @@ class SettingListCell: UITableViewCell {
     
     // MARK: Setup
     
-    func setupCell(title: String?, status: String?) {
+    func setupCell(title: String?,
+                   status: String?,
+                   accessoryType: UITableViewCell.AccessoryType = .disclosureIndicator,
+                   selectionStyle: UITableViewCell.SelectionStyle = .default) {
         titleLabel.text = title
         statusLabel.text = status
         statusLabel.isHidden = status == nil
+        self.accessoryType = accessoryType
+        self.selectionStyle = selectionStyle
     }
 }

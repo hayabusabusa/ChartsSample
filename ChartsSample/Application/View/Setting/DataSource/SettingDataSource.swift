@@ -22,6 +22,10 @@ class SettingDataSource: NSObject, UITableViewDataSource, RxTableViewDataSourceT
         switch _itemModels[section] {
         case let .aboutApp(title, _):
             return title
+        case let .aboutTestData(title, _):
+            return title
+        case let .logout(title, _):
+            return title
         }
     }
     
@@ -31,13 +35,21 @@ class SettingDataSource: NSObject, UITableViewDataSource, RxTableViewDataSourceT
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch _itemModels[indexPath.section].rows[indexPath.row] {
-        case .normal(let title):
-            let cell = tableView.dequeueReusableCell(withIdentifier: SettingListCell.reuseIdentifier, for: indexPath) as! SettingListCell
-            cell.setupCell(title: title, status: nil)
-            return cell
-        case let .withStatus(title, status):
+        case let .modifyStudies(title, status):
             let cell = tableView.dequeueReusableCell(withIdentifier: SettingListCell.reuseIdentifier, for: indexPath) as! SettingListCell
             cell.setupCell(title: title, status: status)
+            return cell
+        case let .about(title, status):
+            let cell = tableView.dequeueReusableCell(withIdentifier: SettingListCell.reuseIdentifier, for: indexPath) as! SettingListCell
+            cell.setupCell(title: title, status: status)
+            return cell
+        case let .version(title, status):
+            let cell = tableView.dequeueReusableCell(withIdentifier: SettingListCell.reuseIdentifier, for: indexPath) as! SettingListCell
+            cell.setupCell(title: title, status: status, accessoryType: .none, selectionStyle: .none)
+            return cell
+        case let .logout(title, status):
+            let cell = tableView.dequeueReusableCell(withIdentifier: SettingListCell.reuseIdentifier, for: indexPath) as! SettingListCell
+            cell.setupCell(title: title, status: status, accessoryType: .none)
             return cell
         }
     }

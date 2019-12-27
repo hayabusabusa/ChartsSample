@@ -39,7 +39,9 @@ extension SettingViewModel: ViewModelType {
         let settingsRelay: BehaviorRelay<[SettingSectionType]> = .init(value: [])
         
         settingsRelay.accept([
-            .aboutApp(title: "アプリについて", rows: [.normal(title: "設定"), .withStatus(title: "設定", status: "未設定")])
+            .aboutTestData(title: "テストデータについて", rows: [.modifyStudies(title: "勉強データを変更", status: nil)]),
+            .aboutApp(title: "アプリについて", rows: [.about(title: "このアプリについて", status: nil), .version(title: "バージョン", status: "1.0.0")]),
+            .logout(title: nil, rows: [.logout(title: "ログアウト", status: nil)])
         ])
         
         input.selectedRow
