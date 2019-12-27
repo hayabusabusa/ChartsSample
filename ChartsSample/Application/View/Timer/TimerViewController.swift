@@ -25,8 +25,9 @@ final class TimerViewController: BaseViewController {
     
     // MARK: Lifecycle
     
-    static func instantiate() -> TimerViewController {
+    static func configureWith(timerCache: TimerCache?) -> TimerViewController {
         let vc = Storyboard.TimerViewController.instantiate(TimerViewController.self)
+        vc.viewModel = TimerViewModel(dependency: timerCache)
         return vc
     }
     
@@ -58,8 +59,6 @@ extension TimerViewController {
 extension TimerViewController {
     
     private func bindViewModel() {
-        viewModel = TimerViewModel()
-        
         let leftBarButtonItem = navigationItem.leftBarButtonItem!
         let notification =  NotificationCenter.default.rx.notification(UIApplication.didEnterBackgroundNotification).map { _ in () }
         

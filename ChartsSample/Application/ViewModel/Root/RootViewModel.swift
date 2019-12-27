@@ -32,6 +32,7 @@ extension RootViewModel: ViewModelType {
     struct Output {
         let replaceRootToWalkthrough: Driver<Void>
         let replaceRootToTabBar: Driver<Void>
+        let timerCacheDriver: Driver<TimerCache>
     }
     
     // MARK: Transform I/O
@@ -39,22 +40,26 @@ extension RootViewModel: ViewModelType {
     func transform(input: RootViewModel.Input) -> RootViewModel.Output {
         let replaceRootToWalkthroughRelay: PublishRelay<Void> = .init()
         let replaceRootToTabBarRelay: PublishRelay<Void> = .init()
+        let timerCacheRelay: PublishRelay<TimerCache> = .init()
         
         input.viewDidAppear
             .emit(onNext: {
                 switch LocalSettings.getUserStatus() {
                 case .initial:
                     replaceRootToWalkthroughRelay.accept(())
-                case .loggedIn:
-                    replaceRootToTabBarRelay.accept(())
-                case .loggedOut:
-                    // TODO: Login
-                    replaceRootToTabBarRelay.accept(())
+                case .loggedIn, .loggedOut:
+                    // Check timer cache
+                    if let timerCache = LocalSettings.getTimerCache() {
+                        timerCacheRelay.accept(timerCache)
+                    } else {
+                        replaceRootToTabBarRelay.accept(())
+                    }
                 }
             })
             .disposed(by: disposeBag)
         
         return Output(replaceRootToWalkthrough: replaceRootToWalkthroughRelay.asDriver(onErrorDriveWith: .empty()),
-                      replaceRootToTabBar: replaceRootToTabBarRelay.asDriver(onErrorDriveWith: .empty()))
+                      replaceRootToTabBar: replaceRootToTabBarRelay.asDriver(onErrorDriveWith: .empty()),
+                      timerCacheDriver: timerCacheRelay.asDriver(onErrorDriveWith: .empty()))
     }
 }

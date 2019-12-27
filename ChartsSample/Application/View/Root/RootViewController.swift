@@ -45,6 +45,9 @@ extension RootViewController {
         output.replaceRootToTabBar
             .drive(onNext: { [weak self] in self?.replaceRootToTabBar() })
             .disposed(by: disposeBag)
+        output.timerCacheDriver
+            .drive(onNext: { [weak self] in self?.replaceRootAndPresentTimer(timerCache: $0) })
+            .disposed(by: disposeBag)
     }
 }
 
@@ -60,5 +63,13 @@ extension RootViewController {
     private func replaceRootToTabBar() {
         let vc = TabBarController.instantiate()
         replaceRoot(to: vc)
+    }
+    
+    private func replaceRootAndPresentTimer(timerCache: TimerCache) {
+        let vc = NavigationController(rootViewController: TimerViewController.configureWith(timerCache: timerCache))
+        vc.modalPresentationStyle = .fullScreen
+        let tabBar = TabBarController.instantiate()
+        replaceRoot(to: tabBar)
+        tabBar.present(vc, animated: true, completion: nil)
     }
 }

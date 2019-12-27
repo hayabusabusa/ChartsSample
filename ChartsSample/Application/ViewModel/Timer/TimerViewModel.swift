@@ -14,11 +14,18 @@ final class TimerViewModel {
     
     // MARK: Dependency
     
+    typealias Dependeny = TimerCache?
+    
     // MARK: Propreties
     
+    private let timerCache: TimerCache?
     private let disposeBag = DisposeBag()
     
     // MARK: Initializer
+    
+    init(dependency: Dependeny) {
+        self.timerCache = dependency
+    }
 }
 
 extension TimerViewModel: ViewModelType {
@@ -43,6 +50,13 @@ extension TimerViewModel: ViewModelType {
     func transform(input: TimerViewModel.Input) -> TimerViewModel.Output {
         let isValidRelay: BehaviorRelay<Bool> = .init(value: false)
         let timerRelay: BehaviorRelay<Int> = .init(value: 0)
+        
+        // NOTE: Load timer cache and remove old cache.
+        if let timerCache = timerCache {
+            isValidRelay.accept(timerCache.isValid)
+            timerRelay.accept(timerCache.rawTime)
+            LocalSettings.removeTimerCache()
+        }
         
         isValidRelay
             .distinctUntilChanged()
