@@ -26,22 +26,26 @@ extension SettingViewModel: ViewModelType {
     // MARK: I/O
     
     struct Input {
-        
+        let selectedRow: Driver<IndexPath>
     }
     
     struct Output {
-        let settingsDriver: Driver<[SettingCellType]>
+        let settingsDriver: Driver<[SettingSectionType]>
     }
     
     // MARK: Transform I/O
     
     func transform(input: SettingViewModel.Input) -> SettingViewModel.Output {
-        let settingsRelay: BehaviorRelay<[SettingCellType]> = .init(value: [])
+        let settingsRelay: BehaviorRelay<[SettingSectionType]> = .init(value: [])
         
         settingsRelay.accept([
-            .normal(title: "設定1"),
-            .withStatus(title: "設定2", status: "未設定")
+            .aboutApp(title: "アプリについて", rows: [.normal(title: "設定"), .withStatus(title: "設定", status: "未設定")])
         ])
+        
+        input.selectedRow
+            .map { settingsRelay.value[$0.section].rows[$0.row] }
+            .drive(onNext: { print($0) })
+            .disposed(by: disposeBag)
         
         return Output(settingsDriver: settingsRelay.asDriver())
     }

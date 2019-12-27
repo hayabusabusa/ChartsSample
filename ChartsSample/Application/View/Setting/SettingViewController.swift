@@ -46,6 +46,9 @@ extension SettingViewController {
         tableView.tableFooterView = UIView()
         tableView.rowHeight = SettingListCell.rowHeight
         tableView.register(SettingListCell.nib, forCellReuseIdentifier: SettingListCell.reuseIdentifier)
+        tableView.rx.itemSelected.asSignal(onErrorSignalWith: .empty())
+            .emit(onNext: { [weak self] in self?.tableView.deselectRow(at: $0, animated: true) })
+            .disposed(by: disposeBag)
     }
 }
 
@@ -56,17 +59,12 @@ extension SettingViewController {
     private func bindViewModel() {
         viewModel = SettingViewModel()
         
-        let output = viewModel.transform(input: SettingViewModel.Input())
+        let dataSource = SettingDataSource()
+        let input = SettingViewModel.Input(selectedRow: tableView.rx.itemSelected.asDriver())
+        let output = viewModel.transform(input: input)
         
         output.settingsDriver
-            .drive(tableView.rx.items(cellIdentifier: SettingListCell.reuseIdentifier, cellType: SettingListCell.self)) { index, item, cell  in
-                switch item {
-                case .normal(let title):
-                    cell.setupCell(title: title, status: nil)
-                case let .withStatus(title, status):
-                    cell.setupCell(title: title, status: status)
-                }
-        }
-        .disposed(by: disposeBag)
+            .drive(tableView.rx.items(dataSource: dataSource))
+            .disposed(by: disposeBag)
     }
 }

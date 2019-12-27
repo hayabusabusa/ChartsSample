@@ -1,5 +1,5 @@
 //
-//  SettingCellType.swift
+//  Study.swift
 //  ChartsSample
 //
 //  Created by Yamada Shunya on 2019/12/27.
@@ -8,7 +8,8 @@
 
 import Foundation
 
-enum SettingCellType {
-    case normal(title: String)
-    case withStatus(title: String, status: String?)
+struct Study {
+    let title: String
+    let date: Date
+    let seconds: Int
 }
