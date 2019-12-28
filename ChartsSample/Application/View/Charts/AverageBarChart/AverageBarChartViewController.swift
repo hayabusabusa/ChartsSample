@@ -69,8 +69,15 @@ extension AverageBarChartViewController {
         
         output.studiesDriver
             .map { $0.reduce(0.0) { $0 + Double($1.seconds) / 3600 } / Double($0.count) }
-            .map { String(format: "%.2f時間", $0) }
-            .drive(averageLabel.rx.text)
+            .drive(onNext:  { [weak self] in
+                let limitLine = ChartLimitLine(limit: $0 * 3600)
+                limitLine.drawLabelEnabled = false
+                limitLine.lineColor = ColorPalette.firstDate
+                limitLine.lineDashLengths = [2]
+                self?.barChartView.leftAxis.removeAllLimitLines()
+                self?.barChartView.leftAxis.addLimitLine(limitLine)
+                self?.averageLabel.text = String(format: "%.2f時間", $0)
+            })
             .disposed(by: disposeBag)
         output.studiesDriver
             .map { $0.enumerated().map { BarChartDataEntry(x: Double($0.offset), y: Double($0.element.seconds)) } }
