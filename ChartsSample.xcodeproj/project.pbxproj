@@ -32,6 +32,9 @@
 		716C71EA23B6BE7600A78E9D /* AverageBarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71E923B6BE7600A78E9D /* AverageBarChartViewController.swift */; };
 		716C71EC23B6BF3D00A78E9D /* AverageBarChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716C71EB23B6BF3D00A78E9D /* AverageBarChartViewController.storyboard */; };
 		716C71EF23B6C0A500A78E9D /* AverageBarChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71EE23B6C0A500A78E9D /* AverageBarChartViewModel.swift */; };
+		71BDECC523B73E7200410D38 /* HBarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BDECC423B73E7200410D38 /* HBarChartViewController.swift */; };
+		71BDECC723B73F1E00410D38 /* HBarChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BDECC623B73F1E00410D38 /* HBarChartViewController.storyboard */; };
+		71C85E6323B7847D00440C63 /* HBarChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C85E6223B7847D00440C63 /* HBarChartViewModel.swift */; };
 		A40FDC9E23B5918000C91E46 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDC9D23B5918000C91E46 /* SettingViewController.swift */; };
 		A40FDCA023B5923F00C91E46 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40FDC9F23B5923E00C91E46 /* SettingViewController.storyboard */; };
 		A40FDCA423B5973200C91E46 /* SettingListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDCA223B5973200C91E46 /* SettingListCell.swift */; };
@@ -103,6 +106,9 @@
 		716C71E923B6BE7600A78E9D /* AverageBarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageBarChartViewController.swift; sourceTree = "<group>"; };
 		716C71EB23B6BF3D00A78E9D /* AverageBarChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AverageBarChartViewController.storyboard; sourceTree = "<group>"; };
 		716C71EE23B6C0A500A78E9D /* AverageBarChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageBarChartViewModel.swift; sourceTree = "<group>"; };
+		71BDECC423B73E7200410D38 /* HBarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBarChartViewController.swift; sourceTree = "<group>"; };
+		71BDECC623B73F1E00410D38 /* HBarChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HBarChartViewController.storyboard; sourceTree = "<group>"; };
+		71C85E6223B7847D00440C63 /* HBarChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBarChartViewModel.swift; sourceTree = "<group>"; };
 		A40FDC9D23B5918000C91E46 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A40FDC9F23B5923E00C91E46 /* SettingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingViewController.storyboard; sourceTree = "<group>"; };
 		A40FDCA223B5973200C91E46 /* SettingListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListCell.swift; sourceTree = "<group>"; };
@@ -259,6 +265,7 @@
 			children = (
 				716C71CA23ADD84D00A78E9D /* ChartType.swift */,
 				716C71E623B6BE0600A78E9D /* AverageBarChart */,
+				71BDECC323B73DC500410D38 /* HBarChart */,
 				716C71C523ADCF8500A78E9D /* BarChart */,
 				716C71CC23AFA9D400A78E9D /* HorizontalBarChart */,
 				A417209523B07BF90009C10D /* LineChart */,
@@ -324,8 +331,18 @@
 			isa = PBXGroup;
 			children = (
 				716C71EE23B6C0A500A78E9D /* AverageBarChartViewModel.swift */,
+				71C85E6223B7847D00440C63 /* HBarChartViewModel.swift */,
 			);
 			path = Charts;
+			sourceTree = "<group>";
+		};
+		71BDECC323B73DC500410D38 /* HBarChart */ = {
+			isa = PBXGroup;
+			children = (
+				71BDECC423B73E7200410D38 /* HBarChartViewController.swift */,
+				71BDECC623B73F1E00410D38 /* HBarChartViewController.storyboard */,
+			);
+			path = HBarChart;
 			sourceTree = "<group>";
 		};
 		A40FDC9C23B5916900C91E46 /* Setting */ = {
@@ -611,6 +628,7 @@
 				A417208523B062190009C10D /* PieChartViewController.storyboard in Resources */,
 				A42E5BF223B353AD002F58C0 /* TimerViewController.storyboard in Resources */,
 				A417209923B07D790009C10D /* LineChartViewController.storyboard in Resources */,
+				71BDECC723B73F1E00410D38 /* HBarChartViewController.storyboard in Resources */,
 				A48E6E1F23B2079E0043332F /* TabBarController.storyboard in Resources */,
 				716C71EC23B6BF3D00A78E9D /* AverageBarChartViewController.storyboard in Resources */,
 				A40FDCA523B5973200C91E46 /* SettingListCell.xib in Resources */,
@@ -680,12 +698,14 @@
 				A48E6E1A23B202710043332F /* ThirdStepViewController.swift in Sources */,
 				A48E6E1D23B207620043332F /* TabBarController.swift in Sources */,
 				716C71C723ADCF9300A78E9D /* BarChartViewController.swift in Sources */,
+				71BDECC523B73E7200410D38 /* HBarChartViewController.swift in Sources */,
 				A48E6E2123B208F00043332F /* TabBarItemType.swift in Sources */,
 				A48E6E1023B1C9250043332F /* FirstStepViewController.swift in Sources */,
 				716C71C023ADC18200A78E9D /* NavigationController.swift in Sources */,
 				A48E6DFF23B1AD3E0043332F /* WalkthroughViewController.swift in Sources */,
 				A417208323B061FF0009C10D /* PieChartViewController.swift in Sources */,
 				716C719523ADBB8A00A78E9D /* SceneDelegate.swift in Sources */,
+				71C85E6323B7847D00440C63 /* HBarChartViewModel.swift in Sources */,
 				A40FDCA423B5973200C91E46 /* SettingListCell.swift in Sources */,
 				A42E5BE823B34C70002F58C0 /* WalkthroughViewModel.swift in Sources */,
 				A40FDCB723B5BCF800C91E46 /* SettingSectionType.swift in Sources */,

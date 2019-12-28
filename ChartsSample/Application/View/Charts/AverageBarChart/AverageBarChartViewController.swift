@@ -70,7 +70,7 @@ extension AverageBarChartViewController {
         output.studiesDriver
             .map { $0.reduce(0.0) { $0 + Double($1.seconds) / 3600 } / Double($0.count) }
             .drive(onNext:  { [weak self] in
-                let limitLine = ChartLimitLine(limit: $0 * 3600)
+                let limitLine = ChartLimitLine(limit: $0)
                 limitLine.drawLabelEnabled = false
                 limitLine.lineColor = ColorPalette.firstDate
                 limitLine.lineDashLengths = [2]
@@ -80,7 +80,7 @@ extension AverageBarChartViewController {
             })
             .disposed(by: disposeBag)
         output.studiesDriver
-            .map { $0.enumerated().map { BarChartDataEntry(x: Double($0.offset), y: Double($0.element.seconds)) } }
+            .map { $0.enumerated().map { BarChartDataEntry(x: Double($0.offset), y: Double($0.element.seconds) / 3600) } }
             .map {
                 let dataSet = BarChartDataSet(entries: $0)
                 dataSet.drawValuesEnabled = false

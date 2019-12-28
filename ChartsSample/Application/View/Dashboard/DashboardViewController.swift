@@ -15,7 +15,7 @@ final class DashboardViewController: BaseViewController {
     // MARK: IBOutlet
     
     @IBOutlet private weak var averageContainer: UIView!
-    @IBOutlet weak var topContainer: UIView!
+    @IBOutlet private weak var topThreeContainer: UIView!
     @IBOutlet private weak var plusButton: UIButton!
     
     // MARK: Properties
@@ -59,6 +59,8 @@ extension DashboardViewController {
         
         let average = AverageBarChartViewController.configureWith(studiesDriver: output.mockStudiesDriver)
         embed(average, to: averageContainer)
+        let topThree = HBarChartViewController.configureWith(studiesDriver: output.mockStudiesDriver)
+        embed(topThree, to: topThreeContainer)
         
         output.presentTimer
             .drive(onNext: { [weak self] in self?.presentTimer() })
