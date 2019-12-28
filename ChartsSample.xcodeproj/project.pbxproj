@@ -29,6 +29,9 @@
 		716C71DA23B273D800A78E9D /* TimelineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716C71D923B273D800A78E9D /* TimelineViewController.storyboard */; };
 		716C71DD23B3948700A78E9D /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71DC23B3948700A78E9D /* TimerViewModel.swift */; };
 		716C71E523B4722000A78E9D /* ScaledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71E423B4722000A78E9D /* ScaledButton.swift */; };
+		716C71EA23B6BE7600A78E9D /* AverageBarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71E923B6BE7600A78E9D /* AverageBarChartViewController.swift */; };
+		716C71EC23B6BF3D00A78E9D /* AverageBarChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716C71EB23B6BF3D00A78E9D /* AverageBarChartViewController.storyboard */; };
+		716C71EF23B6C0A500A78E9D /* AverageBarChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71EE23B6C0A500A78E9D /* AverageBarChartViewModel.swift */; };
 		A40FDC9E23B5918000C91E46 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDC9D23B5918000C91E46 /* SettingViewController.swift */; };
 		A40FDCA023B5923F00C91E46 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40FDC9F23B5923E00C91E46 /* SettingViewController.storyboard */; };
 		A40FDCA423B5973200C91E46 /* SettingListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDCA223B5973200C91E46 /* SettingListCell.swift */; };
@@ -97,6 +100,9 @@
 		716C71D923B273D800A78E9D /* TimelineViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimelineViewController.storyboard; sourceTree = "<group>"; };
 		716C71DC23B3948700A78E9D /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		716C71E423B4722000A78E9D /* ScaledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledButton.swift; sourceTree = "<group>"; };
+		716C71E923B6BE7600A78E9D /* AverageBarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageBarChartViewController.swift; sourceTree = "<group>"; };
+		716C71EB23B6BF3D00A78E9D /* AverageBarChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AverageBarChartViewController.storyboard; sourceTree = "<group>"; };
+		716C71EE23B6C0A500A78E9D /* AverageBarChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageBarChartViewModel.swift; sourceTree = "<group>"; };
 		A40FDC9D23B5918000C91E46 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A40FDC9F23B5923E00C91E46 /* SettingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingViewController.storyboard; sourceTree = "<group>"; };
 		A40FDCA223B5973200C91E46 /* SettingListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListCell.swift; sourceTree = "<group>"; };
@@ -252,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				716C71CA23ADD84D00A78E9D /* ChartType.swift */,
+				716C71E623B6BE0600A78E9D /* AverageBarChart */,
 				716C71C523ADCF8500A78E9D /* BarChart */,
 				716C71CC23AFA9D400A78E9D /* HorizontalBarChart */,
 				A417209523B07BF90009C10D /* LineChart */,
@@ -302,6 +309,23 @@
 				716C71DC23B3948700A78E9D /* TimerViewModel.swift */,
 			);
 			path = Timer;
+			sourceTree = "<group>";
+		};
+		716C71E623B6BE0600A78E9D /* AverageBarChart */ = {
+			isa = PBXGroup;
+			children = (
+				716C71E923B6BE7600A78E9D /* AverageBarChartViewController.swift */,
+				716C71EB23B6BF3D00A78E9D /* AverageBarChartViewController.storyboard */,
+			);
+			path = AverageBarChart;
+			sourceTree = "<group>";
+		};
+		716C71ED23B6C08D00A78E9D /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				716C71EE23B6C0A500A78E9D /* AverageBarChartViewModel.swift */,
+			);
+			path = Charts;
 			sourceTree = "<group>";
 		};
 		A40FDC9C23B5916900C91E46 /* Setting */ = {
@@ -401,6 +425,7 @@
 				A42E5BE923B3520D002F58C0 /* Dashboard */,
 				716C71DB23B3939000A78E9D /* Timer */,
 				A40FDCA623B59F6E00C91E46 /* Setting */,
+				716C71ED23B6C08D00A78E9D /* Charts */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -587,6 +612,7 @@
 				A42E5BF223B353AD002F58C0 /* TimerViewController.storyboard in Resources */,
 				A417209923B07D790009C10D /* LineChartViewController.storyboard in Resources */,
 				A48E6E1F23B2079E0043332F /* TabBarController.storyboard in Resources */,
+				716C71EC23B6BF3D00A78E9D /* AverageBarChartViewController.storyboard in Resources */,
 				A40FDCA523B5973200C91E46 /* SettingListCell.xib in Resources */,
 				A42E5BDD23B34393002F58C0 /* RootViewController.storyboard in Resources */,
 				716C71D023AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard in Resources */,
@@ -665,6 +691,8 @@
 				A40FDCB723B5BCF800C91E46 /* SettingSectionType.swift in Sources */,
 				A48E6E0C23B1B59D0043332F /* ContainerView.swift in Sources */,
 				A42E5BEB23B35224002F58C0 /* DashboardViewModel.swift in Sources */,
+				716C71EF23B6C0A500A78E9D /* AverageBarChartViewModel.swift in Sources */,
+				716C71EA23B6BE7600A78E9D /* AverageBarChartViewController.swift in Sources */,
 				A40FDC9E23B5918000C91E46 /* SettingViewController.swift in Sources */,
 				A40FDCBB23B5D8A400C91E46 /* MockStudyProvider.swift in Sources */,
 				A48E6E0B23B1B59D0043332F /* RoundedButton.swift in Sources */,

@@ -56,7 +56,7 @@ extension SettingViewModel: ViewModelType {
             .drive(onNext: { [weak self] row in
                 switch row {
                 case .modifyStudies:
-                    self?.mockStudyProvider.acceptRandomMock(number: 10)
+                    self?.mockStudyProvider.acceptRandomMock(number: Int.random(in: 8 ..< 15))
                 default:
                     break
                 }

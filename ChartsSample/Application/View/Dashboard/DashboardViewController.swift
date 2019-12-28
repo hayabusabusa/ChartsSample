@@ -14,7 +14,7 @@ final class DashboardViewController: BaseViewController {
     
     // MARK: IBOutlet
     
-    @IBOutlet private weak var avarageChartView: BarChartView!
+    @IBOutlet private weak var averageContainer: UIView!
     @IBOutlet private weak var plusButton: UIButton!
     
     // MARK: Properties
@@ -31,7 +31,6 @@ final class DashboardViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigation()
-        setupChartView()
         bindViewModel()
     }
     
@@ -45,21 +44,6 @@ extension DashboardViewController {
     private func setupNavigation() {
         navigationItem.title = "ボード"
     }
-    
-    private func setupChartView() {
-        avarageChartView.scaleXEnabled = false
-        avarageChartView.scaleYEnabled = false
-        // X axis
-        avarageChartView.xAxis.enabled = false
-        avarageChartView.xAxis.labelPosition = .bottom
-        // Y right axis
-        avarageChartView.rightAxis.enabled = false
-        // Y left axis
-        avarageChartView.leftAxis.drawAxisLineEnabled = false
-        avarageChartView.leftAxis.gridColor = ColorPalette.soothingBreeze.withAlphaComponent(0.5)
-        avarageChartView.leftAxis.labelTextColor = ColorPalette.soothingBreeze
-        avarageChartView.leftAxis.gridLineDashLengths = [4]
-    }
 }
 
 // MARK: - ViewModel
@@ -72,20 +56,9 @@ extension DashboardViewController {
         let input = DashboardViewModel.Input(plusButtonDidTap: plusButton.rx.tap.asDriver())
         let output = viewModel.transform(input: input)
         
-        output.mockStudiesDriver
-            .map { $0.enumerated().map { BarChartDataEntry(x: Double($0.offset), y: Double($0.element.seconds)) } }
-            .map {
-                let dataSet = BarChartDataSet(entries: $0)
-                dataSet.drawValuesEnabled = false
-                dataSet.colors = [ColorPalette.shyMoment]
-                return dataSet
-            }
-            .map { BarChartData(dataSet: $0) }
-            .drive(onNext: { [weak self] data in
-                self?.avarageChartView.data = data
-                self?.avarageChartView.animate(yAxisDuration: 0.8, easingOption: .easeInOutElastic)
-            })
-            .disposed(by: disposeBag)
+        let average = AverageBarChartViewController.configureWith(studiesDriver: output.mockStudiesDriver)
+        embed(average, to: averageContainer)
+        
         output.presentTimer
             .drive(onNext: { [weak self] in self?.presentTimer() })
             .disposed(by: disposeBag)
