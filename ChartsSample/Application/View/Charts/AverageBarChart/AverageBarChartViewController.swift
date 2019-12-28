@@ -54,6 +54,7 @@ extension AverageBarChartViewController {
         barChartView.leftAxis.drawAxisLineEnabled = false
         barChartView.leftAxis.gridColor = ColorPalette.soothingBreeze.withAlphaComponent(0.8)
         barChartView.leftAxis.labelTextColor = ColorPalette.soothingBreeze
+        barChartView.leftAxis.labelCount = 3
         barChartView.leftAxis.gridLineDashLengths = [4]
     }
 }
@@ -76,7 +77,7 @@ extension AverageBarChartViewController {
             .map {
                 let dataSet = BarChartDataSet(entries: $0)
                 dataSet.drawValuesEnabled = false
-                dataSet.colors = [ColorPalette.shyMoment]
+                dataSet.colors = [ColorPalette.robinsEggBlue]
                 return dataSet
             }
             .map { BarChartData(dataSet: $0) }

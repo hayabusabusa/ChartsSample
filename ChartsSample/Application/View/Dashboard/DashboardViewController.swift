@@ -15,6 +15,7 @@ final class DashboardViewController: BaseViewController {
     // MARK: IBOutlet
     
     @IBOutlet private weak var averageContainer: UIView!
+    @IBOutlet weak var topContainer: UIView!
     @IBOutlet private weak var plusButton: UIButton!
     
     // MARK: Properties

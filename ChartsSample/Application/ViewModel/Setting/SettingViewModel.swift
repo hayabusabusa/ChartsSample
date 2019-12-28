@@ -57,6 +57,8 @@ extension SettingViewModel: ViewModelType {
                 switch row {
                 case .modifyStudies:
                     self?.mockStudyProvider.acceptRandomMock(number: Int.random(in: 8 ..< 15))
+                case .logout:
+                    LocalSettings.saveUserStatus(.initial)
                 default:
                     break
                 }

@@ -19,14 +19,21 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZwM-lT-tZ1">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="IYR-OL-8h2">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="IYR-OL-8h2">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="440"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2MB-Bj-bfh">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="240" id="0QX-tV-s63"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20M-oC-Xt2">
+                                                <rect key="frame" x="0.0" y="252" width="414" height="188"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="188" id="yhZ-Ra-eAc"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -71,6 +78,7 @@
                     <connections>
                         <outlet property="averageContainer" destination="2MB-Bj-bfh" id="grf-eb-qDq"/>
                         <outlet property="plusButton" destination="vQ1-wC-UL1" id="C4p-Qe-oMS"/>
+                        <outlet property="topContainer" destination="20M-oC-Xt2" id="e8F-51-sme"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EjC-B8-gsn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
