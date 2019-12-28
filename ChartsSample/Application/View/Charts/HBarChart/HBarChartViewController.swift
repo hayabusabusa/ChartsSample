@@ -89,7 +89,7 @@ extension HBarChartViewController {
             .map { BarChartData(dataSet: $0) }
             .drive(onNext: { [weak self] data in
                 self?.horizontalBarChartView.data = data
-                self?.horizontalBarChartView.animate(yAxisDuration: 1.8, easingOption: .easeInOutElastic)
+                self?.horizontalBarChartView.animate(yAxisDuration: 1.8, easingOption: .easeInOutExpo)
             })
             .disposed(by: disposeBag)
     }

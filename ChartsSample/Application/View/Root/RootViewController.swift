@@ -42,6 +42,9 @@ extension RootViewController {
         output.replaceRootToWalkthrough
             .drive(onNext: { [weak self] in self?.replaceRootToWalkthrough() })
             .disposed(by: disposeBag)
+        output.replaceRootToLogin
+            .drive(onNext: { [weak self] in self?.replaceRootToLogin() })
+            .disposed(by: disposeBag)
         output.replaceRootToTabBar
             .drive(onNext: { [weak self] in self?.replaceRootToTabBar() })
             .disposed(by: disposeBag)
@@ -57,6 +60,11 @@ extension RootViewController {
     
     private func replaceRootToWalkthrough() {
         let vc = WalkthroughViewController.instantiate()
+        replaceRoot(to: vc)
+    }
+    
+    private func replaceRootToLogin() {
+        let vc = LoginViewController.instantiate()
         replaceRoot(to: vc)
     }
     

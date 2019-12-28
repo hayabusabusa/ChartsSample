@@ -12,6 +12,7 @@ enum Storyboard: String {
     // Application
     case RootViewController
     case WalkthroughViewController
+    case LoginViewController
     case TabBarController
     case DashboardViewController
     case TimelineViewController
