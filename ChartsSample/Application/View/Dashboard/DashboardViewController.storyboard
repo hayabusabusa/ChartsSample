@@ -39,7 +39,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" name="Soothing breeze"/>
+                                <color key="backgroundColor" name="City lights"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="IYR-OL-8h2" secondAttribute="bottom" id="0VN-UZ-mkN"/>
                                     <constraint firstItem="IYR-OL-8h2" firstAttribute="top" secondItem="ZwM-lT-tZ1" secondAttribute="top" id="XDs-HP-wN1"/>
@@ -90,11 +90,11 @@
     </scenes>
     <resources>
         <image name="plus" catalog="system" width="64" height="56"/>
+        <namedColor name="City lights">
+            <color red="0.875" green="0.90200001001358032" blue="0.91399997472763062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Electron blue">
             <color red="0.035000000149011612" green="0.51800000667572021" blue="0.88999998569488525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Soothing breeze">
-            <color red="0.69800001382827759" green="0.74500000476837158" blue="0.76499998569488525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

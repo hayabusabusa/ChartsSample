@@ -37,6 +37,8 @@
 		71C85E6323B7847D00440C63 /* HBarChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C85E6223B7847D00440C63 /* HBarChartViewModel.swift */; };
 		71C85E6623B7952800440C63 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C85E6523B7952800440C63 /* LoginViewController.swift */; };
 		71C85E6823B795E400440C63 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C85E6723B795E400440C63 /* LoginViewController.storyboard */; };
+		71C85E6F23B8EFAF00440C63 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C85E6E23B8EFAF00440C63 /* RoundedTextField.swift */; };
+		71C85E7223B8F97D00440C63 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C85E7123B8F97D00440C63 /* LoginViewModel.swift */; };
 		A40FDC9E23B5918000C91E46 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDC9D23B5918000C91E46 /* SettingViewController.swift */; };
 		A40FDCA023B5923F00C91E46 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40FDC9F23B5923E00C91E46 /* SettingViewController.storyboard */; };
 		A40FDCA423B5973200C91E46 /* SettingListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDCA223B5973200C91E46 /* SettingListCell.swift */; };
@@ -113,6 +115,8 @@
 		71C85E6223B7847D00440C63 /* HBarChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBarChartViewModel.swift; sourceTree = "<group>"; };
 		71C85E6523B7952800440C63 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		71C85E6723B795E400440C63 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		71C85E6E23B8EFAF00440C63 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
+		71C85E7123B8F97D00440C63 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		A40FDC9D23B5918000C91E46 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A40FDC9F23B5923E00C91E46 /* SettingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingViewController.storyboard; sourceTree = "<group>"; };
 		A40FDCA223B5973200C91E46 /* SettingListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListCell.swift; sourceTree = "<group>"; };
@@ -359,6 +363,14 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		71C85E7023B8F97100440C63 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				71C85E7123B8F97D00440C63 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		A40FDC9C23B5916900C91E46 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
@@ -453,6 +465,7 @@
 				A42E5BE423B34661002F58C0 /* ViewModelType.swift */,
 				A42E5BE123B34650002F58C0 /* Root */,
 				A42E5BE623B34C58002F58C0 /* Walkthrough */,
+				71C85E7023B8F97100440C63 /* Login */,
 				A42E5BE923B3520D002F58C0 /* Dashboard */,
 				716C71DB23B3939000A78E9D /* Timer */,
 				A40FDCA623B59F6E00C91E46 /* Setting */,
@@ -556,6 +569,7 @@
 				A48E6E0A23B1B59D0043332F /* OutlinedButton.swift */,
 				716C71E423B4722000A78E9D /* ScaledButton.swift */,
 				A48E6E0823B1B59D0043332F /* RoundedButton.swift */,
+				71C85E6E23B8EFAF00440C63 /* RoundedTextField.swift */,
 			);
 			path = Skin;
 			sourceTree = "<group>";
@@ -692,12 +706,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A48E6E0523B1B0E50043332F /* ColorPalette.swift in Sources */,
+				71C85E6F23B8EFAF00440C63 /* RoundedTextField.swift in Sources */,
 				716C71E523B4722000A78E9D /* ScaledButton.swift in Sources */,
 				A417209723B07C0F0009C10D /* LineChartViewController.swift in Sources */,
 				A42E5BD823B33B68002F58C0 /* LocalSettings.swift in Sources */,
 				716C71C323ADCB4D00A78E9D /* UIViewController+Extension.swift in Sources */,
 				A417208A23B069290009C10D /* RxAnimated+animations.swift in Sources */,
 				A42E5BF823B35970002F58C0 /* TimerCache.swift in Sources */,
+				71C85E7223B8F97D00440C63 /* LoginViewModel.swift in Sources */,
 				A42E5BDB23B34373002F58C0 /* RootViewController.swift in Sources */,
 				716C71BB23ADC06E00A78E9D /* Storyboard.swift in Sources */,
 				716C71D823B273B900A78E9D /* TimelineViewController.swift in Sources */,

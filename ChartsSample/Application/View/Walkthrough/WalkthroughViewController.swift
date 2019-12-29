@@ -76,7 +76,7 @@ extension WalkthroughViewController {
 extension WalkthroughViewController {
     
     func replaceRootToTabBar() {
-        let vc = TabBarController.instantiate()
+        let vc = LoginViewController.instantiate()
         replaceRoot(to: vc)
     }
 }

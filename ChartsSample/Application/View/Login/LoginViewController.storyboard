@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,13 +15,120 @@
                     <view key="view" contentMode="scaleToFill" id="SlK-0H-LB7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="qgE-gW-Wcc">
+                                <rect key="frame" x="32" y="312" width="350" height="272"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="G1z-Sn-oXs">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="212"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="c2q-3U-G5h">
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="102"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ユーザー名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UFn-zQ-SGA" customClass="RoundedTextField" customModule="ChartsSample" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="48"/>
+                                                        <color key="backgroundColor" red="0.875" green="0.90200001001358032" blue="0.91399997472763062" alpha="0.20357983732876717" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="48" id="h6G-UV-iwB"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="Dracula orchid"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="City lights"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BQ-gp-vcp">
+                                                        <rect key="frame" x="0.0" y="52" width="350" height="50"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                                        <color key="textColor" name="Chi-gong"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="DCj-IH-Ix1">
+                                                <rect key="frame" x="0.0" y="110" width="350" height="102"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ddt-FT-dgR" customClass="RoundedTextField" customModule="ChartsSample" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="48"/>
+                                                        <color key="backgroundColor" red="0.875" green="0.90200001001358032" blue="0.91399997472763062" alpha="0.20149293664383561" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="48" id="Mdw-Ck-GYb"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="Dracula orchid"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="City lights"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzo-a5-er0">
+                                                        <rect key="frame" x="0.0" y="52" width="350" height="50"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                                        <color key="textColor" name="Chi-gong"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKf-ZI-ve4" customClass="RoundedButton" customModule="ChartsSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="228" width="350" height="44"/>
+                                        <color key="backgroundColor" name="Electron blue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="iaz-42-rrd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                        <state key="normal" title="設定する">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qgE-gW-Wcc" firstAttribute="leading" secondItem="v5z-8i-LPR" secondAttribute="leading" constant="32" id="6WH-ZT-WHd"/>
+                            <constraint firstItem="v5z-8i-LPR" firstAttribute="trailing" secondItem="qgE-gW-Wcc" secondAttribute="trailing" constant="32" id="WwE-DX-4op"/>
+                            <constraint firstItem="qgE-gW-Wcc" firstAttribute="centerY" secondItem="SlK-0H-LB7" secondAttribute="centerY" id="mM0-F6-Om6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="v5z-8i-LPR"/>
                     </view>
+                    <connections>
+                        <outlet property="nameErrorLabel" destination="3BQ-gp-vcp" id="Wls-nU-k6f"/>
+                        <outlet property="nameTextField" destination="UFn-zQ-SGA" id="ffz-lL-C0b"/>
+                        <outlet property="passwordErrorLabel" destination="fzo-a5-er0" id="enp-Tp-Dz4"/>
+                        <outlet property="passwordTextField" destination="ddt-FT-dgR" id="QX4-c2-2ei"/>
+                        <outlet property="setButton" destination="fKf-ZI-ve4" id="FWD-uH-rm5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1IZ-x1-EXN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="201" y="90"/>
+            <point key="canvasLocation" x="200.00000000000003" y="89.732142857142847"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="Chi-gong">
+            <color red="0.83899998664855957" green="0.18799999356269836" blue="0.19200000166893005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="City lights">
+            <color red="0.875" green="0.90200001001358032" blue="0.91399997472763062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Dracula orchid">
+            <color red="0.17599999904632568" green="0.20399999618530273" blue="0.21199999749660492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Electron blue">
+            <color red="0.035000000149011612" green="0.51800000667572021" blue="0.88999998569488525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
