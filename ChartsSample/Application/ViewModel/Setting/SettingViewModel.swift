@@ -38,12 +38,14 @@ extension SettingViewModel: ViewModelType {
     
     struct Output {
         let settingsDriver: Driver<[SettingSectionType]>
+        let replaceRootToLogin: Driver<Void>
     }
     
     // MARK: Transform I/O
     
     func transform(input: SettingViewModel.Input) -> SettingViewModel.Output {
         let settingsRelay: BehaviorRelay<[SettingSectionType]> = .init(value: [])
+        let replaceRootToLoginRelay: PublishRelay<Void> = .init()
         
         settingsRelay.accept([
             .aboutTestData(title: "テストデータについて", rows: [.modifyStudies(title: "勉強データを変更", status: nil), .modifyTimeline(title: "タイムラインのデータを変更", status: nil)]),
@@ -58,13 +60,15 @@ extension SettingViewModel: ViewModelType {
                 case .modifyStudies:
                     self?.mockStudyProvider.acceptRandomMock(number: Int.random(in: 8 ..< 15))
                 case .logout:
-                    LocalSettings.saveUserStatus(.initial)
+                    LocalSettings.saveUserStatus(.loggedOut)
+                    replaceRootToLoginRelay.accept(())
                 default:
                     break
                 }
             })
             .disposed(by: disposeBag)
         
-        return Output(settingsDriver: settingsRelay.asDriver())
+        return Output(settingsDriver: settingsRelay.asDriver(),
+                      replaceRootToLogin: replaceRootToLoginRelay.asDriver(onErrorDriveWith: .empty()))
     }
 }

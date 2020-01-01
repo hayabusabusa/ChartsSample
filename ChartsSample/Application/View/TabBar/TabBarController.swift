@@ -16,6 +16,10 @@ final class TabBarController: UITabBarController {
     
     // MARK: Lifecycle
     
+    deinit {
+        print("[DEINIT] ✨🧹 \(type(of: self)) was deinited.")
+    }
+    
     static func instantiate() -> TabBarController {
         let vc = Storyboard.TabBarController.instantiate(TabBarController.self)
         return vc

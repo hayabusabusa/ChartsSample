@@ -66,5 +66,18 @@ extension SettingViewController {
         output.settingsDriver
             .drive(tableView.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
+        output.replaceRootToLogin
+            .drive(onNext: { [weak self] in self?.replaceRootToLogin() })
+            .disposed(by: disposeBag)
+    }
+}
+
+// MARK: - Transition
+
+extension SettingViewController {
+    
+    private func replaceRootToLogin() {
+        let vc = LoginViewController.instantiate()
+        replaceRoot(to: vc)
     }
 }

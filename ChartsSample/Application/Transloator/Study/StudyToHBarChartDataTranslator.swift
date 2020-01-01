@@ -33,7 +33,6 @@ struct StudyToHBarChartTranslator: ViewableTranslator {
                 popped.append(last)
             }
         }
-        print(popped)
         return popped
     }
 }
