@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mSH-Pq-ZUa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Week Ave Line Chart View Controller-->
+        <scene sceneID="frl-9s-dtf">
+            <objects>
+                <viewController id="mSH-Pq-ZUa" customClass="WeekAveLineChartViewController" customModule="ChartsSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c22-up-6Ha">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tVM-R6-qxK">
+                                <rect key="frame" x="12" y="60" width="390" height="786"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1週間の履歴( 合計時間 )" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qu-uv-src">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                        <color key="textColor" name="Dracula orchid"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uq0-zo-E4H" customClass="LineChartView" customModule="Charts">
+                                        <rect key="frame" x="0.0" y="27.5" width="390" height="758.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tVM-R6-qxK" firstAttribute="top" secondItem="Jrf-9X-Zk0" secondAttribute="top" constant="16" id="6FW-YB-EcM"/>
+                            <constraint firstItem="Jrf-9X-Zk0" firstAttribute="bottom" secondItem="tVM-R6-qxK" secondAttribute="bottom" constant="16" id="DB9-pO-AN1"/>
+                            <constraint firstItem="Jrf-9X-Zk0" firstAttribute="trailing" secondItem="tVM-R6-qxK" secondAttribute="trailing" constant="12" id="SDh-3b-gku"/>
+                            <constraint firstItem="tVM-R6-qxK" firstAttribute="leading" secondItem="Jrf-9X-Zk0" secondAttribute="leading" constant="12" id="gM7-aL-3QQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jrf-9X-Zk0"/>
+                    </view>
+                    <connections>
+                        <outlet property="lineChartView" destination="uq0-zo-E4H" id="vT1-3H-OJL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ph-K8-I1o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="74"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Dracula orchid">
+            <color red="0.17599999904632568" green="0.20399999618530273" blue="0.21199999749660492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -32,6 +32,8 @@
 		716C71EA23B6BE7600A78E9D /* AverageBarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71E923B6BE7600A78E9D /* AverageBarChartViewController.swift */; };
 		716C71EC23B6BF3D00A78E9D /* AverageBarChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716C71EB23B6BF3D00A78E9D /* AverageBarChartViewController.storyboard */; };
 		716C71EF23B6C0A500A78E9D /* AverageBarChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71EE23B6C0A500A78E9D /* AverageBarChartViewModel.swift */; };
+		71B56DBE23BD0A9B003DB0B5 /* WeekAveLineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B56DBD23BD0A9B003DB0B5 /* WeekAveLineChartViewController.swift */; };
+		71B56DC023BD0AC1003DB0B5 /* WeekAveLineChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71B56DBF23BD0AC1003DB0B5 /* WeekAveLineChartViewController.storyboard */; };
 		71BDECC523B73E7200410D38 /* HBarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BDECC423B73E7200410D38 /* HBarChartViewController.swift */; };
 		71BDECC723B73F1E00410D38 /* HBarChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BDECC623B73F1E00410D38 /* HBarChartViewController.storyboard */; };
 		71C85E6323B7847D00440C63 /* HBarChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C85E6223B7847D00440C63 /* HBarChartViewModel.swift */; };
@@ -115,6 +117,8 @@
 		716C71E923B6BE7600A78E9D /* AverageBarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageBarChartViewController.swift; sourceTree = "<group>"; };
 		716C71EB23B6BF3D00A78E9D /* AverageBarChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AverageBarChartViewController.storyboard; sourceTree = "<group>"; };
 		716C71EE23B6C0A500A78E9D /* AverageBarChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageBarChartViewModel.swift; sourceTree = "<group>"; };
+		71B56DBD23BD0A9B003DB0B5 /* WeekAveLineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekAveLineChartViewController.swift; sourceTree = "<group>"; };
+		71B56DBF23BD0AC1003DB0B5 /* WeekAveLineChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeekAveLineChartViewController.storyboard; sourceTree = "<group>"; };
 		71BDECC423B73E7200410D38 /* HBarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBarChartViewController.swift; sourceTree = "<group>"; };
 		71BDECC623B73F1E00410D38 /* HBarChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HBarChartViewController.storyboard; sourceTree = "<group>"; };
 		71C85E6223B7847D00440C63 /* HBarChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBarChartViewModel.swift; sourceTree = "<group>"; };
@@ -286,6 +290,7 @@
 				716C71CA23ADD84D00A78E9D /* ChartType.swift */,
 				716C71E623B6BE0600A78E9D /* AverageBarChart */,
 				71BDECC323B73DC500410D38 /* HBarChart */,
+				71B56DBC23BD0A79003DB0B5 /* WeekAveLineChart */,
 				716C71C523ADCF8500A78E9D /* BarChart */,
 				716C71CC23AFA9D400A78E9D /* HorizontalBarChart */,
 				A417209523B07BF90009C10D /* LineChart */,
@@ -363,6 +368,15 @@
 				71F56A9A23BC6C1400FB5DA3 /* Study */,
 			);
 			path = Transloator;
+			sourceTree = "<group>";
+		};
+		71B56DBC23BD0A79003DB0B5 /* WeekAveLineChart */ = {
+			isa = PBXGroup;
+			children = (
+				71B56DBD23BD0A9B003DB0B5 /* WeekAveLineChartViewController.swift */,
+				71B56DBF23BD0AC1003DB0B5 /* WeekAveLineChartViewController.storyboard */,
+			);
+			path = WeekAveLineChart;
 			sourceTree = "<group>";
 		};
 		71BDECC323B73DC500410D38 /* HBarChart */ = {
@@ -709,6 +723,7 @@
 				716C71C923ADD17200A78E9D /* BarChartViewController.storyboard in Resources */,
 				716C71DA23B273D800A78E9D /* TimelineViewController.storyboard in Resources */,
 				716C719C23ADBB9100A78E9D /* Assets.xcassets in Resources */,
+				71B56DC023BD0AC1003DB0B5 /* WeekAveLineChartViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -756,6 +771,7 @@
 				71C85E7223B8F97D00440C63 /* LoginViewModel.swift in Sources */,
 				71F56A9C23BC6C2B00FB5DA3 /* StudyToBarChartDataTranslator.swift in Sources */,
 				A42E5BDB23B34373002F58C0 /* RootViewController.swift in Sources */,
+				71B56DBE23BD0A9B003DB0B5 /* WeekAveLineChartViewController.swift in Sources */,
 				716C71BB23ADC06E00A78E9D /* Storyboard.swift in Sources */,
 				716C71D823B273B900A78E9D /* TimelineViewController.swift in Sources */,
 				716C71CE23AFAA0800A78E9D /* HorizontalBarChartViewController.swift in Sources */,

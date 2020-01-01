@@ -21,6 +21,7 @@ enum Storyboard: String {
     // Charts
     case AverageBarChartViewController
     case HBarChartViewController
+    case WeekAveLineChartViewController
     // Test
     case BarChartViewController
     case HorizontalBarChartViewController
