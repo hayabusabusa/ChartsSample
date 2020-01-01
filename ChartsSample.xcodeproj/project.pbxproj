@@ -356,6 +356,15 @@
 			path = Charts;
 			sourceTree = "<group>";
 		};
+		71B56DBB23BD04FE003DB0B5 /* Transloator */ = {
+			isa = PBXGroup;
+			children = (
+				71F56A9D23BC7D1000FB5DA3 /* ViewableTranslator.swift */,
+				71F56A9A23BC6C1400FB5DA3 /* Study */,
+			);
+			path = Transloator;
+			sourceTree = "<group>";
+		};
 		71BDECC323B73DC500410D38 /* HBarChart */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,8 +395,6 @@
 			isa = PBXGroup;
 			children = (
 				71F56A9823BC6BA100FB5DA3 /* Translator.swift */,
-				71F56A9D23BC7D1000FB5DA3 /* ViewableTranslator.swift */,
-				71F56A9A23BC6C1400FB5DA3 /* Study */,
 			);
 			path = Translator;
 			sourceTree = "<group>";
@@ -554,6 +561,7 @@
 				716C719423ADBB8A00A78E9D /* SceneDelegate.swift */,
 				A42E5BE023B34645002F58C0 /* ViewModel */,
 				716C71B523ADC00500A78E9D /* View */,
+				71B56DBB23BD04FE003DB0B5 /* Transloator */,
 			);
 			path = Application;
 			sourceTree = "<group>";
