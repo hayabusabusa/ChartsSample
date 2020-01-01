@@ -80,14 +80,7 @@ extension AverageBarChartViewController {
             })
             .disposed(by: disposeBag)
         output.studiesDriver
-            .map { $0.enumerated().map { BarChartDataEntry(x: Double($0.offset), y: Double($0.element.seconds) / 3600) } }
-            .map {
-                let dataSet = BarChartDataSet(entries: $0)
-                dataSet.drawValuesEnabled = false
-                dataSet.colors = [ColorPalette.robinsEggBlue]
-                return dataSet
-            }
-            .map { BarChartData(dataSet: $0) }
+            .translate(with: StudyToBarChartDataTranslator())
             .drive(onNext: { [weak self] data in
                 self?.barChartView.data = data
                 self?.barChartView.animate(yAxisDuration: 1.8, easingOption: .easeInOutElastic)

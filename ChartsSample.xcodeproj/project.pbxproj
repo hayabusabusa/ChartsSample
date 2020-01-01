@@ -39,6 +39,10 @@
 		71C85E6823B795E400440C63 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C85E6723B795E400440C63 /* LoginViewController.storyboard */; };
 		71C85E6F23B8EFAF00440C63 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C85E6E23B8EFAF00440C63 /* RoundedTextField.swift */; };
 		71C85E7223B8F97D00440C63 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C85E7123B8F97D00440C63 /* LoginViewModel.swift */; };
+		71F56A9923BC6BA100FB5DA3 /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F56A9823BC6BA100FB5DA3 /* Translator.swift */; };
+		71F56A9C23BC6C2B00FB5DA3 /* StudyToBarChartDataTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F56A9B23BC6C2B00FB5DA3 /* StudyToBarChartDataTranslator.swift */; };
+		71F56A9E23BC7D1000FB5DA3 /* ViewableTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F56A9D23BC7D1000FB5DA3 /* ViewableTranslator.swift */; };
+		71F56AA223BC812800FB5DA3 /* StudyToHBarChartDataTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F56AA123BC812800FB5DA3 /* StudyToHBarChartDataTranslator.swift */; };
 		A40FDC9E23B5918000C91E46 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDC9D23B5918000C91E46 /* SettingViewController.swift */; };
 		A40FDCA023B5923F00C91E46 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40FDC9F23B5923E00C91E46 /* SettingViewController.storyboard */; };
 		A40FDCA423B5973200C91E46 /* SettingListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDCA223B5973200C91E46 /* SettingListCell.swift */; };
@@ -117,6 +121,10 @@
 		71C85E6723B795E400440C63 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		71C85E6E23B8EFAF00440C63 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		71C85E7123B8F97D00440C63 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		71F56A9823BC6BA100FB5DA3 /* Translator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
+		71F56A9B23BC6C2B00FB5DA3 /* StudyToBarChartDataTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyToBarChartDataTranslator.swift; sourceTree = "<group>"; };
+		71F56A9D23BC7D1000FB5DA3 /* ViewableTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewableTranslator.swift; sourceTree = "<group>"; };
+		71F56AA123BC812800FB5DA3 /* StudyToHBarChartDataTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyToHBarChartDataTranslator.swift; sourceTree = "<group>"; };
 		A40FDC9D23B5918000C91E46 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A40FDC9F23B5923E00C91E46 /* SettingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingViewController.storyboard; sourceTree = "<group>"; };
 		A40FDCA223B5973200C91E46 /* SettingListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListCell.swift; sourceTree = "<group>"; };
@@ -371,6 +379,25 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		71F56A9723BC6B8B00FB5DA3 /* Translator */ = {
+			isa = PBXGroup;
+			children = (
+				71F56A9823BC6BA100FB5DA3 /* Translator.swift */,
+				71F56A9D23BC7D1000FB5DA3 /* ViewableTranslator.swift */,
+				71F56A9A23BC6C1400FB5DA3 /* Study */,
+			);
+			path = Translator;
+			sourceTree = "<group>";
+		};
+		71F56A9A23BC6C1400FB5DA3 /* Study */ = {
+			isa = PBXGroup;
+			children = (
+				71F56A9B23BC6C2B00FB5DA3 /* StudyToBarChartDataTranslator.swift */,
+				71F56AA123BC812800FB5DA3 /* StudyToHBarChartDataTranslator.swift */,
+			);
+			path = Study;
+			sourceTree = "<group>";
+		};
 		A40FDC9C23B5916900C91E46 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
@@ -512,6 +539,7 @@
 			children = (
 				A40FDCB823B5D87E00C91E46 /* Provider */,
 				A42E5BF523B35953002F58C0 /* Entity */,
+				71F56A9723BC6B8B00FB5DA3 /* Translator */,
 			);
 			path = Infrastracture;
 			sourceTree = "<group>";
@@ -706,6 +734,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A48E6E0523B1B0E50043332F /* ColorPalette.swift in Sources */,
+				71F56A9E23BC7D1000FB5DA3 /* ViewableTranslator.swift in Sources */,
 				71C85E6F23B8EFAF00440C63 /* RoundedTextField.swift in Sources */,
 				716C71E523B4722000A78E9D /* ScaledButton.swift in Sources */,
 				A417209723B07C0F0009C10D /* LineChartViewController.swift in Sources */,
@@ -714,6 +743,7 @@
 				A417208A23B069290009C10D /* RxAnimated+animations.swift in Sources */,
 				A42E5BF823B35970002F58C0 /* TimerCache.swift in Sources */,
 				71C85E7223B8F97D00440C63 /* LoginViewModel.swift in Sources */,
+				71F56A9C23BC6C2B00FB5DA3 /* StudyToBarChartDataTranslator.swift in Sources */,
 				A42E5BDB23B34373002F58C0 /* RootViewController.swift in Sources */,
 				716C71BB23ADC06E00A78E9D /* Storyboard.swift in Sources */,
 				716C71D823B273B900A78E9D /* TimelineViewController.swift in Sources */,
@@ -747,7 +777,9 @@
 				A40FDC9E23B5918000C91E46 /* SettingViewController.swift in Sources */,
 				71C85E6623B7952800440C63 /* LoginViewController.swift in Sources */,
 				A40FDCBB23B5D8A400C91E46 /* MockStudyProvider.swift in Sources */,
+				71F56A9923BC6BA100FB5DA3 /* Translator.swift in Sources */,
 				A48E6E0B23B1B59D0043332F /* RoundedButton.swift in Sources */,
+				71F56AA223BC812800FB5DA3 /* StudyToHBarChartDataTranslator.swift in Sources */,
 				A40FDCB223B5A85900C91E46 /* Study.swift in Sources */,
 				A48E6E0D23B1B59D0043332F /* OutlinedButton.swift in Sources */,
 				716C71DD23B3948700A78E9D /* TimerViewModel.swift in Sources */,
@@ -893,6 +925,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NFHBTKRJJM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -914,6 +947,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NFHBTKRJJM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",

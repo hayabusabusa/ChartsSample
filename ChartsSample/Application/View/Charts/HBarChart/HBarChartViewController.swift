@@ -66,27 +66,8 @@ extension HBarChartViewController {
         let input = HBarChartViewModel.Input()
         let output = viewModel.transform(input: input)
         
-        let studiesDriver = output.studiesDriver
-            .map { studies -> [Study] in
-                var poppingStudies = studies.sorted(by: { $1.seconds > $0.seconds })
-                var poppedStudies: [Study] = [Study]()
-                for _ in 0 ... 2 {
-                    if let popped = poppingStudies.popLast() {
-                        poppedStudies.append(popped)
-                    }
-                }
-                return poppedStudies
-            }
-        
-        studiesDriver
-            .map { $0.enumerated().map { BarChartDataEntry(x: Double($0.offset + 1), y: Double($0.element.seconds) / 3600) } }
-            .map {
-                let dataSet = BarChartDataSet(entries: $0)
-                dataSet.drawValuesEnabled = false
-                dataSet.colors = [ColorPalette.greenDarnerTail]
-                return dataSet
-            }
-            .map { BarChartData(dataSet: $0) }
+        output.studiesDriver
+            .translate(with: StudyToHBarChartTranslator())
             .drive(onNext: { [weak self] data in
                 self?.horizontalBarChartView.data = data
                 self?.horizontalBarChartView.animate(yAxisDuration: 1.8, easingOption: .easeInOutExpo)
