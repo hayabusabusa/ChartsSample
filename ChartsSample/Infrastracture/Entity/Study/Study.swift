@@ -12,4 +12,5 @@ struct Study {
     let title: String
     let date: Date
     let seconds: Int
+    let colorCode: String
 }

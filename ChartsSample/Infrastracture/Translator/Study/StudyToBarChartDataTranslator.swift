@@ -6,7 +6,7 @@
 //  Copyright © 2020 Shunya Yamada. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import Charts
 
 struct StudyToBarChartDataTranslator: ViewableTranslator {
@@ -18,7 +18,7 @@ struct StudyToBarChartDataTranslator: ViewableTranslator {
             .map { BarChartDataEntry(x: Double($0.offset), y: Double($0.element.seconds) / 3600) }
         let dataSet = BarChartDataSet(entries: entries)
         dataSet.drawValuesEnabled = false
-        dataSet.colors = [ColorPalette.robinsEggBlue]
+        dataSet.colors = input.map { UIColor(hex: $0.colorCode) }
         return BarChartData(dataSet: dataSet)
     }
 }

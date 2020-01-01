@@ -6,7 +6,7 @@
 //  Copyright © 2020 Shunya Yamada. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import Charts
 
 struct StudyToHBarChartTranslator: ViewableTranslator {
@@ -16,11 +16,12 @@ struct StudyToHBarChartTranslator: ViewableTranslator {
     func translate(_ input: [Study]) -> BarChartData {
         // Sort and slice
         let poppedStudies = popLast(input, to: 2)
+        // Create bar chart data
         let entries = poppedStudies.enumerated()
             .map { BarChartDataEntry(x: Double($0.offset + 1), y: Double($0.element.seconds) / 3600) }
         let dataSet = BarChartDataSet(entries: entries)
         dataSet.drawValuesEnabled = false
-        dataSet.colors = [ColorPalette.greenDarnerTail]
+        dataSet.colors = poppedStudies.map { UIColor(hex: $0.colorCode) }
         return BarChartData(dataSet: dataSet)
     }
     
@@ -32,6 +33,7 @@ struct StudyToHBarChartTranslator: ViewableTranslator {
                 popped.append(last)
             }
         }
+        print(popped)
         return popped
     }
 }

@@ -43,6 +43,7 @@
 		71F56A9C23BC6C2B00FB5DA3 /* StudyToBarChartDataTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F56A9B23BC6C2B00FB5DA3 /* StudyToBarChartDataTranslator.swift */; };
 		71F56A9E23BC7D1000FB5DA3 /* ViewableTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F56A9D23BC7D1000FB5DA3 /* ViewableTranslator.swift */; };
 		71F56AA223BC812800FB5DA3 /* StudyToHBarChartDataTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F56AA123BC812800FB5DA3 /* StudyToHBarChartDataTranslator.swift */; };
+		71F56AA623BC86AC00FB5DA3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F56AA523BC86AC00FB5DA3 /* UIColor+Extension.swift */; };
 		A40FDC9E23B5918000C91E46 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDC9D23B5918000C91E46 /* SettingViewController.swift */; };
 		A40FDCA023B5923F00C91E46 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40FDC9F23B5923E00C91E46 /* SettingViewController.storyboard */; };
 		A40FDCA423B5973200C91E46 /* SettingListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDCA223B5973200C91E46 /* SettingListCell.swift */; };
@@ -125,6 +126,7 @@
 		71F56A9B23BC6C2B00FB5DA3 /* StudyToBarChartDataTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyToBarChartDataTranslator.swift; sourceTree = "<group>"; };
 		71F56A9D23BC7D1000FB5DA3 /* ViewableTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewableTranslator.swift; sourceTree = "<group>"; };
 		71F56AA123BC812800FB5DA3 /* StudyToHBarChartDataTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyToHBarChartDataTranslator.swift; sourceTree = "<group>"; };
+		71F56AA523BC86AC00FB5DA3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		A40FDC9D23B5918000C91E46 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A40FDC9F23B5923E00C91E46 /* SettingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingViewController.storyboard; sourceTree = "<group>"; };
 		A40FDCA223B5973200C91E46 /* SettingListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListCell.swift; sourceTree = "<group>"; };
@@ -267,12 +269,13 @@
 		716C71C123ADCB3B00A78E9D /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				71F56AA523BC86AC00FB5DA3 /* UIColor+Extension.swift */,
 				A48E6E0223B1AE2C0043332F /* UIScrollView+Rx.swift */,
+				716C71C223ADCB4D00A78E9D /* UIViewController+Extension.swift */,
+				A42E5BDE23B34548002F58C0 /* UIViewController+Rx.swift */,
 				A417208623B069290009C10D /* RxAnimated.swift */,
 				A417208723B069290009C10D /* RxAnimated+animations.swift */,
 				A417208823B069290009C10D /* RxAnimated+bindings.swift */,
-				716C71C223ADCB4D00A78E9D /* UIViewController+Extension.swift */,
-				A42E5BDE23B34548002F58C0 /* UIViewController+Rx.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -751,6 +754,7 @@
 				A48E6DFC23B1ACD80043332F /* BaseViewController.swift in Sources */,
 				A42E5BF023B35394002F58C0 /* TimerViewController.swift in Sources */,
 				A42E5BDF23B34548002F58C0 /* UIViewController+Rx.swift in Sources */,
+				71F56AA623BC86AC00FB5DA3 /* UIColor+Extension.swift in Sources */,
 				A40FDCB523B5BCA000C91E46 /* SettingDataSource.swift in Sources */,
 				A42E5BE323B34658002F58C0 /* RootViewModel.swift in Sources */,
 				A40FDCA823B59FB500C91E46 /* SettingViewModel.swift in Sources */,

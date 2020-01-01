@@ -16,8 +16,6 @@ public protocol Translator {
     func translate(_ input: Input) throws -> Output
 }
 
-
-
 public extension ObservableType {
     func translate<T: Translator>(with translator: T) -> Observable<T.Output> where Self.Element == T.Input {
         return map { try translator.translate($0) }

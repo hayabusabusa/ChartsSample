@@ -37,7 +37,7 @@ final class MockStudyProviderImpl: MockStudyProvider {
     
     func acceptRandomMock(number: Int) {
         let mock = stride(from: 0, to: number, by: 1)
-            .map { Study(title: "Mock data number \($0)", date: Date(), seconds: Int.random(in: 0 ..< 36000)) }
+            .map { Study(title: "Mock data number \($0)", date: Date(), seconds: Int.random(in: 0 ..< 36000), colorCode: ColorPalette.randomColorCode()) }
         studiesRelay.accept(mock)
     }
 }
