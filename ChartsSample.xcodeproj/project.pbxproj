@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		711C112B23BDE93F00A21B55 /* TEAContributionGraphDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711C112A23BDE93F00A21B55 /* TEAContributionGraphDataSource.swift */; };
+		711C112D23BDEE7200A21B55 /* TEAContributionGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711C112C23BDEE7200A21B55 /* TEAContributionGraph.swift */; };
 		7120165E23BD8F5800BE166F /* WeekAveLineChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7120165D23BD8F5700BE166F /* WeekAveLineChartViewModel.swift */; };
 		7120166223BD901500BE166F /* StudyToWeekAveLineChartDataTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7120166123BD901500BE166F /* StudyToWeekAveLineChartDataTranslator.swift */; };
 		716C719323ADBB8A00A78E9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C719223ADBB8A00A78E9D /* AppDelegate.swift */; };
@@ -93,6 +95,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		711C112A23BDE93F00A21B55 /* TEAContributionGraphDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEAContributionGraphDataSource.swift; sourceTree = "<group>"; };
+		711C112C23BDEE7200A21B55 /* TEAContributionGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEAContributionGraph.swift; sourceTree = "<group>"; };
 		7120165D23BD8F5700BE166F /* WeekAveLineChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekAveLineChartViewModel.swift; sourceTree = "<group>"; };
 		7120166123BD901500BE166F /* StudyToWeekAveLineChartDataTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyToWeekAveLineChartDataTranslator.swift; sourceTree = "<group>"; };
 		716C718F23ADBB8A00A78E9D /* ChartsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,6 +200,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		711C112923BDE92900A21B55 /* TEAContributionGraph */ = {
+			isa = PBXGroup;
+			children = (
+				711C112A23BDE93F00A21B55 /* TEAContributionGraphDataSource.swift */,
+				711C112C23BDEE7200A21B55 /* TEAContributionGraph.swift */,
+			);
+			path = TEAContributionGraph;
+			sourceTree = "<group>";
+		};
 		716C718623ADBB8A00A78E9D = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +311,7 @@
 				716C71E623B6BE0600A78E9D /* AverageBarChart */,
 				71BDECC323B73DC500410D38 /* HBarChart */,
 				71B56DBC23BD0A79003DB0B5 /* WeekAveLineChart */,
+				711C112923BDE92900A21B55 /* TEAContributionGraph */,
 				716C71C523ADCF8500A78E9D /* BarChart */,
 				716C71CC23AFA9D400A78E9D /* HorizontalBarChart */,
 				A417209523B07BF90009C10D /* LineChart */,
@@ -784,6 +798,7 @@
 				716C71BB23ADC06E00A78E9D /* Storyboard.swift in Sources */,
 				716C71D823B273B900A78E9D /* TimelineViewController.swift in Sources */,
 				716C71CE23AFAA0800A78E9D /* HorizontalBarChartViewController.swift in Sources */,
+				711C112B23BDE93F00A21B55 /* TEAContributionGraphDataSource.swift in Sources */,
 				A48E6DFC23B1ACD80043332F /* BaseViewController.swift in Sources */,
 				A42E5BF023B35394002F58C0 /* TimerViewController.swift in Sources */,
 				A42E5BDF23B34548002F58C0 /* UIViewController+Rx.swift in Sources */,
@@ -813,6 +828,7 @@
 				A42E5BEB23B35224002F58C0 /* DashboardViewModel.swift in Sources */,
 				716C71EF23B6C0A500A78E9D /* AverageBarChartViewModel.swift in Sources */,
 				716C71EA23B6BE7600A78E9D /* AverageBarChartViewController.swift in Sources */,
+				711C112D23BDEE7200A21B55 /* TEAContributionGraph.swift in Sources */,
 				A40FDC9E23B5918000C91E46 /* SettingViewController.swift in Sources */,
 				71C85E6623B7952800440C63 /* LoginViewController.swift in Sources */,
 				A40FDCBB23B5D8A400C91E46 /* MockStudyProvider.swift in Sources */,
