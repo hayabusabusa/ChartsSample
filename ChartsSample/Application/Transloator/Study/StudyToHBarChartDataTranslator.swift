@@ -11,9 +11,10 @@ import Charts
 
 struct StudyToHBarChartDataTranslator: ViewableTranslator {
     typealias Input = [Study]
-    typealias Output = BarChartData
+    typealias Output = BarChartData?
     
-    func translate(_ input: [Study]) -> BarChartData {
+    func translate(_ input: [Study]) -> BarChartData? {
+        guard !input.isEmpty else { return nil }
         // Sort and slice
         let poppedStudies = popLast(input, to: 2)
         // Create bar chart data

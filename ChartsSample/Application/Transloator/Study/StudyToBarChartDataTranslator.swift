@@ -11,9 +11,10 @@ import Charts
 
 struct StudyToBarChartDataTranslator: ViewableTranslator {
     typealias Input = [Study]
-    typealias Output = BarChartData
+    typealias Output = BarChartData?
     
-    func translate(_ input: [Study]) -> BarChartData {
+    func translate(_ input: [Study]) -> BarChartData? {
+        guard !input.isEmpty else { return nil }
         let entries = input.enumerated()
             .map { BarChartDataEntry(x: Double($0.offset), y: Double($0.element.seconds) / 3600) }
         let dataSet = BarChartDataSet(entries: entries)

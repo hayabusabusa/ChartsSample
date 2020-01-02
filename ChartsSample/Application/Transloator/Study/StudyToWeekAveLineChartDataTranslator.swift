@@ -11,11 +11,12 @@ import Charts
 
 struct StudyToWeekAveLineChartDataTranslator: ViewableTranslator {
     typealias Input = [Study]
-    typealias Output = LineChartData
+    typealias Output = LineChartData?
     
     let fillColor: UIColor
     
-    func translate(_ input: [Study]) -> LineChartData {
+    func translate(_ input: [Study]) -> LineChartData? {
+        guard !input.isEmpty else { return nil }
         let entries = input.enumerated().map { ChartDataEntry(x: Double($0.offset), y: Double($0.element.seconds / 3600)) }
         let dataSet = LineChartDataSet(entries: entries, label: "This is label")
         let gradient = CGGradient(colorsSpace: nil,

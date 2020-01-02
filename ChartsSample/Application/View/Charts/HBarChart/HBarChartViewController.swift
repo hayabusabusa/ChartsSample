@@ -45,6 +45,7 @@ extension HBarChartViewController {
         horizontalBarChartView.noDataFont = .boldSystemFont(ofSize: 14)
         horizontalBarChartView.noDataText = "データがありません"
         horizontalBarChartView.noDataTextColor = ColorPalette.soothingBreeze
+        horizontalBarChartView.legend.enabled = false
         // X axis
         horizontalBarChartView.xAxis.drawGridLinesEnabled = false
         horizontalBarChartView.xAxis.labelCount = 3

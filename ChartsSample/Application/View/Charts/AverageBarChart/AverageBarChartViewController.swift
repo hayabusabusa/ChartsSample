@@ -48,6 +48,7 @@ extension AverageBarChartViewController {
         barChartView.noDataTextColor = ColorPalette.soothingBreeze
         barChartView.scaleXEnabled = false
         barChartView.scaleYEnabled = false
+        barChartView.legend.enabled = false
         // X axis
         barChartView.xAxis.enabled = false
         barChartView.xAxis.labelPosition = .bottom

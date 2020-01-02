@@ -47,6 +47,7 @@ extension WeekAveLineChartViewController {
         lineChartView.noDataTextColor = ColorPalette.soothingBreeze
         lineChartView.scaleXEnabled = false
         lineChartView.scaleYEnabled = false
+        lineChartView.legend.enabled = false
         // X axis
         lineChartView.xAxis.labelPosition = .bottom
         lineChartView.xAxis.drawLabelsEnabled = false

@@ -30,7 +30,6 @@ final class MockStudyProviderImpl: MockStudyProvider {
     
     private init() {
         studiesRelay = .init(value: [])
-        acceptRandomMock(number: 10)
     }
     
     // MARK: Public
