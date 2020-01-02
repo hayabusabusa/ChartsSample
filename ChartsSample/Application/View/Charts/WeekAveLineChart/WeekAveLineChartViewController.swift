@@ -45,6 +45,25 @@ extension WeekAveLineChartViewController {
         lineChartView.noDataFont = .boldSystemFont(ofSize: 14)
         lineChartView.noDataText = "データがありません"
         lineChartView.noDataTextColor = ColorPalette.soothingBreeze
+        lineChartView.scaleXEnabled = false
+        lineChartView.scaleYEnabled = false
+        // X axis
+        lineChartView.xAxis.labelPosition = .bottom
+        lineChartView.xAxis.drawLabelsEnabled = false
+        lineChartView.xAxis.drawAxisLineEnabled = false
+        lineChartView.xAxis.drawGridLinesEnabled = false
+        // Y right axis
+        lineChartView.rightAxis.enabled = false
+        // Y left axis
+        lineChartView.leftAxis.drawAxisLineEnabled = false
+        lineChartView.leftAxis.drawZeroLineEnabled = true
+        lineChartView.leftAxis.labelCount = 4
+        lineChartView.leftAxis.labelTextColor =  ColorPalette.soothingBreeze
+        lineChartView.leftAxis.gridColor =  ColorPalette.soothingBreeze.withAlphaComponent(0.8)
+        lineChartView.leftAxis.gridLineDashLengths = [2]
+        lineChartView.leftAxis.zeroLineDashPhase = 0
+        lineChartView.leftAxis.zeroLineColor =  ColorPalette.soothingBreeze.withAlphaComponent(0.8)
+        lineChartView.leftAxis.zeroLineDashLengths = [2]
     }
 }
 

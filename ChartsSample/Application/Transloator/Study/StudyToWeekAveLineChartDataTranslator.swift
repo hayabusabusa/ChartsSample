@@ -20,14 +20,17 @@ struct StudyToWeekAveLineChartDataTranslator: ViewableTranslator {
         let dataSet = LineChartDataSet(entries: entries, label: "This is label")
         let gradient = CGGradient(colorsSpace: nil,
                                   colors: [fillColor.withAlphaComponent(0.8).cgColor,
-                                           UIColor.clear.cgColor] as CFArray,
+                                           UIColor.white.withAlphaComponent(0.4).cgColor] as CFArray,
                                   locations: nil)
         dataSet.mode = .horizontalBezier
         dataSet.fill = Fill(linearGradient: gradient!, angle: -90)
         dataSet.fillAlpha = 1
         dataSet.drawFilledEnabled = true
         dataSet.colors = [fillColor]
-        dataSet.circleColors = [fillColor]
+        dataSet.drawCirclesEnabled = false
+        dataSet.drawValuesEnabled = false
+        dataSet.lineWidth = 2
+        dataSet.highlightLineWidth = 0
         return LineChartData(dataSet: dataSet)
     }
 }
