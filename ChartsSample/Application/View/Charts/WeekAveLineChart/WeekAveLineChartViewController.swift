@@ -10,7 +10,7 @@ import UIKit
 import RxCocoa
 import Charts
 
-final class WeekAveLineChartViewController: UIViewController {
+final class WeekAveLineChartViewController: BaseViewController {
     
     // MARK: IBOutlet
     
@@ -18,16 +18,20 @@ final class WeekAveLineChartViewController: UIViewController {
     
     // MARK: Properties
     
+    private var viewModel: WeekAveLineChartViewModel!
+    
     // MARK: Lifecycle
     
     static func configureWith(studiesDriver: Driver<[Study]>) -> WeekAveLineChartViewController {
         let vc = Storyboard.WeekAveLineChartViewController.instantiate(WeekAveLineChartViewController.self)
+        vc.viewModel = WeekAveLineChartViewModel(dependency: studiesDriver)
         return vc
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupChartView()
+        bindViewModel()
     }
     
     // MARK: IBAction
@@ -41,5 +45,20 @@ extension WeekAveLineChartViewController {
         lineChartView.noDataFont = .boldSystemFont(ofSize: 14)
         lineChartView.noDataText = "データがありません"
         lineChartView.noDataTextColor = ColorPalette.soothingBreeze
+    }
+}
+
+// MARK: - ViewModel
+
+extension WeekAveLineChartViewController {
+    
+    private func bindViewModel() {
+        let input = WeekAveLineChartViewModel.Input()
+        let output = viewModel.transform(input: input)
+        
+        output.studiesDriver
+            .translate(with: StudyToWeekAveLineChartDataTranslator(fillColor: ColorPalette.mintLeaf))
+            .drive(lineChartView.rx.data)
+            .disposed(by: disposeBag)
     }
 }

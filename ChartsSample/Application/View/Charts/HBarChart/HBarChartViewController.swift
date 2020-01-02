@@ -42,6 +42,9 @@ final class HBarChartViewController: BaseViewController {
 extension HBarChartViewController {
     
     private func setupChartView() {
+        horizontalBarChartView.noDataFont = .boldSystemFont(ofSize: 14)
+        horizontalBarChartView.noDataText = "データがありません"
+        horizontalBarChartView.noDataTextColor = ColorPalette.soothingBreeze
         // X axis
         horizontalBarChartView.xAxis.drawGridLinesEnabled = false
         horizontalBarChartView.xAxis.labelCount = 3
@@ -67,11 +70,8 @@ extension HBarChartViewController {
         let output = viewModel.transform(input: input)
         
         output.studiesDriver
-            .translate(with: StudyToHBarChartTranslator())
-            .drive(onNext: { [weak self] data in
-                self?.horizontalBarChartView.data = data
-                self?.horizontalBarChartView.animate(yAxisDuration: 1.8, easingOption: .easeInOutExpo)
-            })
+            .translate(with: StudyToHBarChartDataTranslator())
+            .drive(horizontalBarChartView.rx.data)
             .disposed(by: disposeBag)
     }
 }

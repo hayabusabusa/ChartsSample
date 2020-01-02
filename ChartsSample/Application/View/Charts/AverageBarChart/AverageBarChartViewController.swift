@@ -43,6 +43,9 @@ final class AverageBarChartViewController: BaseViewController {
 extension AverageBarChartViewController {
     
     private func setupChartView() {
+        barChartView.noDataFont = .boldSystemFont(ofSize: 14)
+        barChartView.noDataText = "データがありません"
+        barChartView.noDataTextColor = ColorPalette.soothingBreeze
         barChartView.scaleXEnabled = false
         barChartView.scaleYEnabled = false
         // X axis
@@ -81,10 +84,7 @@ extension AverageBarChartViewController {
             .disposed(by: disposeBag)
         output.studiesDriver
             .translate(with: StudyToBarChartDataTranslator())
-            .drive(onNext: { [weak self] data in
-                self?.barChartView.data = data
-                self?.barChartView.animate(yAxisDuration: 1.8, easingOption: .easeInOutElastic)
-            })
+            .drive(barChartView.rx.data)
             .disposed(by: disposeBag)
     }
 }

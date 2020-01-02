@@ -9,7 +9,7 @@
 import UIKit
 import Charts
 
-struct StudyToHBarChartTranslator: ViewableTranslator {
+struct StudyToHBarChartDataTranslator: ViewableTranslator {
     typealias Input = [Study]
     typealias Output = BarChartData
     
