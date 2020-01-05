@@ -53,4 +53,11 @@ enum LocalSettings {
     static func removeTimerCache() {
         UserDefaults.standard.removeObject(forKey: kTimerCacheKey)
     }
+    
+    static func getAndRemoveTimerCache() -> TimerCache? {
+        guard let data = UserDefaults.standard.data(forKey: kTimerCacheKey),
+            let stored = try? JSONDecoder().decode(TimerCache.self, from: data) else { return nil }
+        UserDefaults.standard.removeObject(forKey: kTimerCacheKey)
+        return stored
+    }
 }

@@ -53,7 +53,7 @@ extension RootViewModel: ViewModelType {
                     replaceRootToLogin.accept(())
                 case .loggedIn:
                     // Check timer cache
-                    if let timerCache = LocalSettings.getTimerCache() {
+                    if let timerCache = LocalSettings.getAndRemoveTimerCache() {
                         timerCacheRelay.accept(timerCache)
                     } else {
                         replaceRootToTabBarRelay.accept(())

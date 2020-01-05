@@ -39,6 +39,7 @@ extension TimerViewModel: ViewModelType {
         let resetButtonDidTap: Driver<Void>
         let closeButtonDidTap: Driver<Void>
         let didEnterBackground: Driver<Void>
+        let willEnterForeground: Driver<Void>
     }
     
     struct Output {
@@ -58,7 +59,7 @@ extension TimerViewModel: ViewModelType {
             timerRelay.accept(timerCache.isValid
                 ? timerCache.rawTime + timerCache.difference
                 : timerCache.rawTime)
-            LocalSettings.removeTimerCache()
+            print("[TIMER] 💾 Load timer cache. \(timerCache)")
         }
         
         isValidRelay
@@ -85,6 +86,18 @@ extension TimerViewModel: ViewModelType {
                     let timerCache = TimerCache(isValid: isValidRelay.value, enterDate: Date(), rawTime: timerRelay.value)
                     LocalSettings.saveTimerCache(timerCache)
                     print("[TIMER] 💾 Save timer cache. \(timerCache)")
+                }
+            })
+            .disposed(by: disposeBag)
+        input.willEnterForeground
+            .drive(onNext: {
+                // NOTE: Load timer cache and remove old cache.
+                if let timerCache = LocalSettings.getAndRemoveTimerCache() {
+                    isValidRelay.accept(timerCache.isValid)
+                    timerRelay.accept(timerCache.isValid
+                        ? timerCache.rawTime + timerCache.difference
+                        : timerCache.rawTime)
+                    print("[TIMER] 💾 Load timer cache. \(timerCache)")
                 }
             })
             .disposed(by: disposeBag)

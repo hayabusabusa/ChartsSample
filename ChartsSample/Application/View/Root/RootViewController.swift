@@ -78,6 +78,6 @@ extension RootViewController {
         vc.modalPresentationStyle = .fullScreen
         let tabBar = TabBarController.instantiate()
         replaceRoot(to: tabBar)
-        tabBar.present(vc, animated: true, completion: nil)
+        tabBar.present(vc, animated: false, completion: nil)
     }
 }

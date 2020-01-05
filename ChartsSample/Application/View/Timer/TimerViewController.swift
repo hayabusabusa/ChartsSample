@@ -60,13 +60,15 @@ extension TimerViewController {
     
     private func bindViewModel() {
         let leftBarButtonItem = navigationItem.leftBarButtonItem!
-        let notification =  NotificationCenter.default.rx.notification(UIApplication.didEnterBackgroundNotification).map { _ in () }
+        let backgroundNotification =  NotificationCenter.default.rx.notification(UIApplication.didEnterBackgroundNotification).map { _ in () }
+        let foregroundNotification = NotificationCenter.default.rx.notification(UIApplication.willEnterForegroundNotification).map { _ in () }
         
         let input = TimerViewModel.Input(startButtonDidTap: startButton.rx.tap.asDriver(),
                                          stopButtonDidTap: stopButton.rx.tap.asDriver(),
                                          resetButtonDidTap: resetButton.rx.tap.asDriver(),
                                          closeButtonDidTap: leftBarButtonItem.rx.tap.asDriver(),
-                                         didEnterBackground: notification.asDriver(onErrorDriveWith: .empty()))
+                                         didEnterBackground: backgroundNotification.asDriver(onErrorDriveWith: .empty()),
+                                         willEnterForeground: foregroundNotification.asDriver(onErrorDriveWith: .empty()))
         let output = viewModel.transform(input: input)
         
         output.timerDriver
