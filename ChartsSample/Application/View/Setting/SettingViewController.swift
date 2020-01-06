@@ -60,7 +60,10 @@ extension SettingViewController {
         viewModel = SettingViewModel()
         
         let dataSource = SettingDataSource()
-        let input = SettingViewModel.Input(selectedRow: tableView.rx.itemSelected.asDriver())
+        let logoutAlert = Alert.present(in: self, title: nil, message: "ログアウトします。\nよろしいですか？", style: .alert, actions: [.ok])
+        
+        let input = SettingViewModel.Input(selectedRow: tableView.rx.itemSelected.asDriver(),
+                                           logoutAlertOk: logoutAlert.asDriver(onErrorDriveWith: .empty()))
         let output = viewModel.transform(input: input)
         
         output.settingsDriver

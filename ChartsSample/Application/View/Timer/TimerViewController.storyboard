@@ -23,15 +23,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="WNh-fI-LMn">
-                                <rect key="frame" x="12" y="750" width="390" height="88"/>
+                                <rect key="frame" x="10" y="748" width="394" height="90"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vGd-kH-ZSY">
-                                        <rect key="frame" x="0.0" y="0.0" width="88" height="88"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhx-4p-rTv" customClass="RoundedButton" customModule="ChartsSample" customModuleProvider="target">
-                                                <rect key="frame" x="17.5" y="17.5" width="70.5" height="70.5"/>
+                                                <rect key="frame" x="18" y="18" width="72" height="72"/>
                                                 <color key="backgroundColor" name="Electron blue"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="13"/>
                                                 <state key="normal" title="ストップ">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -47,7 +47,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQf-15-OfQ" customClass="RoundedButton" customModule="ChartsSample" customModuleProvider="target">
-                                        <rect key="frame" x="151" y="0.0" width="88" height="88"/>
+                                        <rect key="frame" x="152" y="0.0" width="90" height="90"/>
                                         <color key="backgroundColor" name="Electron blue"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="dQf-15-OfQ" secondAttribute="height" multiplier="1:1" id="fpE-tG-bqI"/>
@@ -58,12 +58,12 @@
                                         </state>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8YM-Ai-16d">
-                                        <rect key="frame" x="302" y="0.0" width="88" height="88"/>
+                                        <rect key="frame" x="304" y="0.0" width="90" height="90"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhy-N6-Hft" customClass="RoundedButton" customModule="ChartsSample" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="17.5" width="70.5" height="70.5"/>
+                                                <rect key="frame" x="0.0" y="18" width="72" height="72"/>
                                                 <color key="backgroundColor" name="Electron blue"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="13"/>
                                                 <state key="normal" title="リセット">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -80,7 +80,7 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="StV-V7-GRO"/>
+                                    <constraint firstAttribute="height" constant="90" id="StV-V7-GRO"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -90,8 +90,8 @@
                             <constraint firstItem="wFy-Tb-3mH" firstAttribute="centerY" secondItem="UjN-Di-hPl" secondAttribute="centerY" constant="-40" id="EL5-K4-yJJ"/>
                             <constraint firstItem="Y6R-02-eB2" firstAttribute="bottom" secondItem="WNh-fI-LMn" secondAttribute="bottom" constant="24" id="Uin-mM-taz"/>
                             <constraint firstItem="wFy-Tb-3mH" firstAttribute="leading" secondItem="Y6R-02-eB2" secondAttribute="leading" constant="24" id="Xme-44-H0A"/>
-                            <constraint firstItem="Y6R-02-eB2" firstAttribute="trailing" secondItem="WNh-fI-LMn" secondAttribute="trailing" constant="12" id="Ze4-7D-m9d"/>
-                            <constraint firstItem="WNh-fI-LMn" firstAttribute="leading" secondItem="Y6R-02-eB2" secondAttribute="leading" constant="12" id="yIP-AS-0fa"/>
+                            <constraint firstItem="Y6R-02-eB2" firstAttribute="trailing" secondItem="WNh-fI-LMn" secondAttribute="trailing" constant="10" id="Ze4-7D-m9d"/>
+                            <constraint firstItem="WNh-fI-LMn" firstAttribute="leading" secondItem="Y6R-02-eB2" secondAttribute="leading" constant="10" id="yIP-AS-0fa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y6R-02-eB2"/>
                     </view>

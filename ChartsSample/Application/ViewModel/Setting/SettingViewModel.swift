@@ -34,6 +34,7 @@ extension SettingViewModel: ViewModelType {
     
     struct Input {
         let selectedRow: Driver<IndexPath>
+        let logoutAlertOk: Driver<Alert.Action>
     }
     
     struct Output {
@@ -56,12 +57,19 @@ extension SettingViewModel: ViewModelType {
         input.selectedRow
             .map { settingsRelay.value[$0.section].rows[$0.row] }
             .drive(onNext: { [weak self] row in
+                guard let self = self else { return }
                 switch row {
                 case .modifyStudies:
-                    self?.mockStudyProvider.acceptRandomMock(number: Int.random(in: 0 ..< 15))
+                    self.mockStudyProvider.acceptRandomMock(number: Int.random(in: 0 ..< 15))
                 case .logout:
-                    LocalSettings.saveUserStatus(.loggedOut)
-                    replaceRootToLoginRelay.accept(())
+                    input.logoutAlertOk
+                        .filter { $0 == .ok }
+                        .debug()
+                        .drive(onNext: { _ in
+                            LocalSettings.saveUserStatus(.loggedOut)
+                            replaceRootToLoginRelay.accept(())
+                        })
+                        .disposed(by: self.disposeBag)
                 default:
                     break
                 }
