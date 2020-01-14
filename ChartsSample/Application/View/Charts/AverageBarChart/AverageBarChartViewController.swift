@@ -49,6 +49,7 @@ extension AverageBarChartViewController {
         barChartView.scaleXEnabled = false
         barChartView.scaleYEnabled = false
         barChartView.legend.enabled = false
+        barChartView.drawMarkers = true
         // X axis
         barChartView.xAxis.enabled = false
         barChartView.xAxis.labelPosition = .bottom
@@ -60,6 +61,10 @@ extension AverageBarChartViewController {
         barChartView.leftAxis.labelTextColor = ColorPalette.soothingBreeze
         barChartView.leftAxis.labelCount = 3
         barChartView.leftAxis.gridLineDashLengths = [4]
+        // Marker
+        let marker = Marker.viewFromXib()
+        marker?.chartView = barChartView
+        barChartView.marker = marker
     }
 }
 

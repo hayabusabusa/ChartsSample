@@ -80,6 +80,8 @@
 		A42E5BF023B35394002F58C0 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E5BEF23B35394002F58C0 /* TimerViewController.swift */; };
 		A42E5BF223B353AD002F58C0 /* TimerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42E5BF123B353AD002F58C0 /* TimerViewController.storyboard */; };
 		A42E5BF823B35970002F58C0 /* TimerCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E5BF723B35970002F58C0 /* TimerCache.swift */; };
+		A47B1E9223CD53C200F4DECC /* Marker.xib in Resources */ = {isa = PBXBuildFile; fileRef = A47B1E9123CD53C200F4DECC /* Marker.xib */; };
+		A47B1E9423CD543E00F4DECC /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47B1E9323CD543E00F4DECC /* Marker.swift */; };
 		A48E6DFC23B1ACD80043332F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6DFB23B1ACD80043332F /* BaseViewController.swift */; };
 		A48E6DFF23B1AD3E0043332F /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6DFE23B1AD3E0043332F /* WalkthroughViewController.swift */; };
 		A48E6E0123B1AD760043332F /* WalkthroughViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A48E6E0023B1AD760043332F /* WalkthroughViewController.storyboard */; };
@@ -173,6 +175,8 @@
 		A42E5BEF23B35394002F58C0 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		A42E5BF123B353AD002F58C0 /* TimerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimerViewController.storyboard; sourceTree = "<group>"; };
 		A42E5BF723B35970002F58C0 /* TimerCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCache.swift; sourceTree = "<group>"; };
+		A47B1E9123CD53C200F4DECC /* Marker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Marker.xib; sourceTree = "<group>"; };
+		A47B1E9323CD543E00F4DECC /* Marker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
 		A48E6DFB23B1ACD80043332F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A48E6DFE23B1AD3E0043332F /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		A48E6E0023B1AD760043332F /* WalkthroughViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WalkthroughViewController.storyboard; sourceTree = "<group>"; };
@@ -320,6 +324,7 @@
 				716C71CC23AFA9D400A78E9D /* HorizontalBarChart */,
 				A417209523B07BF90009C10D /* LineChart */,
 				A417208123B061EC0009C10D /* PieChart */,
+				A47B1E9023CD53A900F4DECC /* Marker */,
 			);
 			path = Charts;
 			sourceTree = "<group>";
@@ -625,6 +630,15 @@
 			path = Timer;
 			sourceTree = "<group>";
 		};
+		A47B1E9023CD53A900F4DECC /* Marker */ = {
+			isa = PBXGroup;
+			children = (
+				A47B1E9323CD543E00F4DECC /* Marker.swift */,
+				A47B1E9123CD53C200F4DECC /* Marker.xib */,
+			);
+			path = Marker;
+			sourceTree = "<group>";
+		};
 		A48E6DFD23B1AD250043332F /* Walkthrough */ = {
 			isa = PBXGroup;
 			children = (
@@ -752,6 +766,7 @@
 				716C71C923ADD17200A78E9D /* BarChartViewController.storyboard in Resources */,
 				716C71DA23B273D800A78E9D /* TimelineViewController.storyboard in Resources */,
 				716C719C23ADBB9100A78E9D /* Assets.xcassets in Resources */,
+				A47B1E9223CD53C200F4DECC /* Marker.xib in Resources */,
 				71B56DC023BD0AC1003DB0B5 /* WeekAveLineChartViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -817,6 +832,7 @@
 				716C719323ADBB8A00A78E9D /* AppDelegate.swift in Sources */,
 				A48E6E1A23B202710043332F /* ThirdStepViewController.swift in Sources */,
 				A48E6E1D23B207620043332F /* TabBarController.swift in Sources */,
+				A47B1E9423CD543E00F4DECC /* Marker.swift in Sources */,
 				716C71C723ADCF9300A78E9D /* BarChartViewController.swift in Sources */,
 				712D00C923C33F1000B21E7B /* Alert.swift in Sources */,
 				71BDECC523B73E7200410D38 /* HBarChartViewController.swift in Sources */,
