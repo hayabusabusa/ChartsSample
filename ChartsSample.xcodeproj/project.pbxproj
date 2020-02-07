@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		711C112B23BDE93F00A21B55 /* TEAContributionGraphDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711C112A23BDE93F00A21B55 /* TEAContributionGraphDataSource.swift */; };
+		711C112D23BDEE7200A21B55 /* TEAContributionGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711C112C23BDEE7200A21B55 /* TEAContributionGraph.swift */; };
+		7120165E23BD8F5800BE166F /* WeekAveLineChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7120165D23BD8F5700BE166F /* WeekAveLineChartViewModel.swift */; };
+		7120166223BD901500BE166F /* StudyToWeekAveLineChartDataTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7120166123BD901500BE166F /* StudyToWeekAveLineChartDataTranslator.swift */; };
+		712D00C523C2C58B00B21E7B /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712D00C423C2C58B00B21E7B /* Day.swift */; };
+		712D00C923C33F1000B21E7B /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712D00C823C33F1000B21E7B /* Alert.swift */; };
 		716C719323ADBB8A00A78E9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C719223ADBB8A00A78E9D /* AppDelegate.swift */; };
 		716C719523ADBB8A00A78E9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C719423ADBB8A00A78E9D /* SceneDelegate.swift */; };
 		716C719C23ADBB9100A78E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 716C719B23ADBB9100A78E9D /* Assets.xcassets */; };
@@ -15,9 +21,7 @@
 		716C71AD23ADBF8100A78E9D /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716C71A823ADBF8000A78E9D /* Charts.framework */; };
 		716C71AF23ADBF8100A78E9D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716C71A923ADBF8000A78E9D /* RxSwift.framework */; };
 		716C71B123ADBF8100A78E9D /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716C71AA23ADBF8000A78E9D /* RxCocoa.framework */; };
-		716C71B823ADC01A00A78E9D /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71B723ADC01A00A78E9D /* DashboardViewController.swift */; };
 		716C71BB23ADC06E00A78E9D /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71BA23ADC06E00A78E9D /* Storyboard.swift */; };
-		716C71BD23ADC10600A78E9D /* DashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716C71BC23ADC10600A78E9D /* DashboardViewController.storyboard */; };
 		716C71C023ADC18200A78E9D /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71BF23ADC18200A78E9D /* NavigationController.swift */; };
 		716C71C323ADCB4D00A78E9D /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71C223ADCB4D00A78E9D /* UIViewController+Extension.swift */; };
 		716C71C723ADCF9300A78E9D /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71C623ADCF9300A78E9D /* BarChartViewController.swift */; };
@@ -25,24 +29,82 @@
 		716C71CB23ADD84D00A78E9D /* ChartType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71CA23ADD84D00A78E9D /* ChartType.swift */; };
 		716C71CE23AFAA0800A78E9D /* HorizontalBarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71CD23AFAA0800A78E9D /* HorizontalBarChartViewController.swift */; };
 		716C71D023AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716C71CF23AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard */; };
+		716C71D323B26FBB00A78E9D /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71D223B26FBB00A78E9D /* DashboardViewController.swift */; };
+		716C71D523B26FE100A78E9D /* DashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716C71D423B26FE100A78E9D /* DashboardViewController.storyboard */; };
+		716C71D823B273B900A78E9D /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71D723B273B900A78E9D /* TimelineViewController.swift */; };
+		716C71DA23B273D800A78E9D /* TimelineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716C71D923B273D800A78E9D /* TimelineViewController.storyboard */; };
+		716C71DD23B3948700A78E9D /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71DC23B3948700A78E9D /* TimerViewModel.swift */; };
+		716C71E523B4722000A78E9D /* ScaledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71E423B4722000A78E9D /* ScaledButton.swift */; };
+		716C71EA23B6BE7600A78E9D /* AverageBarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71E923B6BE7600A78E9D /* AverageBarChartViewController.swift */; };
+		716C71EC23B6BF3D00A78E9D /* AverageBarChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716C71EB23B6BF3D00A78E9D /* AverageBarChartViewController.storyboard */; };
+		716C71EF23B6C0A500A78E9D /* AverageBarChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C71EE23B6C0A500A78E9D /* AverageBarChartViewModel.swift */; };
+		71B56DBE23BD0A9B003DB0B5 /* WeekAveLineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B56DBD23BD0A9B003DB0B5 /* WeekAveLineChartViewController.swift */; };
+		71B56DC023BD0AC1003DB0B5 /* WeekAveLineChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71B56DBF23BD0AC1003DB0B5 /* WeekAveLineChartViewController.storyboard */; };
+		71B56DC323BD8767003DB0B5 /* Charts+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B56DC223BD8767003DB0B5 /* Charts+Rx.swift */; };
+		71BDECC523B73E7200410D38 /* HBarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BDECC423B73E7200410D38 /* HBarChartViewController.swift */; };
+		71BDECC723B73F1E00410D38 /* HBarChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BDECC623B73F1E00410D38 /* HBarChartViewController.storyboard */; };
+		71C85E6323B7847D00440C63 /* HBarChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C85E6223B7847D00440C63 /* HBarChartViewModel.swift */; };
+		71C85E6623B7952800440C63 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C85E6523B7952800440C63 /* LoginViewController.swift */; };
+		71C85E6823B795E400440C63 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C85E6723B795E400440C63 /* LoginViewController.storyboard */; };
+		71C85E6F23B8EFAF00440C63 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C85E6E23B8EFAF00440C63 /* RoundedTextField.swift */; };
+		71C85E7223B8F97D00440C63 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C85E7123B8F97D00440C63 /* LoginViewModel.swift */; };
+		71F56A9923BC6BA100FB5DA3 /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F56A9823BC6BA100FB5DA3 /* Translator.swift */; };
+		71F56A9C23BC6C2B00FB5DA3 /* StudyToBarChartDataTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F56A9B23BC6C2B00FB5DA3 /* StudyToBarChartDataTranslator.swift */; };
+		71F56A9E23BC7D1000FB5DA3 /* ViewableTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F56A9D23BC7D1000FB5DA3 /* ViewableTranslator.swift */; };
+		71F56AA223BC812800FB5DA3 /* StudyToHBarChartDataTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F56AA123BC812800FB5DA3 /* StudyToHBarChartDataTranslator.swift */; };
+		71F56AA623BC86AC00FB5DA3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F56AA523BC86AC00FB5DA3 /* UIColor+Extension.swift */; };
+		A40FDC9E23B5918000C91E46 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDC9D23B5918000C91E46 /* SettingViewController.swift */; };
+		A40FDCA023B5923F00C91E46 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40FDC9F23B5923E00C91E46 /* SettingViewController.storyboard */; };
+		A40FDCA423B5973200C91E46 /* SettingListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDCA223B5973200C91E46 /* SettingListCell.swift */; };
+		A40FDCA523B5973200C91E46 /* SettingListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A40FDCA323B5973200C91E46 /* SettingListCell.xib */; };
+		A40FDCA823B59FB500C91E46 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDCA723B59FB500C91E46 /* SettingViewModel.swift */; };
+		A40FDCB223B5A85900C91E46 /* Study.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDCB123B5A85900C91E46 /* Study.swift */; };
+		A40FDCB523B5BCA000C91E46 /* SettingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDCB423B5BCA000C91E46 /* SettingDataSource.swift */; };
+		A40FDCB723B5BCF800C91E46 /* SettingSectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDCB623B5BCF800C91E46 /* SettingSectionType.swift */; };
+		A40FDCBB23B5D8A400C91E46 /* MockStudyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40FDCBA23B5D8A400C91E46 /* MockStudyProvider.swift */; };
 		A417208323B061FF0009C10D /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208223B061FF0009C10D /* PieChartViewController.swift */; };
 		A417208523B062190009C10D /* PieChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A417208423B062190009C10D /* PieChartViewController.storyboard */; };
 		A417208923B069290009C10D /* RxAnimated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208623B069290009C10D /* RxAnimated.swift */; };
 		A417208A23B069290009C10D /* RxAnimated+animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208723B069290009C10D /* RxAnimated+animations.swift */; };
 		A417208B23B069290009C10D /* RxAnimated+bindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208823B069290009C10D /* RxAnimated+bindings.swift */; };
-		A417208E23B074890009C10D /* DashboardPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417208D23B074890009C10D /* DashboardPopoverViewController.swift */; };
-		A417209223B076250009C10D /* DashboardPopoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A417209123B076250009C10D /* DashboardPopoverViewController.storyboard */; };
-		A417209423B077BF0009C10D /* DashboardPopoverPresentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417209323B077BF0009C10D /* DashboardPopoverPresentDelegate.swift */; };
 		A417209723B07C0F0009C10D /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417209623B07C0F0009C10D /* LineChartViewController.swift */; };
 		A417209923B07D790009C10D /* LineChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A417209823B07D790009C10D /* LineChartViewController.storyboard */; };
-		A417209B23B092600009C10D /* SwiftCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A417209A23B092600009C10D /* SwiftCharts.framework */; };
-		A41720A023B0945C0009C10D /* SCDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417209F23B0945C0009C10D /* SCDashboardViewController.swift */; };
-		A41720A223B094760009C10D /* SCDashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41720A123B094760009C10D /* SCDashboardViewController.storyboard */; };
-		A41720A523B09B730009C10D /* SCBarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41720A423B09B730009C10D /* SCBarChartViewController.swift */; };
-		A41720A723B09B9C0009C10D /* SCBarChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41720A623B09B9C0009C10D /* SCBarChartViewController.storyboard */; };
+		A42E5BD823B33B68002F58C0 /* LocalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E5BD723B33B68002F58C0 /* LocalSettings.swift */; };
+		A42E5BDB23B34373002F58C0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E5BDA23B34373002F58C0 /* RootViewController.swift */; };
+		A42E5BDD23B34393002F58C0 /* RootViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42E5BDC23B34393002F58C0 /* RootViewController.storyboard */; };
+		A42E5BDF23B34548002F58C0 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E5BDE23B34548002F58C0 /* UIViewController+Rx.swift */; };
+		A42E5BE323B34658002F58C0 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E5BE223B34658002F58C0 /* RootViewModel.swift */; };
+		A42E5BE523B34661002F58C0 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E5BE423B34661002F58C0 /* ViewModelType.swift */; };
+		A42E5BE823B34C70002F58C0 /* WalkthroughViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E5BE723B34C70002F58C0 /* WalkthroughViewModel.swift */; };
+		A42E5BEB23B35224002F58C0 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E5BEA23B35224002F58C0 /* DashboardViewModel.swift */; };
+		A42E5BF023B35394002F58C0 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E5BEF23B35394002F58C0 /* TimerViewController.swift */; };
+		A42E5BF223B353AD002F58C0 /* TimerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42E5BF123B353AD002F58C0 /* TimerViewController.storyboard */; };
+		A42E5BF823B35970002F58C0 /* TimerCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E5BF723B35970002F58C0 /* TimerCache.swift */; };
+		A47B1E9223CD53C200F4DECC /* Marker.xib in Resources */ = {isa = PBXBuildFile; fileRef = A47B1E9123CD53C200F4DECC /* Marker.xib */; };
+		A47B1E9423CD543E00F4DECC /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47B1E9323CD543E00F4DECC /* Marker.swift */; };
+		A48E6DFC23B1ACD80043332F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6DFB23B1ACD80043332F /* BaseViewController.swift */; };
+		A48E6DFF23B1AD3E0043332F /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6DFE23B1AD3E0043332F /* WalkthroughViewController.swift */; };
+		A48E6E0123B1AD760043332F /* WalkthroughViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A48E6E0023B1AD760043332F /* WalkthroughViewController.storyboard */; };
+		A48E6E0323B1AE2D0043332F /* UIScrollView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E0223B1AE2C0043332F /* UIScrollView+Rx.swift */; };
+		A48E6E0523B1B0E50043332F /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E0423B1B0E50043332F /* ColorPalette.swift */; };
+		A48E6E0B23B1B59D0043332F /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E0823B1B59D0043332F /* RoundedButton.swift */; };
+		A48E6E0C23B1B59D0043332F /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E0923B1B59D0043332F /* ContainerView.swift */; };
+		A48E6E0D23B1B59D0043332F /* OutlinedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E0A23B1B59D0043332F /* OutlinedButton.swift */; };
+		A48E6E1023B1C9250043332F /* FirstStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E0F23B1C9250043332F /* FirstStepViewController.swift */; };
+		A48E6E1223B1CEFE0043332F /* SecondStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E1123B1CEFE0043332F /* SecondStepViewController.swift */; };
+		A48E6E1A23B202710043332F /* ThirdStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E1923B202710043332F /* ThirdStepViewController.swift */; };
+		A48E6E1D23B207620043332F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E1C23B207620043332F /* TabBarController.swift */; };
+		A48E6E1F23B2079E0043332F /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A48E6E1E23B2079E0043332F /* TabBarController.storyboard */; };
+		A48E6E2123B208F00043332F /* TabBarItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48E6E2023B208F00043332F /* TabBarItemType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		711C112A23BDE93F00A21B55 /* TEAContributionGraphDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEAContributionGraphDataSource.swift; sourceTree = "<group>"; };
+		711C112C23BDEE7200A21B55 /* TEAContributionGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEAContributionGraph.swift; sourceTree = "<group>"; };
+		7120165D23BD8F5700BE166F /* WeekAveLineChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekAveLineChartViewModel.swift; sourceTree = "<group>"; };
+		7120166123BD901500BE166F /* StudyToWeekAveLineChartDataTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyToWeekAveLineChartDataTranslator.swift; sourceTree = "<group>"; };
+		712D00C423C2C58B00B21E7B /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		712D00C823C33F1000B21E7B /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		716C718F23ADBB8A00A78E9D /* ChartsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		716C719223ADBB8A00A78E9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		716C719423ADBB8A00A78E9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,9 +115,7 @@
 		716C71A823ADBF8000A78E9D /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
 		716C71A923ADBF8000A78E9D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		716C71AA23ADBF8000A78E9D /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
-		716C71B723ADC01A00A78E9D /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		716C71BA23ADC06E00A78E9D /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
-		716C71BC23ADC10600A78E9D /* DashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardViewController.storyboard; sourceTree = "<group>"; };
 		716C71BF23ADC18200A78E9D /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		716C71C223ADCB4D00A78E9D /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		716C71C623ADCF9300A78E9D /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
@@ -63,21 +123,74 @@
 		716C71CA23ADD84D00A78E9D /* ChartType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartType.swift; sourceTree = "<group>"; };
 		716C71CD23AFAA0800A78E9D /* HorizontalBarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalBarChartViewController.swift; sourceTree = "<group>"; };
 		716C71CF23AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HorizontalBarChartViewController.storyboard; sourceTree = "<group>"; };
+		716C71D223B26FBB00A78E9D /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		716C71D423B26FE100A78E9D /* DashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardViewController.storyboard; sourceTree = "<group>"; };
+		716C71D723B273B900A78E9D /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		716C71D923B273D800A78E9D /* TimelineViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimelineViewController.storyboard; sourceTree = "<group>"; };
+		716C71DC23B3948700A78E9D /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		716C71E423B4722000A78E9D /* ScaledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledButton.swift; sourceTree = "<group>"; };
+		716C71E923B6BE7600A78E9D /* AverageBarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageBarChartViewController.swift; sourceTree = "<group>"; };
+		716C71EB23B6BF3D00A78E9D /* AverageBarChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AverageBarChartViewController.storyboard; sourceTree = "<group>"; };
+		716C71EE23B6C0A500A78E9D /* AverageBarChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageBarChartViewModel.swift; sourceTree = "<group>"; };
+		71B56DBD23BD0A9B003DB0B5 /* WeekAveLineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekAveLineChartViewController.swift; sourceTree = "<group>"; };
+		71B56DBF23BD0AC1003DB0B5 /* WeekAveLineChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeekAveLineChartViewController.storyboard; sourceTree = "<group>"; };
+		71B56DC223BD8767003DB0B5 /* Charts+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charts+Rx.swift"; sourceTree = "<group>"; };
+		71BDECC423B73E7200410D38 /* HBarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBarChartViewController.swift; sourceTree = "<group>"; };
+		71BDECC623B73F1E00410D38 /* HBarChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HBarChartViewController.storyboard; sourceTree = "<group>"; };
+		71C85E6223B7847D00440C63 /* HBarChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBarChartViewModel.swift; sourceTree = "<group>"; };
+		71C85E6523B7952800440C63 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		71C85E6723B795E400440C63 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		71C85E6E23B8EFAF00440C63 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
+		71C85E7123B8F97D00440C63 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		71F56A9823BC6BA100FB5DA3 /* Translator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
+		71F56A9B23BC6C2B00FB5DA3 /* StudyToBarChartDataTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyToBarChartDataTranslator.swift; sourceTree = "<group>"; };
+		71F56A9D23BC7D1000FB5DA3 /* ViewableTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewableTranslator.swift; sourceTree = "<group>"; };
+		71F56AA123BC812800FB5DA3 /* StudyToHBarChartDataTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyToHBarChartDataTranslator.swift; sourceTree = "<group>"; };
+		71F56AA523BC86AC00FB5DA3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		A40FDC9D23B5918000C91E46 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		A40FDC9F23B5923E00C91E46 /* SettingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingViewController.storyboard; sourceTree = "<group>"; };
+		A40FDCA223B5973200C91E46 /* SettingListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListCell.swift; sourceTree = "<group>"; };
+		A40FDCA323B5973200C91E46 /* SettingListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingListCell.xib; sourceTree = "<group>"; };
+		A40FDCA723B59FB500C91E46 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		A40FDCB123B5A85900C91E46 /* Study.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Study.swift; sourceTree = "<group>"; };
+		A40FDCB423B5BCA000C91E46 /* SettingDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingDataSource.swift; sourceTree = "<group>"; };
+		A40FDCB623B5BCF800C91E46 /* SettingSectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingSectionType.swift; sourceTree = "<group>"; };
+		A40FDCBA23B5D8A400C91E46 /* MockStudyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MockStudyProvider.swift; path = ChartsSample/Application/View/Setting/DataSource/MockStudyProvider.swift; sourceTree = SOURCE_ROOT; };
 		A417208223B061FF0009C10D /* PieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
 		A417208423B062190009C10D /* PieChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PieChartViewController.storyboard; sourceTree = "<group>"; };
 		A417208623B069290009C10D /* RxAnimated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxAnimated.swift; sourceTree = "<group>"; };
 		A417208723B069290009C10D /* RxAnimated+animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RxAnimated+animations.swift"; sourceTree = "<group>"; };
 		A417208823B069290009C10D /* RxAnimated+bindings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RxAnimated+bindings.swift"; sourceTree = "<group>"; };
-		A417208D23B074890009C10D /* DashboardPopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPopoverViewController.swift; sourceTree = "<group>"; };
-		A417209123B076250009C10D /* DashboardPopoverViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardPopoverViewController.storyboard; sourceTree = "<group>"; };
-		A417209323B077BF0009C10D /* DashboardPopoverPresentDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPopoverPresentDelegate.swift; sourceTree = "<group>"; };
 		A417209623B07C0F0009C10D /* LineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
 		A417209823B07D790009C10D /* LineChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LineChartViewController.storyboard; sourceTree = "<group>"; };
 		A417209A23B092600009C10D /* SwiftCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCharts.framework; path = Carthage/Build/iOS/SwiftCharts.framework; sourceTree = "<group>"; };
-		A417209F23B0945C0009C10D /* SCDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCDashboardViewController.swift; sourceTree = "<group>"; };
-		A41720A123B094760009C10D /* SCDashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SCDashboardViewController.storyboard; sourceTree = "<group>"; };
-		A41720A423B09B730009C10D /* SCBarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCBarChartViewController.swift; sourceTree = "<group>"; };
-		A41720A623B09B9C0009C10D /* SCBarChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SCBarChartViewController.storyboard; sourceTree = "<group>"; };
+		A42E5BD723B33B68002F58C0 /* LocalSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSettings.swift; sourceTree = "<group>"; };
+		A42E5BDA23B34373002F58C0 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		A42E5BDC23B34393002F58C0 /* RootViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RootViewController.storyboard; sourceTree = "<group>"; };
+		A42E5BDE23B34548002F58C0 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
+		A42E5BE223B34658002F58C0 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		A42E5BE423B34661002F58C0 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		A42E5BE723B34C70002F58C0 /* WalkthroughViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewModel.swift; sourceTree = "<group>"; };
+		A42E5BEA23B35224002F58C0 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		A42E5BEF23B35394002F58C0 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		A42E5BF123B353AD002F58C0 /* TimerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimerViewController.storyboard; sourceTree = "<group>"; };
+		A42E5BF723B35970002F58C0 /* TimerCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCache.swift; sourceTree = "<group>"; };
+		A47B1E9123CD53C200F4DECC /* Marker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Marker.xib; sourceTree = "<group>"; };
+		A47B1E9323CD543E00F4DECC /* Marker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
+		A48E6DFB23B1ACD80043332F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A48E6DFE23B1AD3E0043332F /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
+		A48E6E0023B1AD760043332F /* WalkthroughViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WalkthroughViewController.storyboard; sourceTree = "<group>"; };
+		A48E6E0223B1AE2C0043332F /* UIScrollView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Rx.swift"; sourceTree = "<group>"; };
+		A48E6E0423B1B0E50043332F /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		A48E6E0823B1B59D0043332F /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		A48E6E0923B1B59D0043332F /* ContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		A48E6E0A23B1B59D0043332F /* OutlinedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutlinedButton.swift; sourceTree = "<group>"; };
+		A48E6E0F23B1C9250043332F /* FirstStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepViewController.swift; sourceTree = "<group>"; };
+		A48E6E1123B1CEFE0043332F /* SecondStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStepViewController.swift; sourceTree = "<group>"; };
+		A48E6E1923B202710043332F /* ThirdStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdStepViewController.swift; sourceTree = "<group>"; };
+		A48E6E1C23B207620043332F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		A48E6E1E23B2079E0043332F /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
+		A48E6E2023B208F00043332F /* TabBarItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +198,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A417209B23B092600009C10D /* SwiftCharts.framework in Frameworks */,
 				716C71B123ADBF8100A78E9D /* RxCocoa.framework in Frameworks */,
 				716C71AB23ADBF8100A78E9D /* RxRelay.framework in Frameworks */,
 				716C71AD23ADBF8100A78E9D /* Charts.framework in Frameworks */,
@@ -96,6 +208,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		711C112923BDE92900A21B55 /* TEAContributionGraph */ = {
+			isa = PBXGroup;
+			children = (
+				711C112A23BDE93F00A21B55 /* TEAContributionGraphDataSource.swift */,
+				711C112C23BDEE7200A21B55 /* TEAContributionGraph.swift */,
+			);
+			path = TEAContributionGraph;
+			sourceTree = "<group>";
+		};
 		716C718623ADBB8A00A78E9D = {
 			isa = PBXGroup;
 			children = (
@@ -116,9 +237,8 @@
 		716C719123ADBB8A00A78E9D /* ChartsSample */ = {
 			isa = PBXGroup;
 			children = (
-				716C719223ADBB8A00A78E9D /* AppDelegate.swift */,
-				716C719423ADBB8A00A78E9D /* SceneDelegate.swift */,
-				716C71B523ADC00500A78E9D /* View */,
+				A42E5BF423B35938002F58C0 /* Application */,
+				A42E5BF323B3591F002F58C0 /* Infrastracture */,
 				716C71B923ADC05F00A78E9D /* Environment */,
 				716C719B23ADBB9100A78E9D /* Assets.xcassets */,
 				716C719D23ADBB9100A78E9D /* LaunchScreen.storyboard */,
@@ -143,27 +263,26 @@
 			isa = PBXGroup;
 			children = (
 				716C71BE23ADC16F00A78E9D /* Base */,
-				716C71B623ADC00D00A78E9D /* Dashboard */,
-				A417208C23B0746E0009C10D /* DashboardPopover */,
-				716C71C423ADCF0400A78E9D /* DashboardCharts */,
-				A41720A823B0A12F0009C10D /* TEST */,
+				A42E5BD923B34367002F58C0 /* Root */,
+				A48E6DFD23B1AD250043332F /* Walkthrough */,
+				71C85E6423B7950E00440C63 /* Login */,
+				A48E6E1B23B207520043332F /* TabBar */,
+				716C71D123B26FA900A78E9D /* Dashboard */,
+				716C71D623B272A200A78E9D /* Timeline */,
+				A42E5BEC23B3531F002F58C0 /* Timer */,
+				A40FDC9C23B5916900C91E46 /* Setting */,
+				716C71C423ADCF0400A78E9D /* Charts */,
+				A48E6E0623B1B57F0043332F /* Common */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		716C71B623ADC00D00A78E9D /* Dashboard */ = {
-			isa = PBXGroup;
-			children = (
-				716C71B723ADC01A00A78E9D /* DashboardViewController.swift */,
-				716C71BC23ADC10600A78E9D /* DashboardViewController.storyboard */,
-			);
-			path = Dashboard;
 			sourceTree = "<group>";
 		};
 		716C71B923ADC05F00A78E9D /* Environment */ = {
 			isa = PBXGroup;
 			children = (
 				716C71BA23ADC06E00A78E9D /* Storyboard.swift */,
+				A42E5BD723B33B68002F58C0 /* LocalSettings.swift */,
+				A48E6E0423B1B0E50043332F /* ColorPalette.swift */,
 				716C71C123ADCB3B00A78E9D /* Util */,
 			);
 			path = Environment;
@@ -173,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				716C71BF23ADC18200A78E9D /* NavigationController.swift */,
+				A48E6DFB23B1ACD80043332F /* BaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -180,24 +300,33 @@
 		716C71C123ADCB3B00A78E9D /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				71F56AA523BC86AC00FB5DA3 /* UIColor+Extension.swift */,
+				A48E6E0223B1AE2C0043332F /* UIScrollView+Rx.swift */,
+				716C71C223ADCB4D00A78E9D /* UIViewController+Extension.swift */,
+				A42E5BDE23B34548002F58C0 /* UIViewController+Rx.swift */,
+				71B56DC223BD8767003DB0B5 /* Charts+Rx.swift */,
 				A417208623B069290009C10D /* RxAnimated.swift */,
 				A417208723B069290009C10D /* RxAnimated+animations.swift */,
 				A417208823B069290009C10D /* RxAnimated+bindings.swift */,
-				716C71C223ADCB4D00A78E9D /* UIViewController+Extension.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
 		};
-		716C71C423ADCF0400A78E9D /* DashboardCharts */ = {
+		716C71C423ADCF0400A78E9D /* Charts */ = {
 			isa = PBXGroup;
 			children = (
 				716C71CA23ADD84D00A78E9D /* ChartType.swift */,
+				716C71E623B6BE0600A78E9D /* AverageBarChart */,
+				71BDECC323B73DC500410D38 /* HBarChart */,
+				71B56DBC23BD0A79003DB0B5 /* WeekAveLineChart */,
+				711C112923BDE92900A21B55 /* TEAContributionGraph */,
 				716C71C523ADCF8500A78E9D /* BarChart */,
 				716C71CC23AFA9D400A78E9D /* HorizontalBarChart */,
 				A417209523B07BF90009C10D /* LineChart */,
 				A417208123B061EC0009C10D /* PieChart */,
+				A47B1E9023CD53A900F4DECC /* Marker */,
 			);
-			path = DashboardCharts;
+			path = Charts;
 			sourceTree = "<group>";
 		};
 		716C71C523ADCF8500A78E9D /* BarChart */ = {
@@ -218,6 +347,175 @@
 			path = HorizontalBarChart;
 			sourceTree = "<group>";
 		};
+		716C71D123B26FA900A78E9D /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				716C71D223B26FBB00A78E9D /* DashboardViewController.swift */,
+				716C71D423B26FE100A78E9D /* DashboardViewController.storyboard */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		716C71D623B272A200A78E9D /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				716C71D723B273B900A78E9D /* TimelineViewController.swift */,
+				716C71D923B273D800A78E9D /* TimelineViewController.storyboard */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		716C71DB23B3939000A78E9D /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				716C71DC23B3948700A78E9D /* TimerViewModel.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		716C71E623B6BE0600A78E9D /* AverageBarChart */ = {
+			isa = PBXGroup;
+			children = (
+				716C71E923B6BE7600A78E9D /* AverageBarChartViewController.swift */,
+				716C71EB23B6BF3D00A78E9D /* AverageBarChartViewController.storyboard */,
+			);
+			path = AverageBarChart;
+			sourceTree = "<group>";
+		};
+		716C71ED23B6C08D00A78E9D /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				716C71EE23B6C0A500A78E9D /* AverageBarChartViewModel.swift */,
+				71C85E6223B7847D00440C63 /* HBarChartViewModel.swift */,
+				7120165D23BD8F5700BE166F /* WeekAveLineChartViewModel.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		71B56DBB23BD04FE003DB0B5 /* Transloator */ = {
+			isa = PBXGroup;
+			children = (
+				71F56A9D23BC7D1000FB5DA3 /* ViewableTranslator.swift */,
+				71F56A9A23BC6C1400FB5DA3 /* Study */,
+			);
+			path = Transloator;
+			sourceTree = "<group>";
+		};
+		71B56DBC23BD0A79003DB0B5 /* WeekAveLineChart */ = {
+			isa = PBXGroup;
+			children = (
+				71B56DBD23BD0A9B003DB0B5 /* WeekAveLineChartViewController.swift */,
+				71B56DBF23BD0AC1003DB0B5 /* WeekAveLineChartViewController.storyboard */,
+			);
+			path = WeekAveLineChart;
+			sourceTree = "<group>";
+		};
+		71BDECC323B73DC500410D38 /* HBarChart */ = {
+			isa = PBXGroup;
+			children = (
+				71BDECC423B73E7200410D38 /* HBarChartViewController.swift */,
+				71BDECC623B73F1E00410D38 /* HBarChartViewController.storyboard */,
+			);
+			path = HBarChart;
+			sourceTree = "<group>";
+		};
+		71C85E6423B7950E00440C63 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				71C85E6523B7952800440C63 /* LoginViewController.swift */,
+				71C85E6723B795E400440C63 /* LoginViewController.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		71C85E7023B8F97100440C63 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				71C85E7123B8F97D00440C63 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		71F56A9723BC6B8B00FB5DA3 /* Translator */ = {
+			isa = PBXGroup;
+			children = (
+				71F56A9823BC6BA100FB5DA3 /* Translator.swift */,
+			);
+			path = Translator;
+			sourceTree = "<group>";
+		};
+		71F56A9A23BC6C1400FB5DA3 /* Study */ = {
+			isa = PBXGroup;
+			children = (
+				71F56A9B23BC6C2B00FB5DA3 /* StudyToBarChartDataTranslator.swift */,
+				71F56AA123BC812800FB5DA3 /* StudyToHBarChartDataTranslator.swift */,
+				7120166123BD901500BE166F /* StudyToWeekAveLineChartDataTranslator.swift */,
+			);
+			path = Study;
+			sourceTree = "<group>";
+		};
+		A40FDC9C23B5916900C91E46 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				A40FDC9D23B5918000C91E46 /* SettingViewController.swift */,
+				A40FDC9F23B5923E00C91E46 /* SettingViewController.storyboard */,
+				A40FDCB323B5BB8200C91E46 /* DataSource */,
+				A40FDCA123B596FF00C91E46 /* Cell */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		A40FDCA123B596FF00C91E46 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A40FDCA223B5973200C91E46 /* SettingListCell.swift */,
+				A40FDCA323B5973200C91E46 /* SettingListCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A40FDCA623B59F6E00C91E46 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				A40FDCA723B59FB500C91E46 /* SettingViewModel.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		A40FDCB023B5A85000C91E46 /* Study */ = {
+			isa = PBXGroup;
+			children = (
+				712D00C423C2C58B00B21E7B /* Day.swift */,
+				A40FDCB123B5A85900C91E46 /* Study.swift */,
+			);
+			path = Study;
+			sourceTree = "<group>";
+		};
+		A40FDCB323B5BB8200C91E46 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				A40FDCB623B5BCF800C91E46 /* SettingSectionType.swift */,
+				A40FDCB423B5BCA000C91E46 /* SettingDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		A40FDCB823B5D87E00C91E46 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				A40FDCB923B5D88900C91E46 /* MockStudy */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		A40FDCB923B5D88900C91E46 /* MockStudy */ = {
+			isa = PBXGroup;
+			children = (
+				A40FDCBA23B5D8A400C91E46 /* MockStudyProvider.swift */,
+			);
+			path = MockStudy;
+			sourceTree = "<group>";
+		};
 		A417208123B061EC0009C10D /* PieChart */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,16 +523,6 @@
 				A417208423B062190009C10D /* PieChartViewController.storyboard */,
 			);
 			path = PieChart;
-			sourceTree = "<group>";
-		};
-		A417208C23B0746E0009C10D /* DashboardPopover */ = {
-			isa = PBXGroup;
-			children = (
-				A417209323B077BF0009C10D /* DashboardPopoverPresentDelegate.swift */,
-				A417208D23B074890009C10D /* DashboardPopoverViewController.swift */,
-				A417209123B076250009C10D /* DashboardPopoverViewController.storyboard */,
-			);
-			path = DashboardPopover;
 			sourceTree = "<group>";
 		};
 		A417209523B07BF90009C10D /* LineChart */ = {
@@ -246,31 +534,160 @@
 			path = LineChart;
 			sourceTree = "<group>";
 		};
-		A417209E23B094410009C10D /* SCDashboard */ = {
+		A42E5BD923B34367002F58C0 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				A417209F23B0945C0009C10D /* SCDashboardViewController.swift */,
-				A41720A123B094760009C10D /* SCDashboardViewController.storyboard */,
-				A41720A323B09B440009C10D /* SCBarChart */,
+				A42E5BDA23B34373002F58C0 /* RootViewController.swift */,
+				A42E5BDC23B34393002F58C0 /* RootViewController.storyboard */,
 			);
-			path = SCDashboard;
+			path = Root;
 			sourceTree = "<group>";
 		};
-		A41720A323B09B440009C10D /* SCBarChart */ = {
+		A42E5BE023B34645002F58C0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				A41720A423B09B730009C10D /* SCBarChartViewController.swift */,
-				A41720A623B09B9C0009C10D /* SCBarChartViewController.storyboard */,
+				A42E5BE423B34661002F58C0 /* ViewModelType.swift */,
+				A42E5BE123B34650002F58C0 /* Root */,
+				A42E5BE623B34C58002F58C0 /* Walkthrough */,
+				71C85E7023B8F97100440C63 /* Login */,
+				A42E5BE923B3520D002F58C0 /* Dashboard */,
+				716C71DB23B3939000A78E9D /* Timer */,
+				A40FDCA623B59F6E00C91E46 /* Setting */,
+				716C71ED23B6C08D00A78E9D /* Charts */,
 			);
-			path = SCBarChart;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		A41720A823B0A12F0009C10D /* TEST */ = {
+		A42E5BE123B34650002F58C0 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				A417209E23B094410009C10D /* SCDashboard */,
+				A42E5BE223B34658002F58C0 /* RootViewModel.swift */,
 			);
-			path = TEST;
+			path = Root;
+			sourceTree = "<group>";
+		};
+		A42E5BE623B34C58002F58C0 /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				A42E5BE723B34C70002F58C0 /* WalkthroughViewModel.swift */,
+			);
+			path = Walkthrough;
+			sourceTree = "<group>";
+		};
+		A42E5BE923B3520D002F58C0 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				A42E5BEA23B35224002F58C0 /* DashboardViewModel.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		A42E5BEC23B3531F002F58C0 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				A42E5BEF23B35394002F58C0 /* TimerViewController.swift */,
+				A42E5BF123B353AD002F58C0 /* TimerViewController.storyboard */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		A42E5BF323B3591F002F58C0 /* Infrastracture */ = {
+			isa = PBXGroup;
+			children = (
+				A40FDCB823B5D87E00C91E46 /* Provider */,
+				A42E5BF523B35953002F58C0 /* Entity */,
+				71F56A9723BC6B8B00FB5DA3 /* Translator */,
+			);
+			path = Infrastracture;
+			sourceTree = "<group>";
+		};
+		A42E5BF423B35938002F58C0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				716C719223ADBB8A00A78E9D /* AppDelegate.swift */,
+				716C719423ADBB8A00A78E9D /* SceneDelegate.swift */,
+				A42E5BE023B34645002F58C0 /* ViewModel */,
+				716C71B523ADC00500A78E9D /* View */,
+				71B56DBB23BD04FE003DB0B5 /* Transloator */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A42E5BF523B35953002F58C0 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				A40FDCB023B5A85000C91E46 /* Study */,
+				A42E5BF623B35964002F58C0 /* Timer */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		A42E5BF623B35964002F58C0 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				A42E5BF723B35970002F58C0 /* TimerCache.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		A47B1E9023CD53A900F4DECC /* Marker */ = {
+			isa = PBXGroup;
+			children = (
+				A47B1E9323CD543E00F4DECC /* Marker.swift */,
+				A47B1E9123CD53C200F4DECC /* Marker.xib */,
+			);
+			path = Marker;
+			sourceTree = "<group>";
+		};
+		A48E6DFD23B1AD250043332F /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				A48E6E0E23B1C86E0043332F /* Steps */,
+				A48E6DFE23B1AD3E0043332F /* WalkthroughViewController.swift */,
+				A48E6E0023B1AD760043332F /* WalkthroughViewController.storyboard */,
+			);
+			path = Walkthrough;
+			sourceTree = "<group>";
+		};
+		A48E6E0623B1B57F0043332F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				712D00C823C33F1000B21E7B /* Alert.swift */,
+				A48E6E0723B1B58B0043332F /* Skin */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A48E6E0723B1B58B0043332F /* Skin */ = {
+			isa = PBXGroup;
+			children = (
+				A48E6E0923B1B59D0043332F /* ContainerView.swift */,
+				A48E6E0A23B1B59D0043332F /* OutlinedButton.swift */,
+				716C71E423B4722000A78E9D /* ScaledButton.swift */,
+				A48E6E0823B1B59D0043332F /* RoundedButton.swift */,
+				71C85E6E23B8EFAF00440C63 /* RoundedTextField.swift */,
+			);
+			path = Skin;
+			sourceTree = "<group>";
+		};
+		A48E6E0E23B1C86E0043332F /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				A48E6E0F23B1C9250043332F /* FirstStepViewController.swift */,
+				A48E6E1123B1CEFE0043332F /* SecondStepViewController.swift */,
+				A48E6E1923B202710043332F /* ThirdStepViewController.swift */,
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
+		A48E6E1B23B207520043332F /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A48E6E2023B208F00043332F /* TabBarItemType.swift */,
+				A48E6E1C23B207620043332F /* TabBarController.swift */,
+				A48E6E1E23B2079E0043332F /* TabBarController.storyboard */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,16 +749,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A41720A723B09B9C0009C10D /* SCBarChartViewController.storyboard in Resources */,
-				716C71BD23ADC10600A78E9D /* DashboardViewController.storyboard in Resources */,
-				A41720A223B094760009C10D /* SCDashboardViewController.storyboard in Resources */,
 				A417208523B062190009C10D /* PieChartViewController.storyboard in Resources */,
+				A42E5BF223B353AD002F58C0 /* TimerViewController.storyboard in Resources */,
 				A417209923B07D790009C10D /* LineChartViewController.storyboard in Resources */,
+				71C85E6823B795E400440C63 /* LoginViewController.storyboard in Resources */,
+				71BDECC723B73F1E00410D38 /* HBarChartViewController.storyboard in Resources */,
+				A48E6E1F23B2079E0043332F /* TabBarController.storyboard in Resources */,
+				716C71EC23B6BF3D00A78E9D /* AverageBarChartViewController.storyboard in Resources */,
+				A40FDCA523B5973200C91E46 /* SettingListCell.xib in Resources */,
+				A42E5BDD23B34393002F58C0 /* RootViewController.storyboard in Resources */,
 				716C71D023AFAA6500A78E9D /* HorizontalBarChartViewController.storyboard in Resources */,
-				A417209223B076250009C10D /* DashboardPopoverViewController.storyboard in Resources */,
+				A48E6E0123B1AD760043332F /* WalkthroughViewController.storyboard in Resources */,
 				716C719F23ADBB9100A78E9D /* LaunchScreen.storyboard in Resources */,
+				A40FDCA023B5923F00C91E46 /* SettingViewController.storyboard in Resources */,
+				716C71D523B26FE100A78E9D /* DashboardViewController.storyboard in Resources */,
 				716C71C923ADD17200A78E9D /* BarChartViewController.storyboard in Resources */,
+				716C71DA23B273D800A78E9D /* TimelineViewController.storyboard in Resources */,
 				716C719C23ADBB9100A78E9D /* Assets.xcassets in Resources */,
+				A47B1E9223CD53C200F4DECC /* Marker.xib in Resources */,
+				71B56DC023BD0AC1003DB0B5 /* WeekAveLineChartViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +786,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SwiftCharts.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
@@ -378,24 +803,72 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A417208E23B074890009C10D /* DashboardPopoverViewController.swift in Sources */,
+				A48E6E0523B1B0E50043332F /* ColorPalette.swift in Sources */,
+				71F56A9E23BC7D1000FB5DA3 /* ViewableTranslator.swift in Sources */,
+				712D00C523C2C58B00B21E7B /* Day.swift in Sources */,
+				71C85E6F23B8EFAF00440C63 /* RoundedTextField.swift in Sources */,
+				716C71E523B4722000A78E9D /* ScaledButton.swift in Sources */,
 				A417209723B07C0F0009C10D /* LineChartViewController.swift in Sources */,
-				A41720A023B0945C0009C10D /* SCDashboardViewController.swift in Sources */,
-				A41720A523B09B730009C10D /* SCBarChartViewController.swift in Sources */,
+				A42E5BD823B33B68002F58C0 /* LocalSettings.swift in Sources */,
 				716C71C323ADCB4D00A78E9D /* UIViewController+Extension.swift in Sources */,
 				A417208A23B069290009C10D /* RxAnimated+animations.swift in Sources */,
+				A42E5BF823B35970002F58C0 /* TimerCache.swift in Sources */,
+				71C85E7223B8F97D00440C63 /* LoginViewModel.swift in Sources */,
+				71F56A9C23BC6C2B00FB5DA3 /* StudyToBarChartDataTranslator.swift in Sources */,
+				A42E5BDB23B34373002F58C0 /* RootViewController.swift in Sources */,
+				71B56DBE23BD0A9B003DB0B5 /* WeekAveLineChartViewController.swift in Sources */,
 				716C71BB23ADC06E00A78E9D /* Storyboard.swift in Sources */,
+				716C71D823B273B900A78E9D /* TimelineViewController.swift in Sources */,
 				716C71CE23AFAA0800A78E9D /* HorizontalBarChartViewController.swift in Sources */,
+				711C112B23BDE93F00A21B55 /* TEAContributionGraphDataSource.swift in Sources */,
+				A48E6DFC23B1ACD80043332F /* BaseViewController.swift in Sources */,
+				A42E5BF023B35394002F58C0 /* TimerViewController.swift in Sources */,
+				A42E5BDF23B34548002F58C0 /* UIViewController+Rx.swift in Sources */,
+				71F56AA623BC86AC00FB5DA3 /* UIColor+Extension.swift in Sources */,
+				A40FDCB523B5BCA000C91E46 /* SettingDataSource.swift in Sources */,
+				A42E5BE323B34658002F58C0 /* RootViewModel.swift in Sources */,
+				A40FDCA823B59FB500C91E46 /* SettingViewModel.swift in Sources */,
+				716C71D323B26FBB00A78E9D /* DashboardViewController.swift in Sources */,
 				716C719323ADBB8A00A78E9D /* AppDelegate.swift in Sources */,
+				A48E6E1A23B202710043332F /* ThirdStepViewController.swift in Sources */,
+				A48E6E1D23B207620043332F /* TabBarController.swift in Sources */,
+				A47B1E9423CD543E00F4DECC /* Marker.swift in Sources */,
 				716C71C723ADCF9300A78E9D /* BarChartViewController.swift in Sources */,
-				A417209423B077BF0009C10D /* DashboardPopoverPresentDelegate.swift in Sources */,
+				712D00C923C33F1000B21E7B /* Alert.swift in Sources */,
+				71BDECC523B73E7200410D38 /* HBarChartViewController.swift in Sources */,
+				7120166223BD901500BE166F /* StudyToWeekAveLineChartDataTranslator.swift in Sources */,
+				A48E6E2123B208F00043332F /* TabBarItemType.swift in Sources */,
+				A48E6E1023B1C9250043332F /* FirstStepViewController.swift in Sources */,
 				716C71C023ADC18200A78E9D /* NavigationController.swift in Sources */,
+				A48E6DFF23B1AD3E0043332F /* WalkthroughViewController.swift in Sources */,
 				A417208323B061FF0009C10D /* PieChartViewController.swift in Sources */,
 				716C719523ADBB8A00A78E9D /* SceneDelegate.swift in Sources */,
+				71C85E6323B7847D00440C63 /* HBarChartViewModel.swift in Sources */,
+				A40FDCA423B5973200C91E46 /* SettingListCell.swift in Sources */,
+				A42E5BE823B34C70002F58C0 /* WalkthroughViewModel.swift in Sources */,
+				A40FDCB723B5BCF800C91E46 /* SettingSectionType.swift in Sources */,
+				A48E6E0C23B1B59D0043332F /* ContainerView.swift in Sources */,
+				71B56DC323BD8767003DB0B5 /* Charts+Rx.swift in Sources */,
+				A42E5BEB23B35224002F58C0 /* DashboardViewModel.swift in Sources */,
+				716C71EF23B6C0A500A78E9D /* AverageBarChartViewModel.swift in Sources */,
+				716C71EA23B6BE7600A78E9D /* AverageBarChartViewController.swift in Sources */,
+				711C112D23BDEE7200A21B55 /* TEAContributionGraph.swift in Sources */,
+				A40FDC9E23B5918000C91E46 /* SettingViewController.swift in Sources */,
+				71C85E6623B7952800440C63 /* LoginViewController.swift in Sources */,
+				A40FDCBB23B5D8A400C91E46 /* MockStudyProvider.swift in Sources */,
+				71F56A9923BC6BA100FB5DA3 /* Translator.swift in Sources */,
+				A48E6E0B23B1B59D0043332F /* RoundedButton.swift in Sources */,
+				71F56AA223BC812800FB5DA3 /* StudyToHBarChartDataTranslator.swift in Sources */,
+				A40FDCB223B5A85900C91E46 /* Study.swift in Sources */,
+				A48E6E0D23B1B59D0043332F /* OutlinedButton.swift in Sources */,
+				716C71DD23B3948700A78E9D /* TimerViewModel.swift in Sources */,
 				A417208B23B069290009C10D /* RxAnimated+bindings.swift in Sources */,
+				A48E6E1223B1CEFE0043332F /* SecondStepViewController.swift in Sources */,
+				A42E5BE523B34661002F58C0 /* ViewModelType.swift in Sources */,
+				7120165E23BD8F5800BE166F /* WeekAveLineChartViewModel.swift in Sources */,
+				A48E6E0323B1AE2D0043332F /* UIScrollView+Rx.swift in Sources */,
 				716C71CB23ADD84D00A78E9D /* ChartType.swift in Sources */,
 				A417208923B069290009C10D /* RxAnimated.swift in Sources */,
-				716C71B823ADC01A00A78E9D /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +1005,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NFHBTKRJJM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -553,6 +1027,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NFHBTKRJJM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",

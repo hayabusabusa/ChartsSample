@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Marker" customModule="ChartsSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="52"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="eMv-Ol-kDs">
+                    <rect key="frame" x="4" y="4" width="132" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Axis Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KsP-eV-lnU">
+                            <rect key="frame" x="0.0" y="0.0" width="132" height="17"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fv-Dv-iIU">
+                            <rect key="frame" x="0.0" y="24.5" width="132" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eMv-Ol-kDs" secondAttribute="trailing" constant="4" id="JUf-lY-Zg1"/>
+                <constraint firstItem="eMv-Ol-kDs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="UW4-jd-3Ik"/>
+                <constraint firstItem="eMv-Ol-kDs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="4" id="tPd-5i-EQU"/>
+                <constraint firstAttribute="bottom" secondItem="eMv-Ol-kDs" secondAttribute="bottom" constant="4" id="xNo-Pt-omH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="axisLabel" destination="KsP-eV-lnU" id="2UX-Md-qOb"/>
+                <outlet property="valueLabel" destination="3fv-Dv-iIU" id="1OR-mc-x63"/>
+            </connections>
+            <point key="canvasLocation" x="340.80000000000001" y="3.5982008995502253"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DrE-HR-8WU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Timer View Controller-->
+        <scene sceneID="zND-xM-HuS">
+            <objects>
+                <viewController id="DrE-HR-8WU" customClass="TimerViewController" customModule="ChartsSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UjN-Di-hPl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFy-Tb-3mH">
+                                <rect key="frame" x="24" y="387.5" width="366" height="41"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <color key="textColor" name="American river"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="WNh-fI-LMn">
+                                <rect key="frame" x="10" y="748" width="394" height="90"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vGd-kH-ZSY">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhx-4p-rTv" customClass="RoundedButton" customModule="ChartsSample" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="18" width="72" height="72"/>
+                                                <color key="backgroundColor" name="Electron blue"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="13"/>
+                                                <state key="normal" title="ストップ">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Vhx-4p-rTv" firstAttribute="height" secondItem="vGd-kH-ZSY" secondAttribute="height" multiplier="0.8" id="5Cg-zD-MNF"/>
+                                            <constraint firstItem="Vhx-4p-rTv" firstAttribute="width" secondItem="vGd-kH-ZSY" secondAttribute="width" multiplier="0.8" id="U69-GJ-Vpe"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vhx-4p-rTv" secondAttribute="trailing" id="akq-Ut-zfy"/>
+                                            <constraint firstAttribute="bottom" secondItem="Vhx-4p-rTv" secondAttribute="bottom" id="lgK-Ao-UTq"/>
+                                            <constraint firstAttribute="width" secondItem="vGd-kH-ZSY" secondAttribute="height" multiplier="1:1" id="vwS-Jr-n6f"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQf-15-OfQ" customClass="RoundedButton" customModule="ChartsSample" customModuleProvider="target">
+                                        <rect key="frame" x="152" y="0.0" width="90" height="90"/>
+                                        <color key="backgroundColor" name="Electron blue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="dQf-15-OfQ" secondAttribute="height" multiplier="1:1" id="fpE-tG-bqI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
+                                        <state key="normal" title="スタート">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8YM-Ai-16d">
+                                        <rect key="frame" x="304" y="0.0" width="90" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhy-N6-Hft" customClass="RoundedButton" customModule="ChartsSample" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="18" width="72" height="72"/>
+                                                <color key="backgroundColor" name="Electron blue"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="13"/>
+                                                <state key="normal" title="リセット">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Rhy-N6-Hft" firstAttribute="height" secondItem="8YM-Ai-16d" secondAttribute="height" multiplier="0.8" id="AjQ-HF-pHD"/>
+                                            <constraint firstAttribute="width" secondItem="8YM-Ai-16d" secondAttribute="height" multiplier="1:1" id="PwJ-GL-Zpt"/>
+                                            <constraint firstItem="Rhy-N6-Hft" firstAttribute="width" secondItem="8YM-Ai-16d" secondAttribute="width" multiplier="0.8" id="TpM-pk-oYk"/>
+                                            <constraint firstAttribute="bottom" secondItem="Rhy-N6-Hft" secondAttribute="bottom" id="dVI-Je-nik"/>
+                                            <constraint firstItem="Rhy-N6-Hft" firstAttribute="leading" secondItem="8YM-Ai-16d" secondAttribute="leading" id="pGM-EY-0B0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="StV-V7-GRO"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Y6R-02-eB2" firstAttribute="trailing" secondItem="wFy-Tb-3mH" secondAttribute="trailing" constant="24" id="6Vx-Ck-SR6"/>
+                            <constraint firstItem="wFy-Tb-3mH" firstAttribute="centerY" secondItem="UjN-Di-hPl" secondAttribute="centerY" constant="-40" id="EL5-K4-yJJ"/>
+                            <constraint firstItem="Y6R-02-eB2" firstAttribute="bottom" secondItem="WNh-fI-LMn" secondAttribute="bottom" constant="24" id="Uin-mM-taz"/>
+                            <constraint firstItem="wFy-Tb-3mH" firstAttribute="leading" secondItem="Y6R-02-eB2" secondAttribute="leading" constant="24" id="Xme-44-H0A"/>
+                            <constraint firstItem="Y6R-02-eB2" firstAttribute="trailing" secondItem="WNh-fI-LMn" secondAttribute="trailing" constant="10" id="Ze4-7D-m9d"/>
+                            <constraint firstItem="WNh-fI-LMn" firstAttribute="leading" secondItem="Y6R-02-eB2" secondAttribute="leading" constant="10" id="yIP-AS-0fa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Y6R-02-eB2"/>
+                    </view>
+                    <connections>
+                        <outlet property="resetButton" destination="Rhy-N6-Hft" id="RC4-A8-OLE"/>
+                        <outlet property="startButton" destination="dQf-15-OfQ" id="iwa-Cs-Gas"/>
+                        <outlet property="stopButton" destination="Vhx-4p-rTv" id="Lcl-M9-ZXS"/>
+                        <outlet property="timerLabel" destination="wFy-Tb-3mH" id="R3t-o4-2PP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A4H-lj-zFL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="416" y="-136"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="American river">
+            <color red="0.3880000114440918" green="0.4309999942779541" blue="0.44699999690055847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Electron blue">
+            <color red="0.035000000149011612" green="0.51800000667572021" blue="0.88999998569488525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
